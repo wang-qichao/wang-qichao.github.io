@@ -302,8 +302,14 @@ body {
   font-family: Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif;
   line-height: 1.5;
   color: #333;
-  background-color: #fff;
+  /* background-color: #fff; */
   min-height: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://www.wallpapermaiden.com/image/2021/01/11/nevada-tahoe-sunset-lake-usa-clouds-trees-nature-43151-resized.jpeg")
+      no-repeat 0% 0% / cover;
 }
 article,
 aside,
@@ -716,7 +722,7 @@ textarea {
 }
 body {
   overflow-y: hidden;
-  background: #eaeaea;
+  /* background: #eaeaea; */
 }
 #container,
 body,
@@ -746,7 +752,7 @@ html {
   position: absolute;
   right: 0;
   min-height: 100%;
-  background: #eaeaea;
+  /* background: #eaeaea; */
   left: 300px;
   width: auto;
 }
@@ -758,7 +764,6 @@ html {
   background: hsla(0, 0%, 100%, 0.3);
 }
 .left-col {
-  background-image: url("ChMkKV_ceSeIJi5RABYsXV_o73IAAG8XAJ72oYAFix1780.jpg");
   background: #fff;
   width: 300px;
   position: fixed;
@@ -766,12 +771,13 @@ html {
   transition: all 0.2s ease-in;
   height: 100%;
   z-index: 999;
+  background-image: url("http://b.zol-img.com.cn/sjbizhi/images/12/720x1280/1608284056193.jpg");
 }
 .left-col .overlay {
-  background-image: url("ChMkKV_ceSeIJi5RABYsXV_o73IAAG8XAJ72oYAFix1780.jpg");
   width: 100%;
   height: 180px;
   position: absolute;
+  background-image: url("http://b.zol-img.com.cn/sjbizhi/images/12/720x1280/1608284056193.jpg");
 }
 .left-col .intrude-less {
   width: 76%;
@@ -788,7 +794,7 @@ html {
   color: #ffffff;
 }
 .left-col #header a:hover {
-  color: #ffffff;
+  color: #000000;
 }
 .left-col #header .header-subtitle {
   text-align: center;
@@ -1832,11 +1838,11 @@ pre .id {
 }
 .article {
   margin: 30px;
-  position: relative;
+  /* position: relative; */
   border: 1px solid #ddd;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   transition: all 0.2s ease-in;
 }
 .article img {
@@ -2938,12 +2944,12 @@ pre .id {
     color: #424242;
   }
   #mobile-nav .overlay {
-    background-image: url("ChMkKV_ceSeIJi5RABYsXV_o73IAAG8XAJ72oYAFix1780.jpg");
     height: 110px;
     position: absolute;
     width: 100%;
     z-index: 2;
     background: #4d4d4d;
+    background-image: url("http://b.zol-img.com.cn/sjbizhi/images/12/720x1280/1608284056193.jpg");
   }
   #mobile-nav #header {
     padding: 10px 0 0;
