@@ -758,6 +758,7 @@ html {
   background: hsla(0, 0%, 100%, 0.3);
 }
 .left-col {
+  background-image: url("ChMkKV_ceSeIJi5RABYsXV_o73IAAG8XAJ72oYAFix1780.jpg");
   background: #fff;
   width: 300px;
   position: fixed;
@@ -767,6 +768,7 @@ html {
   z-index: 999;
 }
 .left-col .overlay {
+  background-image: url("ChMkKV_ceSeIJi5RABYsXV_o73IAAG8XAJ72oYAFix1780.jpg");
   width: 100%;
   height: 180px;
   position: absolute;
@@ -783,14 +785,14 @@ html {
   border-bottom: 1px solid color-border;
 }
 .left-col #header a {
-  color: #696969;
+  color: #ffffff;
 }
 .left-col #header a:hover {
-  color: #b0a0aa;
+  color: #ffffff;
 }
 .left-col #header .header-subtitle {
   text-align: center;
-  color: #999;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   line-height: 25px;
   overflow: hidden;
@@ -2936,6 +2938,7 @@ pre .id {
     color: #424242;
   }
   #mobile-nav .overlay {
+    background-image: url("ChMkKV_ceSeIJi5RABYsXV_o73IAAG8XAJ72oYAFix1780.jpg");
     height: 110px;
     position: absolute;
     width: 100%;
