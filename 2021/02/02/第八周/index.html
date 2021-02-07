@@ -9,15 +9,19 @@
     <link rel="dns-prefetch" href="http://example.com">
     <title>
       
-        Archives | 
+        第八周 | 
             Hexo
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+    <meta name="description" content="一、HTML5提高1. 新增的语义化标签 &lt;header&gt;：头部标签 &lt;nav&gt;：导航标签 &lt;article&gt;：内容标签 &lt;section&gt;：定义文档的某个区域 &lt;aside&gt;：侧边栏标签 &lt;footer&gt;：尾部标签">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第八周">
+<meta property="og:url" content="http://example.com/2021/02/02/%E7%AC%AC%E5%85%AB%E5%91%A8/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、HTML5提高1. 新增的语义化标签 &lt;header&gt;：头部标签 &lt;nav&gt;：导航标签 &lt;article&gt;：内容标签 &lt;section&gt;：定义文档的某个区域 &lt;aside&gt;：侧边栏标签 &lt;footer&gt;：尾部标签">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-02-02T03:31:53.000Z">
+<meta property="article:modified_time" content="2021-02-07T15:52:47.161Z">
 <meta property="article:author" content="Wang Qichao">
 <meta name="twitter:card" content="summary">
       
@@ -188,140 +192,681 @@
           </div>
           <div id="js-content" class="content-ll">
             
+        <article id="post-第八周"
+  class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      第八周
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/02/02/%E7%AC%AC%E5%85%AB%E5%91%A8/" class="archive-article-date">
+
+          <!--显示阅读次数-->
+          
+            <br />
+            <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+              <span class="icon-sort"></span>
+              <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+                阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+              </span>
+            </a>
+            
+              
+                <a href="/2021/02/02/%E7%AC%AC%E5%85%AB%E5%91%A8/" class="archive-article-date">
   	<time datetime="2021-02-02T03:31:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-02</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/02/02/%E7%AC%AC%E5%85%AB%E5%91%A8/">第八周</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
+                  
+      </header>
+      
+        <div class="article-entry" itemprop="articleBody">
           
-          
+                    <h2 id="一、HTML5提高"><a href="#一、HTML5提高" class="headerlink" title="一、HTML5提高"></a>一、HTML5提高</h2><h3 id="1-新增的语义化标签"><a href="#1-新增的语义化标签" class="headerlink" title="1. 新增的语义化标签"></a>1. 新增的语义化标签</h3><ul>
+<li><code>&lt;header&gt;</code>：头部标签</li>
+<li><code>&lt;nav&gt;</code>：导航标签</li>
+<li><code>&lt;article&gt;</code>：内容标签</li>
+<li><code>&lt;section&gt;</code>：定义文档的某个区域</li>
+<li><code>&lt;aside&gt;</code>：侧边栏标签</li>
+<li><code>&lt;footer&gt;</code>：尾部标签</li>
+</ul>
+<a id="more"></a>
 
+<p><strong>注意：</strong></p>
+<ol>
+<li>这些语义化标准主要是针对搜索引擎的。</li>
+<li>这些新标签在页面中可以使用多次。</li>
+<li>在IE9中，需要把这些元素转换为块级元素。</li>
+</ol>
+<h3 id="2-新增的多媒体标签"><a href="#2-新增的多媒体标签" class="headerlink" title="2. 新增的多媒体标签"></a>2. 新增的多媒体标签</h3><p>HTML5新增的多媒体标签主要包含两个：</p>
+<ol>
+<li>音频：<code>&lt;audio&gt;</code></li>
+<li>视频：<code>&lt;video&gt;</code></li>
+</ol>
+<p>使用它们可以很方便的在页面中嵌入音频和视频，而不再使用flash和其他浏览器插件。</p>
+<h4 id="2-1-视频-lt-video-gt"><a href="#2-1-视频-lt-video-gt" class="headerlink" title="2.1 视频 &lt;video&gt;"></a>2.1 视频 <code>&lt;video&gt;</code></h4><p>当前的<code>&lt;video&gt;</code>元素仅支持三种视频格式：MP4, WebM和Ogg，尽量使用mp4格式。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&quot;文件地址&quot;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>实例：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">&quot;320&quot;</span> <span class="attr">height</span>=<span class="string">&quot;240&quot;</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;movie.mp4&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/mp4&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;movie.ogg&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/ogg&quot;</span>&gt;</span></span><br><span class="line">您的浏览器不支持Video标签。</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>常见属性：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">值</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">atuoplay</td>
+<td align="center">autoplay</td>
+<td align="center">视频就绪自动播放（谷歌浏览器需要添加muted来解决自动播放问题）</td>
+</tr>
+<tr>
+<td align="center">controls</td>
+<td align="center">controls</td>
+<td align="center">向用户显示播放控件</td>
+</tr>
+<tr>
+<td align="center">width</td>
+<td align="center">pixels（像素）</td>
+<td align="center">设置播放器宽度</td>
+</tr>
+<tr>
+<td align="center">height</td>
+<td align="center">pixels（像素）</td>
+<td align="center">设置播放器高度</td>
+</tr>
+<tr>
+<td align="center">loop</td>
+<td align="center">loop</td>
+<td align="center">播放完是否继续播放该视频，循环播放</td>
+</tr>
+<tr>
+<td align="center">preload</td>
+<td align="center">auto(预加载视频) none(不应加载视频)</td>
+<td align="center">规定是否预加载视频（如果有了autoplay就忽略该属性）</td>
+</tr>
+<tr>
+<td align="center">src</td>
+<td align="center">url</td>
+<td align="center">视频url地址</td>
+</tr>
+<tr>
+<td align="center">poster</td>
+<td align="center">imgurl</td>
+<td align="center">加载等待的画面图片</td>
+</tr>
+<tr>
+<td align="center">muted</td>
+<td align="center">muted</td>
+<td align="center">静音播放</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-音频-lt-audio-gt"><a href="#2-2-音频-lt-audio-gt" class="headerlink" title="2.2 音频 &lt;audio&gt;"></a>2.2 音频 <code>&lt;audio&gt;</code></h4><p>当前的<code>&lt;audio&gt;</code>元素仅支持三种音频格式：MP3、Wav、Ogg。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">&quot;文件地址&quot;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>实例：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;horse.ogg&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/ogg&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;horse.mp3&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/mpeg&quot;</span>&gt;</span></span><br><span class="line">  您的浏览器不支持 audio 元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>常见属性：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">值</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">atuoplay</td>
+<td align="center">autoplay</td>
+<td align="center">音频就绪自动播放</td>
+</tr>
+<tr>
+<td align="center">controls</td>
+<td align="center">controls</td>
+<td align="center">向用户显示播放控件</td>
+</tr>
+<tr>
+<td align="center">loop</td>
+<td align="center">loop</td>
+<td align="center">循环播放</td>
+</tr>
+<tr>
+<td align="center">src</td>
+<td align="center">url</td>
+<td align="center">音频url地址</td>
+</tr>
+</tbody></table>
+<h4 id="2-3-多媒体标签总结"><a href="#2-3-多媒体标签总结" class="headerlink" title="2.3 多媒体标签总结"></a>2.3 多媒体标签总结</h4><ol>
+<li>音频标签和视频标签使用方式基本一致。</li>
+<li>浏览器情况不同。</li>
+<li>谷歌浏览器吧音频和视频自动播放禁止了。</li>
+<li>可一个视频标签添加muted属性来静音播放视频，音频不可以</li>
+</ol>
+<h3 id="3-新增的input表单"><a href="#3-新增的input表单" class="headerlink" title="3. 新增的input表单"></a>3. 新增的input表单</h3><table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">type=”email”</td>
+<td align="center">限制用户输入必须为Email类型</td>
+</tr>
+<tr>
+<td align="center">type=”url”</td>
+<td align="center">限制用户输入必须为URL类型</td>
+</tr>
+<tr>
+<td align="center">type=”date”</td>
+<td align="center">限制用户输入必须为日期类型</td>
+</tr>
+<tr>
+<td align="center">type=”time”</td>
+<td align="center">限制用户输入必须为时间类型</td>
+</tr>
+<tr>
+<td align="center">type=”month”</td>
+<td align="center">限制用户输入必须为月类型</td>
+</tr>
+<tr>
+<td align="center">type=”week”</td>
+<td align="center">限制用户输入必须为周类型</td>
+</tr>
+<tr>
+<td align="center">type=”number”</td>
+<td align="center">限制用户输入必须为数字类型</td>
+</tr>
+<tr>
+<td align="center">type=”tel”</td>
+<td align="center">手机号码</td>
+</tr>
+<tr>
+<td align="center">type=”search”</td>
+<td align="center">搜索框</td>
+</tr>
+<tr>
+<td align="center">type=”color”</td>
+<td align="center">生成一个颜色选择表单</td>
+</tr>
+</tbody></table>
+<h3 id="4-新增的表单属性"><a href="#4-新增的表单属性" class="headerlink" title="4. 新增的表单属性"></a>4. 新增的表单属性</h3><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">值</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">required</td>
+<td align="center">required</td>
+<td align="center">表单拥有该属性表示其内容不能为空，必填</td>
+</tr>
+<tr>
+<td align="center">placeholder</td>
+<td align="center">提示文本</td>
+<td align="center">表单的提示信息，存在默认值将不显示</td>
+</tr>
+<tr>
+<td align="center">autofocus</td>
+<td align="center">autofocus</td>
+<td align="center">自动聚焦属性，页面加载完成时自动聚焦到指定的表单</td>
+</tr>
+<tr>
+<td align="center">autocomplete</td>
+<td align="center">off/on</td>
+<td align="center">当用户在字段开始键入时，浏览器基于之前键入过的值，应该显示出在字段中填写的选项</td>
+</tr>
+<tr>
+<td align="center">multiple</td>
+<td align="center">multiple</td>
+<td align="center">可以多选文件提交</td>
+</tr>
+</tbody></table>
+<p>可以通过以下方式修改placeholder里面字体的颜色：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::placeholder</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="二、CSS3提高"><a href="#二、CSS3提高" class="headerlink" title="二、CSS3提高"></a>二、CSS3提高</h2><h3 id="1-新增选择器"><a href="#1-新增选择器" class="headerlink" title="1. 新增选择器"></a>1. 新增选择器</h3><h4 id="1-1-属性选择器"><a href="#1-1-属性选择器" class="headerlink" title="1.1 属性选择器"></a>1.1 属性选择器</h4><p>属性选择器可以根据元素特定属性来选择元素，这样就可以不借助于类或id选择器。</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">E[att]</td>
+<td align="center">选择具有att属性的E元素</td>
+</tr>
+<tr>
+<td align="center">E[att=”val”]</td>
+<td align="center">选择具有att属性且属性值等于val的E元素</td>
+</tr>
+<tr>
+<td align="center">E[att^=”val”]</td>
+<td align="center">选择具有att属性且值以val开头的E元素</td>
+</tr>
+<tr>
+<td align="center">E[att$=”val”]</td>
+<td align="center">选择具有att属性且值以yival结尾的E元素</td>
+</tr>
+<tr>
+<td align="center">E[att*=”val”]</td>
+<td align="center">选择具有att属性且值中含有val的E元素</td>
+</tr>
+</tbody></table>
+<h4 id="1-2-结构伪类选择器"><a href="#1-2-结构伪类选择器" class="headerlink" title="1.2 结构伪类选择器"></a>1.2 结构伪类选择器</h4><p>结构为类选择器主要根据文档结构来选择元素，常用于根据父级选择里面的子元素。</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">E:first-child</td>
+<td align="center">匹配父元素中的第一个子元素E</td>
+</tr>
+<tr>
+<td align="center">E:last-child</td>
+<td align="center">匹配父元素中的最后一个子元素E</td>
+</tr>
+<tr>
+<td align="center">E:nth-child(n)</td>
+<td align="center">匹配父元素中的第n个子元素E</td>
+</tr>
+<tr>
+<td align="center">E:first-of-type</td>
+<td align="center">指定类型E的第一个</td>
+</tr>
+<tr>
+<td align="center">E:last-of-type</td>
+<td align="center">指定类型E的最后一个</td>
+</tr>
+<tr>
+<td align="center">E:nth-of-type(n)</td>
+<td align="center">指定类型E的第n个</td>
+</tr>
+</tbody></table>
+<p><strong><em>注：类选择器、属性选择器、伪类选择器，权重为10。</em></strong></p>
+<p><code>nth-child(n)</code>可以选择某个父元素的一个或多个特定的子元素。</p>
+<ul>
+<li>n可以是数字、关键字和公式。</li>
+<li>n如果是数字，就是选择第n个子元素，里面数字从1开始。</li>
+<li>n可以是关键字：even 偶数，odd 奇数。</li>
+<li>n可以是公式：常见的共识如下（如果n是公式，则从0开始计算，但是第0个元素 或者超出了元素的个数会被忽略）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">公式</th>
+<th align="center">取值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">2n</td>
+<td align="center">偶数</td>
+</tr>
+<tr>
+<td align="center">2n+1</td>
+<td align="center">奇数</td>
+</tr>
+<tr>
+<td align="center">5n</td>
+<td align="center">5、10、15……</td>
+</tr>
+<tr>
+<td align="center">n+5</td>
+<td align="center">从第5个开始（包含第五个）到最后</td>
+</tr>
+<tr>
+<td align="center">-n+5</td>
+<td align="center">前5个（包含第五个）</td>
+</tr>
+</tbody></table>
+<p><strong><code>nth-child(n)</code>和<code>nth-of-type(n)</code>的区别：</strong></p>
+<ol>
+<li><code>nth-child(n)</code>对父元素里面所有的孩子排序选择（序号是固定的）先找第n个孩子，然后看看是否和E匹配。</li>
+<li><code>nth-of-type(n)</code>对父元素里面指定子元素进行排序选择。现在去匹配E,然后再根据E找第n个孩子。</li>
+</ol>
+<h3 id="1-3-伪元素选择器"><a href="#1-3-伪元素选择器" class="headerlink" title="1.3 伪元素选择器"></a>1.3 伪元素选择器</h3><p>伪元素选择器可以帮助我们利用CSS创建标签元素，而不需要HTML标签，从而简化HTML结构。</p>
+<table>
+<thead>
+<tr>
+<th align="center">选择器</th>
+<th align="center">简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">::before</td>
+<td align="center">在元素内部的前面插入内容</td>
+</tr>
+<tr>
+<td align="center">::after</td>
+<td align="center">在元素内部的后面插入内容</td>
+</tr>
+</tbody></table>
+<p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">element</span><span class="selector-pseudo">::before</span> &#123; &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong></p>
+<ul>
+<li>before和after创建一个元素，但是属于行内元素。</li>
+<li>新创建的这个元素在文档树中是找不到的，所以我们称之为伪元素。</li>
+<li>before和after必须有content属性。</li>
+<li>before在父元素内容的前面创建元素，after在父元素内容的后面插入元素。</li>
+<li>伪元素选择器和标签选择器一样，权重为1。</li>
+</ul>
+<h3 id="2-CSS3盒子模型"><a href="#2-CSS3盒子模型" class="headerlink" title="2. CSS3盒子模型"></a>2. CSS3盒子模型</h3><p>CSS3中可以通过box-sizing来指定盒子模型，有2个值：即可指定为content-box、border-box。<br>我们如果把盒子模型改为了<code>box-sizing:border-box</code>，那padding和border就不会撑大盒子了（前提是padding和border不会超过width的宽度）。</p>
+<h3 id="3-CSS3其他特性"><a href="#3-CSS3其他特性" class="headerlink" title="3. CSS3其他特性"></a>3. CSS3其他特性</h3><h4 id="3-1-图片变模糊"><a href="#3-1-图片变模糊" class="headerlink" title="3.1 图片变模糊"></a>3.1 图片变模糊</h4><p>CSS3滤镜filter：<br>filter属性将模糊或颜色偏移等图形效果应用于元素。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">filter</span>: 函数();</span><br></pre></td></tr></table></figure>
+<p>例如：<code>filter: blur(5px);</code>， blur模糊处理，数值越大越模糊。</p>
+<h4 id="3-2-计算盒子宽度width-calc函数"><a href="#3-2-计算盒子宽度width-calc函数" class="headerlink" title="3.2 计算盒子宽度width:calc函数"></a>3.2 计算盒子宽度<code>width:calc</code>函数</h4><p>calc函数让你在声明CSS属性值时执行一些计算；</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span>: <span class="selector-tag">calc</span>(100%<span class="selector-tag">-80px</span>);</span><br></pre></td></tr></table></figure>
+<p>括号里可以使用+、-、*、/来进行计算。</p>
+<h3 id="4-CSS3过渡"><a href="#4-CSS3过渡" class="headerlink" title="4. CSS3过渡"></a>4. CSS3过渡</h3><p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transition</span>: 要过渡的属性 花费的时间 运动曲线 何时开始;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>属性：想要变换的CSS属性，宽度高度、背景颜色、内外边距都可以。如果想要所有的属性都变化过渡，写一个all就可以了。</li>
+<li>花费时间：单位是秒（必须写单位）。</li>
+<li>运动曲线：默认是easa（可以省略）。</li>
+<li>何时开始：单位是秒（必须写单位），可以设置延迟出发时间，默认是0s（可以省略）。</li>
+</ol>
+<h3 id="5-2D转换"><a href="#5-2D转换" class="headerlink" title="5. 2D转换"></a>5. 2D转换</h3><p>转换（transfrom）是CSS3中具有颠覆性的特征之一，可以实现元素的位移、旋转、缩放等效果。</p>
+<h4 id="5-1-2D转换之移动-transform"><a href="#5-1-2D转换之移动-transform" class="headerlink" title="5.1 2D转换之移动 transform"></a>5.1 2D转换之移动 transform</h4><p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translate</span>(<span class="selector-tag">x</span>,<span class="selector-tag">y</span>);</span><br></pre></td></tr></table></figure>
+<p>或者分开写：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translateX</span>(<span class="selector-tag">n</span>);</span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translateY</span>(<span class="selector-tag">n</span>);</span><br></pre></td></tr></table></figure>
+<ol>
+<li>定义2D转换中的移动，沿着x和y轴移动元素。</li>
+<li>translate最大的优点：不会影响到其他元素的位置。</li>
+<li>translate中的百分比单位是相对于自身元素的<code>translate:(50%,50%);</code>。</li>
+<li>对行内标签没有效果。</li>
+</ol>
+<h4 id="5-2-2D转换之旋转-rotate"><a href="#5-2-2D转换之旋转-rotate" class="headerlink" title="5.2 2D转换之旋转 rotate"></a>5.2 2D转换之旋转 rotate</h4><p>2D旋转指的是让元素在2维平面内顺时针旋转或者逆时针旋转。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">rotate</span>(度数);</span><br></pre></td></tr></table></figure>
+<ol>
+<li>rotate里面跟度数，单位是deg，比如：<code>transform: rotate(45deg);</code>。</li>
+<li>角度为正时，顺时针；负时，为逆时针。</li>
+<li>默认旋转的中心点是元素的中心点。</li>
+</ol>
+<h4 id="5-3-2D转换中心点-transform-origin"><a href="#5-3-2D转换中心点-transform-origin" class="headerlink" title="5.3 2D转换中心点 transform-origin"></a>5.3 2D转换中心点 transform-origin</h4><p>我们可以设置元素转换的中心点。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform-origin</span>: <span class="selector-tag">x</span> <span class="selector-tag">y</span>;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>注意后面的参数x和y用空格隔开。</li>
+<li>x和y默认转换的中心点是元素的中心点(50%,50%)。</li>
+<li>还可以给x和y设置像素或者方位名词(top bottom left right center)。</li>
+</ol>
+<h4 id="5-3-2D转换之缩放-scale"><a href="#5-3-2D转换之缩放-scale" class="headerlink" title="5.3 2D转换之缩放 scale"></a>5.3 2D转换之缩放 scale</h4><p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">scale</span>(<span class="selector-tag">x</span>,<span class="selector-tag">y</span>);</span><br></pre></td></tr></table></figure>
+<ol>
+<li>其中x和y用逗号分隔。</li>
+<li><code>transform: scale(1,1);</code>：宽和高都放大一倍，相当于没有放大。</li>
+<li><code>transform: scale(2,2);</code>：宽和高都放大2倍。</li>
+<li><code>transform: scale(2);</code>：只写一个参数，第二个参数则和第一个参数一样，相当于<code>transform: scale(2,2);</code>。</li>
+<li><code>transform: scale(0.5,0.5);</code>：缩小。</li>
+<li>scale缩放的最大优势：可以设置中心点缩放，默认以中心点缩放，而且不影响其他盒子。</li>
+</ol>
+<h3 id="6-动画"><a href="#6-动画" class="headerlink" title="6. 动画"></a>6. 动画</h3><p>动画（animation）是CSS3中具有颠覆性的特种之一，可通过设置多个节点来精确控制一个或一组动画，常用来实现复杂的动画效果。</p>
+<h4 id="6-1-动画的基本使用"><a href="#6-1-动画的基本使用" class="headerlink" title="6.1 动画的基本使用"></a>6.1 动画的基本使用</h4><p>制作动画分为两步：</p>
+<ol>
+<li>先定义动画</li>
+<li>在调用动画</li>
+</ol>
+<h5 id="6-1-1-用keyframes定义动画（类似于定义类选择器）"><a href="#6-1-1-用keyframes定义动画（类似于定义类选择器）" class="headerlink" title="6.1.1 用keyframes定义动画（类似于定义类选择器）"></a>6.1.1 用keyframes定义动画（类似于定义类选择器）</h5><p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> 动画名称 &#123;</span><br><span class="line">            0%&#123;</span><br><span class="line">                <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            100%&#123;</span><br><span class="line">                <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>0%是动画的开始，100%是动画的完成，这样的规则就是动画序列。</li>
+<li>在@keyframes中规定某项CSS样式，就能创建由当前样式逐渐改为新样式的动画效果。</li>
+<li>动画是使元素从一种样式逐渐变化为另一种样式的效果，可任意改变任意多的样式任意多的次数。</li>
+<li>用百分比规定变化发生的时间，或用关键词”from”和”to”,等同于0%和100%。</li>
+</ol>
+<h5 id="6-1-2-元素使用动画"><a href="#6-1-2-元素使用动画" class="headerlink" title="6.1.2 元素使用动画"></a>6.1.2 元素使用动画</h5><p><strong>语法：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">            <span class="attribute">background-color</span>: aqua;</span><br><span class="line">            <span class="attribute">margin</span>: <span class="number">100px</span> auto;</span><br><span class="line">            <span class="comment">/* 调用动画 */</span></span><br><span class="line">            <span class="attribute">animation-name</span>: 动画名称;</span><br><span class="line">            <span class="comment">/* 持续时间 */</span></span><br><span class="line">            <span class="attribute">animation-duration</span>: 持续时间;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="6-2-动画常见属性"><a href="#6-2-动画常见属性" class="headerlink" title="6.2 动画常见属性"></a>6.2 动画常见属性</h4><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">@keyframes</td>
+<td align="center">定义一个动画,@keyframes定义的动画名称用来被animation-name所使用</td>
+</tr>
+<tr>
+<td align="center">animation</td>
+<td align="center">复合属性。检索或设置对象所应用的动画特效</td>
+</tr>
+<tr>
+<td align="center">animation-name</td>
+<td align="center">检索或设置对象所应用的动画名称 ,必须与规则@keyframes配合使用，因为动画名称由@keyframes定义</td>
+</tr>
+<tr>
+<td align="center">animation-duration</td>
+<td align="center">检索或设置对象动画的持续时间</td>
+</tr>
+<tr>
+<td align="center">animation-timing-function</td>
+<td align="center">检索或设置对象动画的过渡类型</td>
+</tr>
+<tr>
+<td align="center">animation-delay</td>
+<td align="center">检索或设置对象动画的延迟时间</td>
+</tr>
+<tr>
+<td align="center">animation-iteration-count</td>
+<td align="center">检索或设置对象动画的循环次数</td>
+</tr>
+<tr>
+<td align="center">animation-direction</td>
+<td align="center">检索或设置对象动画在循环中是否反向运动</td>
+</tr>
+<tr>
+<td align="center">animation-play-state</td>
+<td align="center">检索或设置对象动画的状态</td>
+</tr>
+<tr>
+<td align="center">animation-fill-mode</td>
+<td align="center">规定动画结束后状态，保持forword回到起始backwards</td>
+</tr>
+</tbody></table>
+<h4 id="6-3-动画简写属性"><a href="#6-3-动画简写属性" class="headerlink" title="6.3 动画简写属性"></a>6.3 动画简写属性</h4><p>animation: 动画名称 持续时间 运动曲线 何时开始 播放次数 是否反方向 动画其实或者结束的状态。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">animation</span>: <span class="selector-tag">myfirst</span> 5<span class="selector-tag">s</span> <span class="selector-tag">linear</span> 2<span class="selector-tag">s</span> <span class="selector-tag">infinite</span> <span class="selector-tag">alternate</span>;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>简写属性里面不包含animation-play-state。</li>
+<li>暂停动画：<code>animation-play-state：puased;</code>，经常和鼠标经过等配合使用。</li>
+<li>想要动画走回来，而不是直接跳回来：<code>animation-direction：alternate;</code>。</li>
+<li>盒子动画结束后，停在结束的位置：<code>animation-fill-mode：forwards;</code>。</li>
+</ol>
+<h3 id="7-3D转换"><a href="#7-3D转换" class="headerlink" title="7. 3D转换"></a>7. 3D转换</h3><p>特点：</p>
+<ol>
+<li>近大远小。</li>
+<li>物体后面遮挡不可见。</li>
+</ol>
+<h4 id="7-1-三维坐标系"><a href="#7-1-三维坐标系" class="headerlink" title="7.1 三维坐标系"></a>7.1 三维坐标系</h4><ul>
+<li>x轴：水平向右 （右边是正值，左边是负值）</li>
+<li>y轴：垂直向下 （下面是正值，上面是负值）</li>
+<li>z轴：垂直屏幕 （往外面是正值，往里面是负值）</li>
+</ul>
+<h4 id="7-2-3D移动-translate3d"><a href="#7-2-3D移动-translate3d" class="headerlink" title="7.2 3D移动 translate3d"></a>7.2 3D移动 translate3d</h4><ul>
+<li><code>translform:translateX(100px);</code>：仅仅在x轴上移动。</li>
+<li><code>translform:translateY(100px);</code>：仅仅在y轴上移动。</li>
+<li><code>translform:translateZ(100px);</code>：仅仅在z轴上移动。</li>
+<li><code>translform:translate(x,y,z);</code>：其中x,y,z分别指要移动的轴的方向的距离。</li>
+</ul>
+<h4 id="7-3-3D旋转-rotate3d"><a href="#7-3-3D旋转-rotate3d" class="headerlink" title="7.3 3D旋转 rotate3d"></a>7.3 3D旋转 rotate3d</h4><p><strong>语法：</strong></p>
+<ul>
+<li><code>translform:rotateX(45deg);</code>：沿着x轴正方向旋转45度。</li>
+<li><code>translform:rotateY(45deg);</code>：沿着y轴正方向旋转45度。</li>
+<li><code>translform:rotateZ(45deg);</code>：沿着z轴正方向旋转45度。</li>
+<li><code>translform:rotate3d(x,y,z,deg);</code>：沿着自定义轴旋转deg度。</li>
+</ul>
+
+                      
+
+                        
+                          <div class="page-reward">
+                            <a href="javascript:;" class="page-reward-btn tooltip-top">
+                              <div class="tooltip tooltip-east">
+                                <span class="tooltip-item">
+                                  赏
+                                </span>
+                                <span class="tooltip-content">
+                                  <span class="tooltip-text">
+                                    <span class="tooltip-inner">
+                                      <p class="reward-p"><i class="icon icon-quo-left"></i>
+                                        谢谢你请我吃糖果<i class="icon icon-quo-right"></i>
+                                      </p>
+                                      <div class="reward-box">
+                                        
+                                          <div class="reward-box-item">
+                                            <img class="reward-img" src="/assets/QQ图片20210121113041.jpg">
+                                            <span class="reward-type">支付宝</span>
+                                          </div>
+                                          
+                                            
+                                              <div class="reward-box-item">
+                                                <img class="reward-img" src="/assets/QQ图片20210121113049.jpg">
+                                                <span class="reward-type">微信</span>
+                                              </div>
+                                              
+                                      </div>
+                                    </span>
+                                  </span>
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                          
         </div>
-        <div class="clearfix"></div>
-    </header>
+        <div class="article-info article-info-index">
+          
+              
+                
+
+                  
+
+                      
+                        
+  <div class="share-btn share-icons tooltip-left">
+    <div class="tooltip tooltip-east">
+      <span class="tooltip-item">
+        <a href="javascript:;" class="share-sns share-outer">
+          <i class="icon icon-share"></i>
+        </a>
+      </span>
+      <span class="tooltip-content">
+        <div class="share-wrap">
+          <div class="share-icons">
+            <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+              <i class="icon icon-weibo"></i>
+            </a>
+            <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+              <i class="icon icon-weixin"></i>
+            </a>
+            <a class="qq share-sns" href="javascript:;" data-type="qq">
+              <i class="icon icon-qq"></i>
+            </a>
+            <a class="douban share-sns" href="javascript:;" data-type="douban">
+              <i class="icon icon-douban"></i>
+            </a>
+            <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+              <i class="icon icon-qzone"></i>
+            </a>
+            <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+              <i class="icon icon-facebook"></i>
+            </a>
+            <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+              <i class="icon icon-twitter"></i>
+            </a>
+            <a class="google share-sns" href="javascript:;" data-type="google">
+              <i class="icon icon-google"></i>
+            </a>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+
+  <div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img
+        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/02/02/%E7%AC%AC%E5%85%AB%E5%91%A8/"
+        alt="微信分享二维码">
+    </div>
+  </div>
+
+  <div class="mask js-mask"></div>
+
+                          
+                            <div class="clearfix"></div>
+        </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/26/%E7%AC%AC%E4%B8%83%E5%91%A8/" class="archive-article-date">
-  	<time datetime="2021-01-26T04:15:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/26/%E7%AC%AC%E4%B8%83%E5%91%A8/">定位+元素的显示和隐藏+CSS高级技巧</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/26/%E7%AC%AC%E4%B8%83%E5%91%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">定位+元素的显示和隐藏+CSS高级技巧</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/22/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-22T04:44:01.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-22</time>
-</a>
+      <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/22/hello-world/">Hello World</a>
-    </h1>
-  
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81HTML5%E6%8F%90%E9%AB%98"><span class="toc-number">1.</span> <span class="toc-text">一、HTML5提高</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%B0%E5%A2%9E%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.</span> <span class="toc-text">1. 新增的语义化标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%B0%E5%A2%9E%E7%9A%84%E5%A4%9A%E5%AA%92%E4%BD%93%E6%A0%87%E7%AD%BE"><span class="toc-number">1.2.</span> <span class="toc-text">2. 新增的多媒体标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E8%A7%86%E9%A2%91-lt-video-gt"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 视频 &lt;video&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E9%9F%B3%E9%A2%91-lt-audio-gt"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 音频 &lt;audio&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-%E5%A4%9A%E5%AA%92%E4%BD%93%E6%A0%87%E7%AD%BE%E6%80%BB%E7%BB%93"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 多媒体标签总结</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%B0%E5%A2%9E%E7%9A%84input%E8%A1%A8%E5%8D%95"><span class="toc-number">1.3.</span> <span class="toc-text">3. 新增的input表单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%96%B0%E5%A2%9E%E7%9A%84%E8%A1%A8%E5%8D%95%E5%B1%9E%E6%80%A7"><span class="toc-number">1.4.</span> <span class="toc-text">4. 新增的表单属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81CSS3%E6%8F%90%E9%AB%98"><span class="toc-number">2.</span> <span class="toc-text">二、CSS3提高</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%B0%E5%A2%9E%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.1.</span> <span class="toc-text">1. 新增选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.1.1.</span> <span class="toc-text">1.1 属性选择器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-%E7%BB%93%E6%9E%84%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.1.2.</span> <span class="toc-text">1.2 结构伪类选择器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E4%BC%AA%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.2.</span> <span class="toc-text">1.3 伪元素选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-CSS3%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.3.</span> <span class="toc-text">2. CSS3盒子模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-CSS3%E5%85%B6%E4%BB%96%E7%89%B9%E6%80%A7"><span class="toc-number">2.4.</span> <span class="toc-text">3. CSS3其他特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E5%9B%BE%E7%89%87%E5%8F%98%E6%A8%A1%E7%B3%8A"><span class="toc-number">2.4.1.</span> <span class="toc-text">3.1 图片变模糊</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E8%AE%A1%E7%AE%97%E7%9B%92%E5%AD%90%E5%AE%BD%E5%BA%A6width-calc%E5%87%BD%E6%95%B0"><span class="toc-number">2.4.2.</span> <span class="toc-text">3.2 计算盒子宽度width:calc函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-CSS3%E8%BF%87%E6%B8%A1"><span class="toc-number">2.5.</span> <span class="toc-text">4. CSS3过渡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2D%E8%BD%AC%E6%8D%A2"><span class="toc-number">2.6.</span> <span class="toc-text">5. 2D转换</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-2D%E8%BD%AC%E6%8D%A2%E4%B9%8B%E7%A7%BB%E5%8A%A8-transform"><span class="toc-number">2.6.1.</span> <span class="toc-text">5.1 2D转换之移动 transform</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-2D%E8%BD%AC%E6%8D%A2%E4%B9%8B%E6%97%8B%E8%BD%AC-rotate"><span class="toc-number">2.6.2.</span> <span class="toc-text">5.2 2D转换之旋转 rotate</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-2D%E8%BD%AC%E6%8D%A2%E4%B8%AD%E5%BF%83%E7%82%B9-transform-origin"><span class="toc-number">2.6.3.</span> <span class="toc-text">5.3 2D转换中心点 transform-origin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-2D%E8%BD%AC%E6%8D%A2%E4%B9%8B%E7%BC%A9%E6%94%BE-scale"><span class="toc-number">2.6.4.</span> <span class="toc-text">5.3 2D转换之缩放 scale</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%8A%A8%E7%94%BB"><span class="toc-number">2.7.</span> <span class="toc-text">6. 动画</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-%E5%8A%A8%E7%94%BB%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">2.7.1.</span> <span class="toc-text">6.1 动画的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#6-1-1-%E7%94%A8keyframes%E5%AE%9A%E4%B9%89%E5%8A%A8%E7%94%BB%EF%BC%88%E7%B1%BB%E4%BC%BC%E4%BA%8E%E5%AE%9A%E4%B9%89%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%89"><span class="toc-number">2.7.1.1.</span> <span class="toc-text">6.1.1 用keyframes定义动画（类似于定义类选择器）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-1-2-%E5%85%83%E7%B4%A0%E4%BD%BF%E7%94%A8%E5%8A%A8%E7%94%BB"><span class="toc-number">2.7.1.2.</span> <span class="toc-text">6.1.2 元素使用动画</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-%E5%8A%A8%E7%94%BB%E5%B8%B8%E8%A7%81%E5%B1%9E%E6%80%A7"><span class="toc-number">2.7.2.</span> <span class="toc-text">6.2 动画常见属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-%E5%8A%A8%E7%94%BB%E7%AE%80%E5%86%99%E5%B1%9E%E6%80%A7"><span class="toc-number">2.7.3.</span> <span class="toc-text">6.3 动画简写属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3D%E8%BD%AC%E6%8D%A2"><span class="toc-number">2.8.</span> <span class="toc-text">7. 3D转换</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1-%E4%B8%89%E7%BB%B4%E5%9D%90%E6%A0%87%E7%B3%BB"><span class="toc-number">2.8.1.</span> <span class="toc-text">7.1 三维坐标系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-3D%E7%A7%BB%E5%8A%A8-translate3d"><span class="toc-number">2.8.2.</span> <span class="toc-text">7.2 3D移动 translate3d</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-3D%E6%97%8B%E8%BD%AC-rotate3d"><span class="toc-number">2.8.3.</span> <span class="toc-text">7.3 3D旋转 rotate3d</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
+
+        
           
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/20/HTML/" class="archive-article-date">
-  	<time datetime="2021-01-20T13:47:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/20/HTML/">HTML</a>
-    </h1>
-  
+                
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
+                      
 
-          
+                            
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
+                                
+                                      
 
 
           </div>
@@ -354,8 +899,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-			isArchive: true,
+		isPost: true,
+			isArchive: false,
 				isTag: false,
 					isCategory: false,
 						open_in_new: false,
