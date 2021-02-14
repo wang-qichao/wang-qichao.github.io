@@ -9,19 +9,19 @@
     <link rel="dns-prefetch" href="http://example.com">
     <title>
       
-        定位+元素的显示和隐藏+CSS高级技巧 | 
+        移动web开发流式布局 | 
             Hexo
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="一、定位 浮动可以让多个块级盒子一行没有缝隙排列显示，经常用于横向排列盒子。 定位则是可以让盒子自由的在某个盒子内移动位置或者固定屏幕中的某个位置，并且可以压住其他盒子。  1. 定位组成定位：将盒子定在某一个位置，定位也是摆放盒子，按照定位的方式移动盒子。定位&#x3D;定位模式+边偏移。定位模式用于指定一个元素在文档中的定位方式。边偏移则决定了该元素的最终位置。">
+    <meta name="description" content="移动web开发流式布局1. 视口视口（viewport）就是浏览器显示页面内容的屏幕区域。视口可以分为布局视口、视觉视口、和理想视口。 1.1 布局视口–layout viewport 一般移动设备的浏览器都默认设置了一个布局视口，用于解决早期的PC端页面在手机上显示的问题。 IOS、Android都将这个视口分辨率设置为980px，所以PC上的页面大多都能在手机上呈现，只不过元素看上去很小，一般">
 <meta property="og:type" content="article">
-<meta property="og:title" content="定位+元素的显示和隐藏+CSS高级技巧">
-<meta property="og:url" content="http://example.com/2021/01/26/%E7%AC%AC%E4%B8%83%E5%91%A8/index.html">
+<meta property="og:title" content="移动web开发流式布局">
+<meta property="og:url" content="http://example.com/2021/02/09/%E7%AC%AC%E4%B9%9D%E5%91%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、定位 浮动可以让多个块级盒子一行没有缝隙排列显示，经常用于横向排列盒子。 定位则是可以让盒子自由的在某个盒子内移动位置或者固定屏幕中的某个位置，并且可以压住其他盒子。  1. 定位组成定位：将盒子定在某一个位置，定位也是摆放盒子，按照定位的方式移动盒子。定位&#x3D;定位模式+边偏移。定位模式用于指定一个元素在文档中的定位方式。边偏移则决定了该元素的最终位置。">
+<meta property="og:description" content="移动web开发流式布局1. 视口视口（viewport）就是浏览器显示页面内容的屏幕区域。视口可以分为布局视口、视觉视口、和理想视口。 1.1 布局视口–layout viewport 一般移动设备的浏览器都默认设置了一个布局视口，用于解决早期的PC端页面在手机上显示的问题。 IOS、Android都将这个视口分辨率设置为980px，所以PC上的页面大多都能在手机上呈现，只不过元素看上去很小，一般">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-26T04:15:41.000Z">
-<meta property="article:modified_time" content="2021-02-07T03:27:28.070Z">
+<meta property="article:published_time" content="2021-02-09T00:31:53.000Z">
+<meta property="article:modified_time" content="2021-02-14T14:33:16.791Z">
 <meta property="article:author" content="Wang Qichao">
 <meta name="twitter:card" content="summary">
       
@@ -192,7 +192,7 @@
           </div>
           <div id="js-content" class="content-ll">
             
-        <article id="post-第七周"
+        <article id="post-第九周"
   class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -200,7 +200,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      定位+元素的显示和隐藏+CSS高级技巧
+      移动web开发流式布局
     </h1>
   
 
@@ -215,305 +215,375 @@
             </a>
             
               
-                <a href="/2021/01/26/%E7%AC%AC%E4%B8%83%E5%91%A8/" class="archive-article-date">
-  	<time datetime="2021-01-26T04:15:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-26</time>
+                <a href="/2021/02/09/%E7%AC%AC%E4%B9%9D%E5%91%A8/" class="archive-article-date">
+  	<time datetime="2021-02-09T00:31:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-09</time>
 </a>
                   
       </header>
       
         <div class="article-entry" itemprop="articleBody">
           
-                    <h2 id="一、定位"><a href="#一、定位" class="headerlink" title="一、定位"></a>一、定位</h2><ol>
-<li>浮动可以让多个块级盒子一行没有缝隙排列显示，经常用于横向排列盒子。</li>
-<li>定位则是可以让盒子自由的在某个盒子内移动位置或者固定屏幕中的某个位置，并且可以压住其他盒子。</li>
-</ol>
-<h3 id="1-定位组成"><a href="#1-定位组成" class="headerlink" title="1. 定位组成"></a>1. 定位组成</h3><p>定位：将盒子定在某一个位置，定位也是摆放盒子，按照定位的方式移动盒子。<br>定位=定位模式+边偏移。<br>定位模式用于指定一个元素在文档中的定位方式。边偏移则决定了该元素的最终位置。</p>
+                    <h2 id="移动web开发流式布局"><a href="#移动web开发流式布局" class="headerlink" title="移动web开发流式布局"></a>移动web开发流式布局</h2><h3 id="1-视口"><a href="#1-视口" class="headerlink" title="1. 视口"></a>1. 视口</h3><p>视口（viewport）就是浏览器显示页面内容的屏幕区域。视口可以分为布局视口、视觉视口、和理想视口。</p>
+<h4 id="1-1-布局视口–layout-viewport"><a href="#1-1-布局视口–layout-viewport" class="headerlink" title="1.1 布局视口–layout viewport"></a>1.1 布局视口–layout viewport</h4><ul>
+<li>一般移动设备的浏览器都默认设置了一个布局视口，用于解决早期的PC端页面在手机上显示的问题。</li>
+<li>IOS、Android都将这个视口分辨率设置为980px，所以PC上的页面大多都能在手机上呈现，只不过元素看上去很小，一般默认可以通过手动缩放页面。</li>
+</ul>
 <a id="more"></a>
 
-<h4 id="1-1-定位模式"><a href="#1-1-定位模式" class="headerlink" title="1.1 定位模式"></a>1.1 定位模式</h4><p>定位模式决定元素的定位方式，它通过CSS的position属性来设置，其值可以分为四个：</p>
-<table>
-<thead>
-<tr>
-<th align="center">值</th>
-<th align="center">语义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">static</td>
-<td align="center">静态定位</td>
-</tr>
-<tr>
-<td align="center">relative</td>
-<td align="center">相对定位</td>
-</tr>
-<tr>
-<td align="center">absolute</td>
-<td align="center">绝对定位</td>
-</tr>
-<tr>
-<td align="center">fixed</td>
-<td align="center">固定定位</td>
-</tr>
-</tbody></table>
-<h4 id="1-2-边偏移"><a href="#1-2-边偏移" class="headerlink" title="1.2 边偏移"></a>1.2 边偏移</h4><p>边偏移就是定位盒子移动到最终位置。有top、bottom、left和right 4个属性。</p>
-<table>
-<thead>
-<tr>
-<th align="center">边偏移属性</th>
-<th align="center">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">top</td>
-<td align="center">顶端偏移量，定义元素相对于其父元素上边线的距离</td>
-</tr>
-<tr>
-<td align="center">bottom</td>
-<td align="center">底部偏移量，定义元素相对于其父元素下边线的距离</td>
-</tr>
-<tr>
-<td align="center">left</td>
-<td align="center">左侧偏移量，定义元素相对于其父元素左边线的距离</td>
-</tr>
-<tr>
-<td align="center">right</td>
-<td align="center">右侧偏移量，定义元素相对于其父元素右边线的距离</td>
-</tr>
-</tbody></table>
-<h3 id="2-静态定位"><a href="#2-静态定位" class="headerlink" title="2. 静态定位"></a>2. 静态定位</h3><p>静态定位是元素的默认定位方式，无定位意思。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;</span><br><span class="line">    <span class="attribute">position</span>: static; </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>静态定位按照标准流特性摆放位置，他没有边偏移。</li>
-<li>静态定位在布局时很少用到。</li>
+<h4 id="1-2-视觉视口–visual-viewport"><a href="#1-2-视觉视口–visual-viewport" class="headerlink" title="1.2 视觉视口–visual viewport"></a>1.2 视觉视口–visual viewport</h4><ul>
+<li>视觉视口是用户正在看到的网站的区域。</li>
+<li>我们可以通过缩放去操作视觉视口，但不会影响布局时视口，布局时口仍然保持原来的宽度。</li>
 </ul>
-<h3 id="3-相对定位"><a href="#3-相对定位" class="headerlink" title="3. 相对定位"></a>3. 相对定位</h3><p>相对定位是元素在移动位置的时候，是相对于原来的位置来说的。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative; </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>特点：</strong></p>
-<ol>
-<li>它是相对于自己原来的位置移动的。</li>
-<li>原来在标准流的位置继续占有，后面的盒子仍然以标准流的方式对待它。（不脱标，继续保留原来的位置）</li>
-</ol>
-<h3 id="4-绝对定位"><a href="#4-绝对定位" class="headerlink" title="4. 绝对定位"></a>4. 绝对定位</h3><p>绝对定位是元素在移动位置的时候，是相对于它的祖先元素来说的。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute; </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>特点：</strong></p>
-<ol>
-<li>如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位。</li>
-<li>如果祖先元素有定位（相对、绝对、固定定位）、则以最近一级的有定位祖先元素为参考点移动位置。</li>
-<li>绝对定位不再占有原先的位置。（脱标）</li>
-</ol>
-<h3 id="5-固定定位"><a href="#5-固定定位" class="headerlink" title="5. 固定定位"></a>5. 固定定位</h3><p>固定定位是元素固定于浏览器可视区的位置。主要使用场景：可以在浏览器页面滚动时元素的位置不会改变。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed; </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>特点：</strong></p>
-<ol>
-<li>以浏览器的可视窗口为参照点移动元素。<ul>
-<li>跟父元素没有任何关系。</li>
-<li>不随滚动条滚动。</li>
+<h4 id="1-3-理想视口–ideal-viewport"><a href="#1-3-理想视口–ideal-viewport" class="headerlink" title="1.3 理想视口–ideal viewport"></a>1.3 理想视口–ideal viewport</h4><ul>
+<li>为了使网站在移动端有最理想的浏览和阅读宽度而设定。</li>
+<li>理想视口，对设备来讲，是最理想的视口尺寸。</li>
+<li>需要手动添写meta视口标签通知浏览器操作。</li>
+<li>meta视口标签的主要目的：布局视口的宽度应该与理想视口的宽度一致，简单理解就是设备有多宽，我们的布局时口就多宽。</li>
 </ul>
-</li>
-<li>固定定位不再占有原先的位置。（脱标）</li>
-</ol>
-<h3 id="6-黏性定位-sticky"><a href="#6-黏性定位-sticky" class="headerlink" title="6. 黏性定位 sticky"></a>6. 黏性定位 sticky</h3><p>黏性定位可以被认为是相对定位和固定定位的混合。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;</span><br><span class="line">    <span class="attribute">position</span>: sticky; </span><br><span class="line">    <span class="attribute">top</span>: <span class="number">10px</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>特点：</strong></p>
-<ol>
-<li>以浏览器的可视窗口为参照点移动元素。（固定定位特点）</li>
-<li>粘性定位占有原先的位置。（相对定位特点）</li>
-<li>必须添加top、bottom、left和right其中一个才有效。</li>
-</ol>
-<h3 id="7-定位总结"><a href="#7-定位总结" class="headerlink" title="7. 定位总结"></a>7. 定位总结</h3><table>
-<thead>
-<tr>
-<th align="center">定位模式</th>
-<th align="center">是否脱标</th>
-<th align="center">移动位置</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">static 静态定位</td>
-<td align="center">否</td>
-<td align="center">不能使用边偏移</td>
-</tr>
-<tr>
-<td align="center">relative 相对定位</td>
-<td align="center">否（占有位置）</td>
-<td align="center">相对于自身位置偏移</td>
-</tr>
-<tr>
-<td align="center">absolute 绝对定位</td>
-<td align="center">是（不占有位置）</td>
-<td align="center">带有定位的父级</td>
-</tr>
-<tr>
-<td align="center">fixed 固定定位</td>
-<td align="center">是（不占有位置）</td>
-<td align="center">浏览器可视区</td>
-</tr>
-<tr>
-<td align="center">sticky 黏性定位</td>
-<td align="center">否（占有位置）</td>
-<td align="center">浏览器可视区</td>
-</tr>
-</tbody></table>
-<h3 id="8-定位的叠放次序-z-index"><a href="#8-定位的叠放次序-z-index" class="headerlink" title="8. 定位的叠放次序 z-index"></a>8. 定位的叠放次序 z-index</h3><p>在使用定位布局时，会出现盒子重叠的情况，可以使用z-index来控制盒子的前后次序（z轴）。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>数值可以是正整数、负整数或0，默认是auto，数值越大，盒子越靠上。</li>
-<li>如果属性值相同，则按照书写顺序，后来居上。</li>
-<li>数字后面不能加单位。</li>
-<li>只有定位的盒子才有z-index属性。</li>
-</ul>
-<h3 id="9-定位的拓展"><a href="#9-定位的拓展" class="headerlink" title="9. 定位的拓展"></a>9. 定位的拓展</h3><h4 id="9-1-绝对定位的盒子居中"><a href="#9-1-绝对定位的盒子居中" class="headerlink" title="9.1 绝对定位的盒子居中"></a>9.1 绝对定位的盒子居中</h4><p>加了绝对定位的盒子不能通过<code>margin: 0 auto;</code>水平居中，但是可以通过以下计算方法实现水平和垂直居中。</p>
-<ol>
-<li><code>left: 50%;</code>：让盒子的左侧移动到父元素的水平中心位置。</li>
-<li><code>margin-left: -子元素宽度一半px;</code>：让盒子向左移动自身宽度的一半。</li>
-</ol>
-<p><strong>绝对定位水平、垂直居中:</strong></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>绝对定位水平、垂直居中<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.box</span> &#123;</span></span><br><span class="line">            position: absolute;</span><br><span class="line"><span class="css">            <span class="comment">/* 1. left 走50% 父容器宽的的一半 */</span></span></span><br><span class="line">            left: 50%;</span><br><span class="line"><span class="css">            <span class="comment">/* 2. margin 负值 王左边走 自己盒子宽度的一半 */</span></span></span><br><span class="line">            margin-left: -100px;</span><br><span class="line">            top: 50%;</span><br><span class="line">            margin-top: -100px;</span><br><span class="line">            width: 200px;</span><br><span class="line">            height: 200px;</span><br><span class="line">            background-color: red;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="9-2-定位的特殊特性"><a href="#9-2-定位的特殊特性" class="headerlink" title="9.2 定位的特殊特性"></a>9.2 定位的特殊特性</h4><ol>
-<li>行内元素添加绝对或固定定位，可以直接设置高度和宽度。</li>
-<li>块级元素添加绝对或固定定位，如果不给宽度和高度，默认大小是内容大小。</li>
-</ol>
-<h4 id="9-3-绝对定位（固定定位）会完全压住盒子"><a href="#9-3-绝对定位（固定定位）会完全压住盒子" class="headerlink" title="9.3 绝对定位（固定定位）会完全压住盒子"></a>9.3 绝对定位（固定定位）会完全压住盒子</h4><p>浮动元素只会压住它下面标准流的盒子，但是不会压住下面标准流盒子里面的文字或图片。<br>但是绝对定位（固定定位）会压住下面标准流所有的内容。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>定位压住标准流的盒子<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.box</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="comment">/* 浮动的元素不会压住下面标准流的文字 */</span></span></span><br><span class="line"><span class="css">            <span class="comment">/* float: left; */</span></span></span><br><span class="line"><span class="css">            <span class="comment">/* 绝对定位（固定定位）会压住下面标准流所有的内容 */</span></span></span><br><span class="line">            position: absolute;</span><br><span class="line">            width: 150px;</span><br><span class="line">            height: 150px;background-color: purple;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>阁下何不同风起，扶摇直上九万里<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="二、网页布局总结"><a href="#二、网页布局总结" class="headerlink" title="二、网页布局总结"></a>二、网页布局总结</h2><p>一个完整的网页，是标准流、浮动、定位一起完成布局的，每个都有自己的专门用法。</p>
-<ol>
-<li>标准流：可以让盒子上下排列或左右排列，垂直的块级盒子显示就用标准流布局。</li>
-<li>浮动：可以让多个块级元素一行显示或者左右对齐盒子，多个块级盒子水平显示就用浮动布局。</li>
-<li>定位：定位最大的特点是有层叠的概念，可以让多个盒子前后叠压来显示。如果元素自由在某个盒子内移动就用定位布局。</li>
-</ol>
-<h2 id="三、元素的显示与隐藏"><a href="#三、元素的显示与隐藏" class="headerlink" title="三、元素的显示与隐藏"></a>三、元素的显示与隐藏</h2><p>本质：让一个元素在页面中隐藏或者显示出来。</p>
-<h3 id="1-display属性"><a href="#1-display属性" class="headerlink" title="1. display属性"></a>1. display属性</h3><p>display属性用于设置一个元素应如何显示。</p>
-<ul>
-<li><code>display: none;</code>：隐藏对象</li>
-<li><code>display: block;</code>除了转换为块级元素外，同时还有显示元素的意思</li>
-</ul>
-<p><strong><em>display隐藏元素之后，不再占有原来的位置。</em></strong></p>
-<h3 id="2-visibility-可见性"><a href="#2-visibility-可见性" class="headerlink" title="2. visibility 可见性"></a>2. visibility 可见性</h3><ul>
-<li><code>visibility: visble;</code>：元素可视。</li>
-<li><code>visibility: hidden;</code>：元素隐藏。</li>
-</ul>
-<p><strong><em>visibility隐藏元素之后，继续占有原来的位置。</em></strong></p>
-<h3 id="3-overflow-溢出"><a href="#3-overflow-溢出" class="headerlink" title="3. overflow 溢出"></a>3. overflow 溢出</h3><p>overflow属性指定了如果内容溢出一个元素的框（超过其指定宽度及高度）时，进行隐藏。</p>
+<h4 id="1-4-meta视口标签"><a href="#1-4-meta视口标签" class="headerlink" title="1.4 meta视口标签"></a>1.4 meta视口标签</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta  name=&quot;viewport&quot; content=&quot;width=device-width,user-scalable=1,initial-scale=no,maximum-scale=1.0,minimum-scale=1.0&quot;&gt;</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
 <th align="center">属性值</th>
-<th align="center">描述</th>
+<th align="center">说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">visible</td>
-<td align="center">不剪切内容也不添加滚动条</td>
+<td align="center">width</td>
+<td align="center">宽度设置的是viewport宽度，可以设置device-width特殊值</td>
 </tr>
 <tr>
-<td align="center">hidden</td>
-<td align="center">不显示超过对象尺寸的内容，超出的部分隐藏掉</td>
+<td align="center">initial-scale</td>
+<td align="center">初始缩放比，大于0的数字</td>
 </tr>
 <tr>
-<td align="center">scroll</td>
-<td align="center">不管超出内容否，总是显示滚动条</td>
+<td align="center">maximum-scale</td>
+<td align="center">最大缩放比，大于0的数字</td>
 </tr>
 <tr>
-<td align="center">auto</td>
-<td align="center">超出自动显示滚动条，不超出不显示滚动条</td>
+<td align="center">minimum-scale</td>
+<td align="center">最小缩放比，大于0的数字</td>
+</tr>
+<tr>
+<td align="center">user-scale</td>
+<td align="center">用户是否可以缩放，yes或no（1或0）</td>
 </tr>
 </tbody></table>
-<h2 id="四、-CSS高级技巧"><a href="#四、-CSS高级技巧" class="headerlink" title="四、 CSS高级技巧"></a>四、 CSS高级技巧</h2><h3 id="1-精灵图"><a href="#1-精灵图" class="headerlink" title="1. 精灵图"></a>1. 精灵图</h3><p>为了有效地减少服务器接受和发送请求的次数，提高页面的加载速度，出现了CSS精灵技术（也称CSS Sprite）。<br>核心原理：将网页中的一些小背景图像整合到一张大图中，这样服务器只需要一次请求就可以了。</p>
-<p>使用精灵图的核心：</p>
-<ol>
-<li>精灵图技术主要针对用于背景图片的使用，就是把多个小背景图片整合到一张大图片中。</li>
-<li>这个大图片也称为Sprites 精灵图 或者雪碧图。</li>
-<li>移动背景图片位置，此时可以使用<code>background-position</code>。</li>
-<li>移动的距离就是这个 目标图片的x和y坐标。</li>
-<li>一般情况下都是往上往左移动，所以数值是负值。</li>
-<li>使用精灵图的时候需要精确测量，每个小背景图片的大小和位置。</li>
-</ol>
-<h3 id="2-字体图标"><a href="#2-字体图标" class="headerlink" title="2. 字体图标"></a>2. 字体图标</h3><h4 id="2-1-字体图标的产生"><a href="#2-1-字体图标的产生" class="headerlink" title="2.1 字体图标的产生"></a>2.1 字体图标的产生</h4><p>字体图标使用场景：主要用于显示网页中通用、常用的小图标。<br>字体图标展示的是图标实际上是字体。</p>
-<h4 id="2-2-字体图标的优点"><a href="#2-2-字体图标的优点" class="headerlink" title="2.2 字体图标的优点"></a>2.2 字体图标的优点</h4><ol>
-<li>轻量级：一个字体图标要比一系列的图像要小，一旦字体加载了，图标就马上会渲染出来，减少了服务器请求。</li>
-<li>灵活性：本质其实是文字，可以随意的改变颜色、产生阴影、透明效果、旋转等。</li>
-<li>兼容性：几乎支持所有的浏览器。</li>
-</ol>
-<p><strong><em>注：字体图标不能代替精灵样式，只是对工作中图标部分技术的提升和优化。</em></strong></p>
-<h3 id="3-CSS三角"><a href="#3-CSS三角" class="headerlink" title="3. CSS三角"></a>3. CSS三角</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>CSS三角<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.box1</span> &#123;</span></span><br><span class="line">            width: 0;</span><br><span class="line">            height: 0;</span><br><span class="line">            border-top: 50px solid pink;</span><br><span class="line">            border-right: 50px solid red;</span><br><span class="line">            border-left: 50px solid blue;</span><br><span class="line">            border-bottom: 50px solid green;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.box2</span> &#123;</span></span><br><span class="line">            width: 0;</span><br><span class="line">            height: 0;</span><br><span class="line">            border: 50px solid transparent;</span><br><span class="line">            border-left: 50px solid blue;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="4-CSS用户界面样式"><a href="#4-CSS用户界面样式" class="headerlink" title="4. CSS用户界面样式"></a>4. CSS用户界面样式</h3><h4 id="4-1-鼠标样式-cursor"><a href="#4-1-鼠标样式-cursor" class="headerlink" title="4.1 鼠标样式 cursor"></a>4.1 鼠标样式 cursor</h4><p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">li</span> &#123;</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>设置或检索在对象上移动的鼠标指针采用何种系统预定义的光标形状。</p>
+<h4 id="1-5-标准的viewport设置"><a href="#1-5-标准的viewport设置" class="headerlink" title="1.5 标准的viewport设置"></a>1.5 标准的viewport设置</h4><ul>
+<li>视口宽度和设置保持一致</li>
+<li>视口的默认缩放比例1.0</li>
+<li>不允许用户自行缩放</li>
+<li>最大允许的缩放比例1.0</li>
+<li>最小允许的缩放比例1.0</li>
+</ul>
+<h3 id="2-二倍图"><a href="#2-二倍图" class="headerlink" title="2. 二倍图"></a>2. 二倍图</h3><h4 id="2-1-物理像素-amp-物理像素比"><a href="#2-1-物理像素-amp-物理像素比" class="headerlink" title="2.1 物理像素&amp;物理像素比"></a>2.1 物理像素&amp;物理像素比</h4><ul>
+<li>物理像素点指的是屏幕显示的最小颗粒，是物理真实存在的。这是厂商在真是出厂时就设置好的，比如苹果6/7/8是750*1334</li>
+<li>PC端页面，1个px等于一个物理像素，但是移动端就不尽相同了</li>
+<li>一个px的能显示的物理像素的个数，称为物理像素比或屏幕像素比</li>
+<li>PC端和早期的手机屏幕/普通手机屏幕：1CSS像素=1物理像素</li>
+<li>Retina（视网膜屏幕）是一种显示技术，可以把更多的物理像素压缩至一块屏幕里，从而达到更高的分辨率，并提高屏幕显示的细腻程度。</li>
+</ul>
+<h4 id="2-2-多倍图"><a href="#2-2-多倍图" class="headerlink" title="2.2 多倍图"></a>2.2 多倍图</h4><ul>
+<li>对于一张50px*50px的图片，在手机Retina屏中打开，按照刚才的物理像素比会放大倍数，这样会造成图片模糊</li>
+<li>在标准的viewport设置中，使用倍图来提高图片的质量，解决在高清设备中的模糊问题</li>
+<li>通常使用二倍图，因为iPhone6/7/8的影响，但是现在还存在3倍图4倍图的情况</li>
+<li>背景图片注意缩放问题</li>
+</ul>
+<h4 id="2-3-背景缩放"><a href="#2-3-背景缩放" class="headerlink" title="2.3 背景缩放"></a>2.3 背景缩放</h4><p>background-size属性规定背景图像的尺寸。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">background-size</span>: 背景图片宽度 背景图片高度;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>单位：长度|百分比|cover|contain。</li>
+<li>cover：把背景图片扩展至足够大，以使背景图像完全覆盖背景区域。</li>
+<li>contain：把背景图片扩展至最大尺寸，以使其宽度和高度完全适应内容区域。</li>
+</ul>
+<h3 id="3-移动端开发选择"><a href="#3-移动端开发选择" class="headerlink" title="3. 移动端开发选择"></a>3. 移动端开发选择</h3><h4 id="3-1-单独移动端页面"><a href="#3-1-单独移动端页面" class="headerlink" title="3.1 单独移动端页面"></a>3.1 单独移动端页面</h4><p>通常情况下，网址域名前面加m(mobile)可以打开移动端。通过判断设备，如果是移动设备打开，则跳到移动端页面。</p>
+<ul>
+<li>流式布局（百分比布局）</li>
+<li>flex弹性布局</li>
+<li>less+rem+媒体查询布局</li>
+<li>混合布局</li>
+</ul>
+<h4 id="3-2-响应式兼容PC移动端"><a href="#3-2-响应式兼容PC移动端" class="headerlink" title="3.2 响应式兼容PC移动端"></a>3.2 响应式兼容PC移动端</h4><p>通过判断屏幕宽度来改变样式，以适应不同终端。<br>缺点：制作麻烦，需要花很大精力去调兼容性问题。</p>
+<ul>
+<li>媒体查询</li>
+<li>bootstrap</li>
+</ul>
+<h3 id="4-CSS3盒子模型"><a href="#4-CSS3盒子模型" class="headerlink" title="4. CSS3盒子模型"></a>4. CSS3盒子模型</h3><ul>
+<li>传统模式宽度计算：盒子的宽度=CSS设置的width+border+padding</li>
+<li>CSS3盒子模型：盒子宽度=CSS中设置的宽度width里面包含了border和padding，也就是说，我们的CSS3的盒子模型，padding和border不会撑大盒子。</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* CSS3 盒子模型 */</span></span><br><span class="line"><span class="selector-tag">box-sizing</span>: <span class="selector-tag">border-box</span>;</span><br><span class="line"><span class="comment">/* 传统盒子模型 */</span></span><br><span class="line"><span class="selector-tag">box-sizing</span>: <span class="selector-tag">content-box</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="5-特殊样式"><a href="#5-特殊样式" class="headerlink" title="5. 特殊样式"></a>5. 特殊样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* CSS3 盒子模型 */</span></span><br><span class="line"><span class="selector-tag">box-sizing</span>: <span class="selector-tag">border-box</span>;</span><br><span class="line"><span class="selector-tag">-webkit-box-sizing</span>: <span class="selector-tag">border-box</span>;</span><br><span class="line"><span class="comment">/* 点击高亮我们需要清除 设置为transparent完成透明 */</span></span><br><span class="line"><span class="selector-tag">-webkit-tap-highlight-color</span>: <span class="selector-tag">transparent</span>;</span><br><span class="line"><span class="comment">/* 在移动端浏览器默认的外观在iOS上加上这个属性才能个按钮和输入框自定义样式 */</span></span><br><span class="line"><span class="selector-tag">-webkit-appearance</span>: <span class="selector-tag">none</span>;</span><br><span class="line"><span class="comment">/* 禁用长按页面时的弹出菜单 */</span></span><br><span class="line"><span class="selector-tag">img</span>,<span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-touch-callout</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="6-移动端常见布局"><a href="#6-移动端常见布局" class="headerlink" title="6. 移动端常见布局"></a>6. 移动端常见布局</h3><h4 id="6-1-流式布局"><a href="#6-1-流式布局" class="headerlink" title="6.1 流式布局"></a>6.1 流式布局</h4><ul>
+<li>流式布局，就是百分比布局，也称非固定像素布局。</li>
+<li>通过盒子的宽度设置成百分比来根据屏幕的宽度来进行伸缩，不受固定像素的限制，内容向两侧填充。</li>
+<li>流式布局方式是移动web开发使用比较常见的布局方式。</li>
+<li><code>max-width</code> 最大宽度(<code>max-hight</code> 最大高度)</li>
+<li><code>min-width</code> 最小宽度(<code>min-hight</code> 最小高度)</li>
+</ul>
+<h4 id="6-2-flex布局"><a href="#6-2-flex布局" class="headerlink" title="6.2 flex布局"></a>6.2 flex布局</h4><h5 id="6-2-1-布局原理"><a href="#6-2-1-布局原理" class="headerlink" title="6.2.1 布局原理"></a>6.2.1 布局原理</h5><p>flex是flexible box的缩写，意为“弹性布局”，用来为盒状模型提供最大的灵活性，任何一个容器都可以指定为flex布局。</p>
+<ul>
+<li>当我们为父盒子设为flex布局以后，子元素的float、clear和vertical-align属性将失效。</li>
+<li>伸缩布局=弹性布局=伸缩盒布局=弹性盒布局=flex布局</li>
+</ul>
+<p>采用flex布局的元素称为flex容器，简称“容器”。他们的所有子元素自动成为容器成员，称为flex项目，简称“项目”。</p>
+<ul>
+<li>子容器可以横向排列也可以纵向排列</li>
+</ul>
+<p><strong>原理：</strong>通过给父盒子添加flex属性，来控制子盒子的位置和排列方式。</p>
+<h5 id="6-2-2-常见父项属性"><a href="#6-2-2-常见父项属性" class="headerlink" title="6.2.2 常见父项属性"></a>6.2.2 常见父项属性</h5><ul>
+<li><code>flex-direction</code>：设置主轴的方向。</li>
+<li><code>justify-content</code>：设置主轴上子元素的排列方式。</li>
+<li><code>flex-wrap</code>：设置子元素是否换行。</li>
+<li><code>align-content</code>：设置侧轴上的子元素的排列方式（多行）。</li>
+<li><code>align-items</code>：设置侧轴上的子元素的排列方式（单行）。</li>
+<li><code>flex-flow</code>：复合属性，相当于同时设置了<code>flex-direction</code>和<code>flex-wrap</code>。</li>
+</ul>
+<h6 id="1-flex-direction-设置主轴的方向"><a href="#1-flex-direction-设置主轴的方向" class="headerlink" title="1. flex-direction 设置主轴的方向"></a>1. <code>flex-direction</code> 设置主轴的方向</h6><p><strong>主轴与侧轴：</strong></p>
+<ul>
+<li>默认的主轴方向就是x轴方向，水平向右。</li>
+<li>默认的侧轴方向就是y轴方向，水平向下。</li>
+</ul>
+<p><strong>属性值：</strong></p>
+<p><code>flex-direction</code>：设置主轴的方向（即项目的排列方向）。<br>注意：主轴和侧轴是会变化的，就看<code>flex-direction</code>设置谁为主轴，剩下的就是侧轴，而我们的子元素是跟着主轴来排列的。</p>
 <table>
 <thead>
 <tr>
 <th align="center">属性值</th>
-<th align="center">描述</th>
+<th align="center">说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">default</td>
-<td align="center">默认</td>
+<td align="center">row</td>
+<td align="center">默认从左到右</td>
 </tr>
 <tr>
-<td align="center">pointer</td>
-<td align="center">小手</td>
+<td align="center">row-reverse</td>
+<td align="center">从右到左</td>
 </tr>
 <tr>
-<td align="center">move</td>
-<td align="center">移动</td>
+<td align="center">column</td>
+<td align="center">从上到下</td>
 </tr>
 <tr>
-<td align="center">text</td>
-<td align="center">文本</td>
-</tr>
-<tr>
-<td align="center">not-allowed</td>
-<td align="center">禁止</td>
+<td align="center">column-reverse</td>
+<td align="center">从下到上</td>
 </tr>
 </tbody></table>
-<h4 id="4-2-轮廓线-outline"><a href="#4-2-轮廓线-outline" class="headerlink" title="4.2 轮廓线 outline"></a>4.2 轮廓线 outline</h4><p>给表单添加<code>outline: 0;</code>或者<code>outline: none;</code>样式后，就可以去掉默认的边框。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span> &#123;</span><br><span class="line">    <span class="attribute">outline</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="4-3-防拖拽文本域-resize"><a href="#4-3-防拖拽文本域-resize" class="headerlink" title="4.3 防拖拽文本域 resize"></a>4.3 防拖拽文本域 resize</h4><p>实际开发中，我们文本域右下角是不可以拖拽的。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">textarea</span> &#123;</span><br><span class="line">            <span class="attribute">resize</span>: none;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<h4 id="表单轮廓-防止拖拽文本域"><a href="#表单轮廓-防止拖拽文本域" class="headerlink" title="表单轮廓+防止拖拽文本域"></a>表单轮廓+防止拖拽文本域</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>表单轮廓和防止拖拽文本域<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        input, textarea &#123;</span><br><span class="line"><span class="css">            <span class="comment">/* 取消表单轮廓 */</span></span></span><br><span class="line">            outline: none;</span><br><span class="line">        &#125;</span><br><span class="line">        textarea &#123;</span><br><span class="line"><span class="css">            <span class="comment">/* 防止拖拽文本域 */</span></span></span><br><span class="line">            resize: none;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 取消表单轮廓 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 防止拖拽文本域 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;30&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="5-vertical-align属性应用"><a href="#5-vertical-align属性应用" class="headerlink" title="5. vertical-align属性应用"></a>5. vertical-align属性应用</h3><h4 id="5-1-图片、表单和文字对齐"><a href="#5-1-图片、表单和文字对齐" class="headerlink" title="5.1 图片、表单和文字对齐"></a>5.1 图片、表单和文字对齐</h4><p>CSS的vertical-align属性应用场景：经常用于设置图片或者表单（行内块元素）和文字垂直对齐。</p>
-<p><strong>语法：</strong></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vertical-align; baseline | top | middle | bottom;</span><br></pre></td></tr></table></figure>
+<h6 id="2-justify-content-设置主轴上子元素的排列方式"><a href="#2-justify-content-设置主轴上子元素的排列方式" class="headerlink" title="2. justify-content 设置主轴上子元素的排列方式"></a>2. <code>justify-content</code> 设置主轴上子元素的排列方式</h6><p><code>justify-content</code>属性定义了项目在主轴上的对齐方式。<br>注意：使用这个属性之前一定要确定好主轴是哪个。</p>
 <table>
 <thead>
 <tr>
-<th align="center">值</th>
-<th align="center">描述</th>
+<th align="center">属性值</th>
+<th align="center">说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">baseline</td>
-<td align="center">默认，元素放置在父元素的基线上</td>
+<td align="center">flex-start</td>
+<td align="center">默认值 从头部开始 如果主轴是x轴，则从左往右</td>
 </tr>
 <tr>
-<td align="center">top</td>
-<td align="center">把元素的顶端与行中最高元素的顶端对齐</td>
+<td align="center">flex-end</td>
+<td align="center">从尾部开始排列</td>
 </tr>
 <tr>
-<td align="center">middle</td>
-<td align="center">把此元素放置在父元素的中部</td>
+<td align="center">center</td>
+<td align="center">在主轴居中对齐（如果主轴是x轴则水平居中）</td>
 </tr>
 <tr>
-<td align="center">bottom</td>
-<td align="center">把元素的顶端与行中最低的元素的顶端对齐</td>
+<td align="center">space-around</td>
+<td align="center">平分剩余空间</td>
+</tr>
+<tr>
+<td align="center">space-between</td>
+<td align="center">先两边贴边 再平分剩余空间</td>
 </tr>
 </tbody></table>
-<h4 id="5-2-解决图片底部默认空白的问题"><a href="#5-2-解决图片底部默认空白的问题" class="headerlink" title="5.2 解决图片底部默认空白的问题"></a>5.2 解决图片底部默认空白的问题</h4><p>bug：图片底部会有一个空白间隙，原因是行内块元素会和文字的基线对齐。<br>解决方法：</p>
-<ol>
-<li>给图片添加<code>vertical-align; top | middle | bottom;</code>等。</li>
-<li>把图片转换为块级元素<code>display: block;</code>。</li>
-</ol>
-<h3 id="6-溢出的文字省略显示"><a href="#6-溢出的文字省略显示" class="headerlink" title="6. 溢出的文字省略显示"></a>6. 溢出的文字省略显示</h3><h4 id="1-单行文本溢出显示省略号——必须满足三个条件"><a href="#1-单行文本溢出显示省略号——必须满足三个条件" class="headerlink" title="1. 单行文本溢出显示省略号——必须满足三个条件"></a>1. 单行文本溢出显示省略号——必须满足三个条件</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 1. 先强制一行内显示文本 */</span></span><br><span class="line"><span class="selector-tag">white-space</span>: <span class="selector-tag">nowrap</span>;    (默认<span class="selector-tag">normal</span>自动换行)</span><br><span class="line"><span class="comment">/* 2. 超出的部分隐藏 */</span></span><br><span class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="comment">/* 3. 文字用省略号替代超出的部分 */</span></span><br><span class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">ellipsis</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="2-多行文本溢出显示省略号"><a href="#2-多行文本溢出显示省略号" class="headerlink" title="2. 多行文本溢出显示省略号"></a>2. 多行文本溢出显示省略号</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="comment">/*  文字用省略号替代超出的部分 */</span></span><br><span class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">ellipsis</span>;</span><br><span class="line"><span class="comment">/* 弹性伸缩盒子模型显示 */</span></span><br><span class="line"><span class="selector-tag">display</span>: <span class="selector-tag">-webkit-box</span>;</span><br><span class="line"><span class="comment">/* 限制在一个块元素显示的文本行数 */</span></span><br><span class="line"><span class="selector-tag">-webkit-line-clamp</span>: 2;</span><br><span class="line"><span class="comment">/* 设置或检索伸缩盒对象的子元素的排列方式 */</span></span><br><span class="line"><span class="selector-tag">-webkit-box-orient</span>: <span class="selector-tag">vertical</span>;</span><br></pre></td></tr></table></figure>
+<h6 id="3-flex-wrap-设置子元素是否换行"><a href="#3-flex-wrap-设置子元素是否换行" class="headerlink" title="3. flex-wrap 设置子元素是否换行"></a>3. <code>flex-wrap</code> 设置子元素是否换行</h6><p>默认情况下，项目都排在一条线（又称“轴线”）上，<code>flex-wrap</code>属性定义，flex布局中默认是不换行的。</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">nowrap</td>
+<td align="center">默认值，不换行</td>
+</tr>
+<tr>
+<td align="center">wrap</td>
+<td align="center">换行</td>
+</tr>
+</tbody></table>
+<h6 id="4-align-items-设置侧轴上的子元素的排列方式（单行）"><a href="#4-align-items-设置侧轴上的子元素的排列方式（单行）" class="headerlink" title="4. align-items 设置侧轴上的子元素的排列方式（单行）"></a>4. <code>align-items</code> 设置侧轴上的子元素的排列方式（单行）</h6><p>该属性是控制子项在侧轴（默认是y轴）上的排列方式，在子项为单项的时候使用。</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">flex-start</td>
+<td align="center">从上到下</td>
+</tr>
+<tr>
+<td align="center">flex-end</td>
+<td align="center">从下到上</td>
+</tr>
+<tr>
+<td align="center">center</td>
+<td align="center">挤在一起居中（垂直居中）</td>
+</tr>
+<tr>
+<td align="center">stretch</td>
+<td align="center">拉伸（默认值）</td>
+</tr>
+</tbody></table>
+<h6 id="5-align-content-设置侧轴上的子元素的排列方式（多行）"><a href="#5-align-content-设置侧轴上的子元素的排列方式（多行）" class="headerlink" title="5. align-content 设置侧轴上的子元素的排列方式（多行）"></a>5. <code>align-content</code> 设置侧轴上的子元素的排列方式（多行）</h6><p>设置子项在侧轴上的排列方式并且只能用于子项出现换行的情况（多行），在单行下没有效果。</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">flex-start</td>
+<td align="center">默认值，在侧轴的头部开始排列</td>
+</tr>
+<tr>
+<td align="center">flex-end</td>
+<td align="center">在侧轴的尾部开始排列</td>
+</tr>
+<tr>
+<td align="center">center</td>
+<td align="center">在侧轴中间显示</td>
+</tr>
+<tr>
+<td align="center">space-around</td>
+<td align="center">子项在侧轴平分剩余空间</td>
+</tr>
+<tr>
+<td align="center">space-between</td>
+<td align="center">子项在侧轴先分布在两头，在平分剩余空间</td>
+</tr>
+<tr>
+<td align="center">stretch</td>
+<td align="center">设置子项元素高度平分父元素高度</td>
+</tr>
+</tbody></table>
+<h5 id="6-2-3-常见子项属性"><a href="#6-2-3-常见子项属性" class="headerlink" title="6.2.3 常见子项属性"></a>6.2.3 常见子项属性</h5><ul>
+<li><code>flex</code>：子项目占的份数。</li>
+<li><code>align-self</code>：控制子项自己在侧轴的排列方式。</li>
+<li><code>order</code>：定义项目的排列顺序（前后顺序）。</li>
+</ul>
+<h6 id="1-flex属性"><a href="#1-flex属性" class="headerlink" title="1. flex属性"></a>1. <code>flex</code>属性</h6><p><code>flex</code>属性定义子项目分配剩余空间，用flex来表示占多少份数。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span>&#123;</span><br><span class="line">                <span class="attribute">flex</span>: &lt;number&gt;; <span class="comment">/* default 0 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="2-align-self-控制子项自己在侧轴的排列方式"><a href="#2-align-self-控制子项自己在侧轴的排列方式" class="headerlink" title="2. align-self 控制子项自己在侧轴的排列方式"></a>2. <code>align-self</code> 控制子项自己在侧轴的排列方式</h6><p><code>align-self</code>属性允许单个项目有与其他项目不一样的对齐方式，可覆盖<code>align-items</code>属性。<br>默认值为auto，表示继承父元素的<code>align-items</code>属性，如果没有父元素，则等同于stretch。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">span</span><span class="selector-pseudo">:nth-child(2)</span> &#123;</span><br><span class="line">            <span class="comment">/* 设置自己在侧轴的排列方式 */</span></span><br><span class="line">            <span class="attribute">align-self</span>: flex-end;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h6 id="3-order：定义项目的排列顺序"><a href="#3-order：定义项目的排列顺序" class="headerlink" title="3. order：定义项目的排列顺序"></a>3. <code>order</code>：定义项目的排列顺序</h6><p>数值越小，排列越靠前，默认为0.<br>注意：和<code>z-index</code>不一样。</p>
+<h4 id="6-3-rem适配布局"><a href="#6-3-rem适配布局" class="headerlink" title="6.3 rem适配布局"></a>6.3 rem适配布局</h4><h5 id="6-3-1-rem基础"><a href="#6-3-1-rem基础" class="headerlink" title="6.3.1 rem基础"></a>6.3.1 rem基础</h5><h6 id="rem单位"><a href="#rem单位" class="headerlink" title="rem单位"></a>rem单位</h6><p>rem是一个相对单位，类似于em，em是父元素字体大小。<br>不同的是rem的基准是相对于HTML元素的字体大小。<br>比如，根元素（html）设置<code>font-size=12px;</code>，非根元素设置<code>width: 2rem;</code>，则换成px表示就是24px。</p>
+<h5 id="6-3-2-媒体查询"><a href="#6-3-2-媒体查询" class="headerlink" title="6.3.2 媒体查询"></a>6.3.2 媒体查询</h5><h6 id="1-什么是媒体查询"><a href="#1-什么是媒体查询" class="headerlink" title="1. 什么是媒体查询"></a>1. 什么是媒体查询</h6><p>媒体查询是CSS3新语法。</p>
+<ul>
+<li>使用@media查询，可以针对不同的媒体类型定义不同的样式。</li>
+<li>@media可以针对不同的屏幕尺寸设置不同的样式。</li>
+<li>当你重置浏览器大小的过程中，页面也会根据浏览器宽度和高度重新渲染页面。</li>
+</ul>
+<h6 id="2-语法规范"><a href="#2-语法规范" class="headerlink" title="2. 语法规范"></a>2. 语法规范</h6><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> mediatype <span class="keyword">and</span>|<span class="keyword">not</span>|<span class="keyword">only</span> (media feature) &#123;</span><br><span class="line">            <span class="selector-tag">css-code</span>;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>用@media开头，注意@符号。</li>
+<li>mediatype 媒体类型。</li>
+<li>关键字 and|not|only。</li>
+<li>media feature 媒体特征（必须有小括号包含）</li>
+</ul>
+<p><strong>mediatype 查询类型：</strong></p>
+<p>将不同的终端设备划分成不同的类型，称为媒体类型。</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">all</td>
+<td align="center">用于所有的设备</td>
+</tr>
+<tr>
+<td align="center">print</td>
+<td align="center">用于打印机和打印预览</td>
+</tr>
+<tr>
+<td align="center">scree</td>
+<td align="center">用于电脑屏幕、平板电脑、智能手机等</td>
+</tr>
+</tbody></table>
+<p><strong>关键字：</strong></p>
+<p>关键字将媒体类型或多个媒体特性连接到一起作为媒体查询的条件。</p>
+<ul>
+<li>and：可以将多个媒体特性连接到一起，相当于“且”的意思。</li>
+<li>not：排除某个媒体特性，相当于“非”的意思，可以省略。</li>
+<li>only：指定某个媒体特性，可以省略。</li>
+</ul>
+<p><strong>媒体特性：</strong></p>
+<p>每种媒体类型都具有各自不同的特性，根据不同媒体类型的媒体特性设置不同的展示风格。</p>
+<table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">width</td>
+<td align="center">定义输出设备中页面可见区域的宽度</td>
+</tr>
+<tr>
+<td align="center">min-width</td>
+<td align="center">定义输出设备中页面最小可见区域的宽度</td>
+</tr>
+<tr>
+<td align="center">max-width</td>
+<td align="center">定义输出设备中页面最大可见区域的宽度</td>
+</tr>
+</tbody></table>
+<h6 id="3-媒体查询-rem实现元素动态大小变化"><a href="#3-媒体查询-rem实现元素动态大小变化" class="headerlink" title="3.媒体查询+rem实现元素动态大小变化"></a>3.媒体查询+rem实现元素动态大小变化</h6><p>rem单位是跟着HTML来走的，有了rem页面元素可以设置不同大小尺寸。<br>媒体查询可以根据不同设备宽度来修改样式。<br>媒体查询+rem就可以实现不同设备宽度，实现页面元素大小的动态变化。</p>
+<h4 id="6-4-响应式布局"><a href="#6-4-响应式布局" class="headerlink" title="6.4 响应式布局"></a>6.4 响应式布局</h4><h5 id="6-4-1-响应式开发"><a href="#6-4-1-响应式开发" class="headerlink" title="6.4.1 响应式开发"></a>6.4.1 响应式开发</h5><h6 id="1-响应式开发原理"><a href="#1-响应式开发原理" class="headerlink" title="1. 响应式开发原理"></a>1. 响应式开发原理</h6><p>就是使用媒体查询针对不同宽度的设备进行布局和样式设置，从而适配不同设备的目的。</p>
+<table>
+<thead>
+<tr>
+<th align="center">设备划分</th>
+<th align="center">尺寸区间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">超小屏幕（手机）</td>
+<td align="center">&lt;768px</td>
+</tr>
+<tr>
+<td align="center">小屏设备（平板）</td>
+<td align="center">&gt;=768px~&lt;992px</td>
+</tr>
+<tr>
+<td align="center">中等屏幕（桌面显示器）</td>
+<td align="center">&gt;=992px~&lt;1200px</td>
+</tr>
+<tr>
+<td align="center">宽屏设备（大桌面显示器）</td>
+<td align="center">&gt;=1200px</td>
+</tr>
+</tbody></table>
+<h6 id="2-响应式布局容器"><a href="#2-响应式布局容器" class="headerlink" title="2. 响应式布局容器"></a>2. 响应式布局容器</h6><p>响应式需要一个父级作为布局容器，来配合子级元素来实现变化效果。<br>原理就是在不同屏幕下，通过媒体查询来改变这个布局容器的大小，再改变里面子元素的排列方式和大小，从而实现不同屏幕下，看到不同的页面布局和样式变化。</p>
+<p><strong>响应式尺寸划分：</strong></p>
+<ul>
+<li>超小屏幕（手机）：设置宽度为100%。</li>
+<li>小屏设备（平板）：设置宽度为750px。</li>
+<li>中等屏幕（桌面显示器）：设置宽度为970px。</li>
+<li>宽屏设备（大桌面显示器）：设置宽度为1170px。</li>
+</ul>
+
                       
 
                         
@@ -605,7 +675,7 @@
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
       <img
-        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/01/26/%E7%AC%AC%E4%B8%83%E5%91%A8/"
+        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/02/09/%E7%AC%AC%E4%B9%9D%E5%91%A8/"
         alt="微信分享二维码">
     </div>
   </div>
@@ -621,18 +691,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/02/02/%E7%AC%AC%E5%85%AB%E5%91%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          HTML5和CSS3的提高
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/01/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2021/02/02/%E7%AC%AC%E5%85%AB%E5%91%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML5和CSS3的提高</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -659,7 +720,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.</span> <span class="toc-text">一、定位</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AE%9A%E4%BD%8D%E7%BB%84%E6%88%90"><span class="toc-number">1.1.</span> <span class="toc-text">1. 定位组成</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E5%AE%9A%E4%BD%8D%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 定位模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-%E8%BE%B9%E5%81%8F%E7%A7%BB"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 边偏移</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%9D%99%E6%80%81%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.2.</span> <span class="toc-text">2. 静态定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.3.</span> <span class="toc-text">3. 相对定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.4.</span> <span class="toc-text">4. 绝对定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%9B%BA%E5%AE%9A%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.5.</span> <span class="toc-text">5. 固定定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%BB%8F%E6%80%A7%E5%AE%9A%E4%BD%8D-sticky"><span class="toc-number">1.6.</span> <span class="toc-text">6. 黏性定位 sticky</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%AE%9A%E4%BD%8D%E6%80%BB%E7%BB%93"><span class="toc-number">1.7.</span> <span class="toc-text">7. 定位总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E5%AE%9A%E4%BD%8D%E7%9A%84%E5%8F%A0%E6%94%BE%E6%AC%A1%E5%BA%8F-z-index"><span class="toc-number">1.8.</span> <span class="toc-text">8. 定位的叠放次序 z-index</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E5%AE%9A%E4%BD%8D%E7%9A%84%E6%8B%93%E5%B1%95"><span class="toc-number">1.9.</span> <span class="toc-text">9. 定位的拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#9-1-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%9A%84%E7%9B%92%E5%AD%90%E5%B1%85%E4%B8%AD"><span class="toc-number">1.9.1.</span> <span class="toc-text">9.1 绝对定位的盒子居中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-2-%E5%AE%9A%E4%BD%8D%E7%9A%84%E7%89%B9%E6%AE%8A%E7%89%B9%E6%80%A7"><span class="toc-number">1.9.2.</span> <span class="toc-text">9.2 定位的特殊特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-3-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%EF%BC%88%E5%9B%BA%E5%AE%9A%E5%AE%9A%E4%BD%8D%EF%BC%89%E4%BC%9A%E5%AE%8C%E5%85%A8%E5%8E%8B%E4%BD%8F%E7%9B%92%E5%AD%90"><span class="toc-number">1.9.3.</span> <span class="toc-text">9.3 绝对定位（固定定位）会完全压住盒子</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%80%BB%E7%BB%93"><span class="toc-number">2.</span> <span class="toc-text">二、网页布局总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%85%83%E7%B4%A0%E7%9A%84%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F"><span class="toc-number">3.</span> <span class="toc-text">三、元素的显示与隐藏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-display%E5%B1%9E%E6%80%A7"><span class="toc-number">3.1.</span> <span class="toc-text">1. display属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-visibility-%E5%8F%AF%E8%A7%81%E6%80%A7"><span class="toc-number">3.2.</span> <span class="toc-text">2. visibility 可见性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-overflow-%E6%BA%A2%E5%87%BA"><span class="toc-number">3.3.</span> <span class="toc-text">3. overflow 溢出</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81-CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7"><span class="toc-number">4.</span> <span class="toc-text">四、 CSS高级技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%B2%BE%E7%81%B5%E5%9B%BE"><span class="toc-number">4.1.</span> <span class="toc-text">1. 精灵图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87"><span class="toc-number">4.2.</span> <span class="toc-text">2. 字体图标</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="toc-number">4.2.1.</span> <span class="toc-text">2.1 字体图标的产生</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">4.2.2.</span> <span class="toc-text">2.2 字体图标的优点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-CSS%E4%B8%89%E8%A7%92"><span class="toc-number">4.3.</span> <span class="toc-text">3. CSS三角</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-CSS%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E6%A0%B7%E5%BC%8F"><span class="toc-number">4.4.</span> <span class="toc-text">4. CSS用户界面样式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F-cursor"><span class="toc-number">4.4.1.</span> <span class="toc-text">4.1 鼠标样式 cursor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-%E8%BD%AE%E5%BB%93%E7%BA%BF-outline"><span class="toc-number">4.4.2.</span> <span class="toc-text">4.2 轮廓线 outline</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-%E9%98%B2%E6%8B%96%E6%8B%BD%E6%96%87%E6%9C%AC%E5%9F%9F-resize"><span class="toc-number">4.4.3.</span> <span class="toc-text">4.3 防拖拽文本域 resize</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E8%BD%AE%E5%BB%93-%E9%98%B2%E6%AD%A2%E6%8B%96%E6%8B%BD%E6%96%87%E6%9C%AC%E5%9F%9F"><span class="toc-number">4.4.4.</span> <span class="toc-text">表单轮廓+防止拖拽文本域</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-vertical-align%E5%B1%9E%E6%80%A7%E5%BA%94%E7%94%A8"><span class="toc-number">4.5.</span> <span class="toc-text">5. vertical-align属性应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-%E5%9B%BE%E7%89%87%E3%80%81%E8%A1%A8%E5%8D%95%E5%92%8C%E6%96%87%E5%AD%97%E5%AF%B9%E9%BD%90"><span class="toc-number">4.5.1.</span> <span class="toc-text">5.1 图片、表单和文字对齐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%BA%95%E9%83%A8%E9%BB%98%E8%AE%A4%E7%A9%BA%E7%99%BD%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">4.5.2.</span> <span class="toc-text">5.2 解决图片底部默认空白的问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%87%E5%AD%97%E7%9C%81%E7%95%A5%E6%98%BE%E7%A4%BA"><span class="toc-number">4.6.</span> <span class="toc-text">6. 溢出的文字省略显示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7%E2%80%94%E2%80%94%E5%BF%85%E9%A1%BB%E6%BB%A1%E8%B6%B3%E4%B8%89%E4%B8%AA%E6%9D%A1%E4%BB%B6"><span class="toc-number">4.6.1.</span> <span class="toc-text">1. 单行文本溢出显示省略号——必须满足三个条件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7"><span class="toc-number">4.6.2.</span> <span class="toc-text">2. 多行文本溢出显示省略号</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">1.</span> <span class="toc-text">移动web开发流式布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%A7%86%E5%8F%A3"><span class="toc-number">1.1.</span> <span class="toc-text">1. 视口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E5%B8%83%E5%B1%80%E8%A7%86%E5%8F%A3%E2%80%93layout-viewport"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 布局视口–layout viewport</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-%E8%A7%86%E8%A7%89%E8%A7%86%E5%8F%A3%E2%80%93visual-viewport"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 视觉视口–visual viewport</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-%E7%90%86%E6%83%B3%E8%A7%86%E5%8F%A3%E2%80%93ideal-viewport"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.3 理想视口–ideal viewport</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-meta%E8%A7%86%E5%8F%A3%E6%A0%87%E7%AD%BE"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.4 meta视口标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-%E6%A0%87%E5%87%86%E7%9A%84viewport%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.1.5.</span> <span class="toc-text">1.5 标准的viewport设置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BA%8C%E5%80%8D%E5%9B%BE"><span class="toc-number">1.2.</span> <span class="toc-text">2. 二倍图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0-amp-%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0%E6%AF%94"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 物理像素&amp;物理像素比</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E5%A4%9A%E5%80%8D%E5%9B%BE"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 多倍图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-%E8%83%8C%E6%99%AF%E7%BC%A9%E6%94%BE"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 背景缩放</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E9%80%89%E6%8B%A9"><span class="toc-number">1.3.</span> <span class="toc-text">3. 移动端开发选择</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E5%8D%95%E7%8B%AC%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 单独移动端页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E5%93%8D%E5%BA%94%E5%BC%8F%E5%85%BC%E5%AE%B9PC%E7%A7%BB%E5%8A%A8%E7%AB%AF"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 响应式兼容PC移动端</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-CSS3%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.4.</span> <span class="toc-text">4. CSS3盒子模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%89%B9%E6%AE%8A%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.5.</span> <span class="toc-text">5. 特殊样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80"><span class="toc-number">1.6.</span> <span class="toc-text">6. 移动端常见布局</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">1.6.1.</span> <span class="toc-text">6.1 流式布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-flex%E5%B8%83%E5%B1%80"><span class="toc-number">1.6.2.</span> <span class="toc-text">6.2 flex布局</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#6-2-1-%E5%B8%83%E5%B1%80%E5%8E%9F%E7%90%86"><span class="toc-number">1.6.2.1.</span> <span class="toc-text">6.2.1 布局原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-2-2-%E5%B8%B8%E8%A7%81%E7%88%B6%E9%A1%B9%E5%B1%9E%E6%80%A7"><span class="toc-number">1.6.2.2.</span> <span class="toc-text">6.2.2 常见父项属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-flex-direction-%E8%AE%BE%E7%BD%AE%E4%B8%BB%E8%BD%B4%E7%9A%84%E6%96%B9%E5%90%91"><span class="toc-number">1.6.2.2.1.</span> <span class="toc-text">1. flex-direction 设置主轴的方向</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-justify-content-%E8%AE%BE%E7%BD%AE%E4%B8%BB%E8%BD%B4%E4%B8%8A%E5%AD%90%E5%85%83%E7%B4%A0%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F"><span class="toc-number">1.6.2.2.2.</span> <span class="toc-text">2. justify-content 设置主轴上子元素的排列方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-flex-wrap-%E8%AE%BE%E7%BD%AE%E5%AD%90%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E6%8D%A2%E8%A1%8C"><span class="toc-number">1.6.2.2.3.</span> <span class="toc-text">3. flex-wrap 设置子元素是否换行</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-align-items-%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BD%B4%E4%B8%8A%E7%9A%84%E5%AD%90%E5%85%83%E7%B4%A0%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F%EF%BC%88%E5%8D%95%E8%A1%8C%EF%BC%89"><span class="toc-number">1.6.2.2.4.</span> <span class="toc-text">4. align-items 设置侧轴上的子元素的排列方式（单行）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-align-content-%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BD%B4%E4%B8%8A%E7%9A%84%E5%AD%90%E5%85%83%E7%B4%A0%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F%EF%BC%88%E5%A4%9A%E8%A1%8C%EF%BC%89"><span class="toc-number">1.6.2.2.5.</span> <span class="toc-text">5. align-content 设置侧轴上的子元素的排列方式（多行）</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-2-3-%E5%B8%B8%E8%A7%81%E5%AD%90%E9%A1%B9%E5%B1%9E%E6%80%A7"><span class="toc-number">1.6.2.3.</span> <span class="toc-text">6.2.3 常见子项属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-flex%E5%B1%9E%E6%80%A7"><span class="toc-number">1.6.2.3.1.</span> <span class="toc-text">1. flex属性</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-align-self-%E6%8E%A7%E5%88%B6%E5%AD%90%E9%A1%B9%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%BE%A7%E8%BD%B4%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F"><span class="toc-number">1.6.2.3.2.</span> <span class="toc-text">2. align-self 控制子项自己在侧轴的排列方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-order%EF%BC%9A%E5%AE%9A%E4%B9%89%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%8E%92%E5%88%97%E9%A1%BA%E5%BA%8F"><span class="toc-number">1.6.2.3.3.</span> <span class="toc-text">3. order：定义项目的排列顺序</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-rem%E9%80%82%E9%85%8D%E5%B8%83%E5%B1%80"><span class="toc-number">1.6.3.</span> <span class="toc-text">6.3 rem适配布局</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#6-3-1-rem%E5%9F%BA%E7%A1%80"><span class="toc-number">1.6.3.1.</span> <span class="toc-text">6.3.1 rem基础</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#rem%E5%8D%95%E4%BD%8D"><span class="toc-number">1.6.3.1.1.</span> <span class="toc-text">rem单位</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-3-2-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.6.3.2.</span> <span class="toc-text">6.3.2 媒体查询</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.6.3.2.1.</span> <span class="toc-text">1. 什么是媒体查询</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83"><span class="toc-number">1.6.3.2.2.</span> <span class="toc-text">2. 语法规范</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2-rem%E5%AE%9E%E7%8E%B0%E5%85%83%E7%B4%A0%E5%8A%A8%E6%80%81%E5%A4%A7%E5%B0%8F%E5%8F%98%E5%8C%96"><span class="toc-number">1.6.3.2.3.</span> <span class="toc-text">3.媒体查询+rem实现元素动态大小变化</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">1.6.4.</span> <span class="toc-text">6.4 响应式布局</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#6-4-1-%E5%93%8D%E5%BA%94%E5%BC%8F%E5%BC%80%E5%8F%91"><span class="toc-number">1.6.4.1.</span> <span class="toc-text">6.4.1 响应式开发</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%93%8D%E5%BA%94%E5%BC%8F%E5%BC%80%E5%8F%91%E5%8E%9F%E7%90%86"><span class="toc-number">1.6.4.1.1.</span> <span class="toc-text">1. 响应式开发原理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E5%AE%B9%E5%99%A8"><span class="toc-number">1.6.4.1.2.</span> <span class="toc-text">2. 响应式布局容器</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
