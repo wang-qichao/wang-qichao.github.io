@@ -9,19 +9,19 @@
     <link rel="dns-prefetch" href="http://example.com">
     <title>
       
-        Hello World | 
+        JavaScript函数+作用域+预解析+对象 | 
             Hexo
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+    <meta name="description" content="一、JavaScript函数1. 函数的概念在JS中，可能会定义非常多的相同代码或者功能相似的代码，这些代码可能需要大量重复使用。 函数：就是封装了一段可被重复调用执行的代码块，通过此代码块可以实现大量代码的重复使用。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/01/22/hello-world/index.html">
+<meta property="og:title" content="JavaScript函数+作用域+预解析+对象">
+<meta property="og:url" content="http://example.com/2021/03/08/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%91%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="一、JavaScript函数1. 函数的概念在JS中，可能会定义非常多的相同代码或者功能相似的代码，这些代码可能需要大量重复使用。 函数：就是封装了一段可被重复调用执行的代码块，通过此代码块可以实现大量代码的重复使用。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-22T04:44:01.223Z">
-<meta property="article:modified_time" content="2021-01-22T05:32:16.939Z">
+<meta property="article:published_time" content="2021-03-08T13:28:31.000Z">
+<meta property="article:modified_time" content="2021-03-14T11:56:30.740Z">
 <meta property="article:author" content="Wang Qichao">
 <meta name="twitter:card" content="summary">
       
@@ -192,7 +192,7 @@
           </div>
           <div id="js-content" class="content-ll">
             
-        <article id="post-hello-world"
+        <article id="post-第十三周"
   class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -200,7 +200,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      JavaScript函数+作用域+预解析+对象
     </h1>
   
 
@@ -215,26 +215,224 @@
             </a>
             
               
-                <a href="/2021/01/22/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-22T04:44:01.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-22</time>
+                <a href="/2021/03/08/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%91%A8/" class="archive-article-date">
+  	<time datetime="2021-03-08T13:28:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-08</time>
 </a>
                   
       </header>
       
         <div class="article-entry" itemprop="articleBody">
           
-                    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+                    <h2 id="一、JavaScript函数"><a href="#一、JavaScript函数" class="headerlink" title="一、JavaScript函数"></a>一、JavaScript函数</h2><h3 id="1-函数的概念"><a href="#1-函数的概念" class="headerlink" title="1. 函数的概念"></a>1. 函数的概念</h3><p>在JS中，可能会定义非常多的相同代码或者功能相似的代码，这些代码可能需要大量重复使用。</p>
+<p>函数：就是封装了一段可被重复调用执行的代码块，通过此代码块可以实现大量代码的重复使用。</p>
 <a id="more"></a>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<h3 id="2-函数的使用"><a href="#2-函数的使用" class="headerlink" title="2. 函数的使用"></a>2. 函数的使用</h3><p>函数在使用时分为两步：声明函数和调用函数。</p>
+<h4 id="2-1-声明函数"><a href="#2-1-声明函数" class="headerlink" title="2.1 声明函数"></a>2.1 声明函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> 函数名(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 函数体代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>function是声明函数的关键字（必须小写）。</li>
+<li>由于函数一般是为了实现某个功能才定义的，所以通常我们将函数名命名为动词，比如getSum。</li>
+</ul>
+<h4 id="2-2-调用函数"><a href="#2-2-调用函数" class="headerlink" title="2.2 调用函数"></a>2.2 调用函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 调用函数</span></span><br><span class="line">函数名();   <span class="comment">//通过调用函数名来执行函数体代码</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>调用的时候千万不要忘记添加小括号。</li>
+<li>口诀：函数不调用，自己不执行。</li>
+</ul>
+<p><strong>注意：声明函数本身并不会执行代码，只有调用函数时才会执行函数体代码。</strong></p>
+<h4 id="2-3-函数的封装"><a href="#2-3-函数的封装" class="headerlink" title="2.3 函数的封装"></a>2.3 函数的封装</h4><ul>
+<li>函数的封装是把一个或者多个功能通过函数的方式封装起来，对外只提供一个简单的函数接口。</li>
+<li>封装类似于将电脑配件整合组装到机箱中（类似于快递打包）。</li>
+</ul>
+<h3 id="3-函数的参数"><a href="#3-函数的参数" class="headerlink" title="3. 函数的参数"></a>3. 函数的参数</h3><h4 id="3-1-形参和实参"><a href="#3-1-形参和实参" class="headerlink" title="3.1 形参和实参"></a>3.1 形参和实参</h4><p>在声明函数时，可以在函数名称后面的小括号中添加一些参数，这些参数被称为形参，而在调用该函数时，同样也需要传递相应的参数，这些参数被称为实参。</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">形参</td>
+<td align="center">形式上的参数 函数定义的时候，传递的参数，当前并不知道是什么</td>
+</tr>
+<tr>
+<td align="center">实参</td>
+<td align="center">实际上的参数 函数调用的时候传递的参数，实参是传递给形参的</td>
+</tr>
+</tbody></table>
+<p>参数的作用：在函数内部某些值不能固定，我们可以通过参数在调用函数时传递不同的值进去。</p>
+<ol>
+<li>多个参数之间用逗号隔开。</li>
+<li>形参可以看做是不用声明的变量。</li>
+</ol>
+<h4 id="3-2-函数形参和实参个数不匹配问题"><a href="#3-2-函数形参和实参个数不匹配问题" class="headerlink" title="3.2 函数形参和实参个数不匹配问题"></a>3.2 函数形参和实参个数不匹配问题</h4><table>
+<thead>
+<tr>
+<th align="center">参数个数</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">实参数个数等于形参个数</td>
+<td align="center">输出正确结果</td>
+</tr>
+<tr>
+<td align="center">实参个数多于形参个数</td>
+<td align="center">只取到形参的个数</td>
+</tr>
+<tr>
+<td align="center">实参个数少于形参个数</td>
+<td align="center">多到形参定义为undefined，结果为NaN</td>
+</tr>
+</tbody></table>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1,num2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num1+num2);</span><br><span class="line">&#125;</span><br><span class="line">sum(<span class="number">100</span>,<span class="number">200</span>);           <span class="comment">//实参数个数等于形参个数,输出正确结果</span></span><br><span class="line">sum(<span class="number">100</span>,<span class="number">400</span>,<span class="number">500</span>,<span class="number">700</span>);   <span class="comment">//实参个数多于形参个数,只取到形参的个数</span></span><br><span class="line">sum(<span class="number">200</span>);               <span class="comment">//实参个数少于形参个数,多到形参定义为undefined，结果为NaN</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意：在JavaScript中，形参默认值是undefined。</strong></p>
+<h4 id="3-4-小结"><a href="#3-4-小结" class="headerlink" title="3.4 小结"></a>3.4 小结</h4><ul>
+<li>函数可以带参数也可以不带参数。</li>
+<li>声明函数的时候，函数名括号里面的是形参，形参默认值是undefined。</li>
+<li>调用函数的时候，函数名括号里面的是实参。</li>
+<li>多个参数中间用逗号分隔。</li>
+<li>形参的个数可以和参数个数不匹配，但是结果不可预计，我们尽量要匹配。</li>
+</ul>
+<h3 id="4-函数的返回值"><a href="#4-函数的返回值" class="headerlink" title="4. 函数的返回值"></a>4. 函数的返回值</h3><h4 id="4-1-return语句"><a href="#4-1-return语句" class="headerlink" title="4.1 return语句"></a>4.1 return语句</h4><p>有的时候，我们会希望函数将值返回给调用者，此时通过使用return语句就可以实现。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 函数的返回值格式</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> 函数名(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> 需要返回的结果;</span><br><span class="line">&#125;</span><br><span class="line">函数名();</span><br></pre></td></tr></table></figure>
+<ol>
+<li>我们函数只是实现某种功能，最终的结果需要返回给函数的调用者函数名()，通过return实现的。</li>
+<li>只要函数遇到return就把后面的结果返回给函数的调用者。函数名()=return 后面的结果。</li>
+</ol>
+<h4 id="4-2-return终止函数"><a href="#4-2-return终止函数" class="headerlink" title="4.2 return终止函数"></a>4.2 return终止函数</h4><p>return语句之后的代码不被执行。</p>
+<h4 id="4-3-return的返回值"><a href="#4-3-return的返回值" class="headerlink" title="4.3 return的返回值"></a>4.3 return的返回值</h4><p>return只能返回一个值。如果用逗号隔开多个值，以最后一个为准。</p>
+<h4 id="4-4-函数没有return就返回undefined"><a href="#4-4-函数没有return就返回undefined" class="headerlink" title="4.4 函数没有return就返回undefined"></a>4.4 函数没有return就返回undefined</h4><p>函数都是有返回值的。</p>
+<ol>
+<li>如果有return，则返回的是return后面的值。</li>
+<li>如果函数没有return，则返回undefined。</li>
+</ol>
+<h4 id="4-5-break，continue，return的区别"><a href="#4-5-break，continue，return的区别" class="headerlink" title="4.5 break，continue，return的区别"></a>4.5 break，continue，return的区别</h4><ul>
+<li>break：结束当前的循环体（如for、while）。</li>
+<li>continue：跳出本次循环，继续执行下次循环（如for、while）。</li>
+<li>return：不仅可以退出循环，还能够返回return语句中的值，同时还可以结束当前的函数体内的代码。</li>
+</ul>
+<h3 id="5-arguments的使用"><a href="#5-arguments的使用" class="headerlink" title="5. arguments的使用"></a>5. arguments的使用</h3><p>当我们不确定有多少个参数传递的时候，可以用arguments来获取。在JavaScript中，arguments实际上它是当前函数的一个内置对象。所有函数都内置了一个arguments对象，arguments对象中存储了传递的所有实参。<br>arguments展示形式是一个伪数组，因此可以进行遍历。伪数组具有以下特点：</p>
+<ul>
+<li>具有length属性。</li>
+<li>按索引方式存储数据。</li>
+<li>不具有数组的push、pop等方法。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 利用函数求任意个数的最大值</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getMax</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> max = <span class="built_in">arguments</span>[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="built_in">arguments</span>.length; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">arguments</span>[i] &gt; max)</span><br><span class="line">        &#123;</span><br><span class="line">            max = <span class="built_in">arguments</span>[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(getMax(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>));</span><br><span class="line"><span class="built_in">console</span>.log(getMax(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>));</span><br><span class="line"><span class="built_in">console</span>.log(getMax(<span class="number">11</span>, <span class="number">2</span>, <span class="number">34</span>, <span class="number">444</span>, <span class="number">5</span>, <span class="number">100</span>));</span><br></pre></td></tr></table></figure>
+<h3 id="6-数组案例"><a href="#6-数组案例" class="headerlink" title="6. 数组案例"></a>6. 数组案例</h3><h4 id="1-利用函数封装方式，翻转任意一个数组"><a href="#1-利用函数封装方式，翻转任意一个数组" class="headerlink" title="1. 利用函数封装方式，翻转任意一个数组"></a>1. 利用函数封装方式，翻转任意一个数组</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 利用函数翻转任意数组</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">reverse</span>(<span class="params">arr</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> newArr = [];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = 1arr.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">        newArr[newArr.length] = arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> newArr;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> arr1 =reverse([<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">9</span>]);</span><br><span class="line"><span class="built_in">console</span>.log(arr1);</span><br><span class="line"><span class="keyword">var</span> arr2 =reverse([<span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;pink&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>]);</span><br><span class="line"><span class="built_in">console</span>.log(arr2);</span><br></pre></td></tr></table></figure>
+<h4 id="2-利用函数封装方式，对数组排序"><a href="#2-利用函数封装方式，对数组排序" class="headerlink" title="2. 利用函数封装方式，对数组排序"></a>2. 利用函数封装方式，对数组排序</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 利用函数翻转任意数组</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sort</span>(<span class="params">arr</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="built_in">arguments</span>.length - <span class="number">1</span>; i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">1</span>; j &lt; <span class="built_in">arguments</span>.length - i - <span class="number">1</span>; j++)</span><br><span class="line">            <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>])</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">var</span> temp = arr[j];</span><br><span class="line">                arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">                arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> arr1 =sort([<span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">9</span>]);</span><br><span class="line"><span class="built_in">console</span>.log(arr1);</span><br><span class="line"><span class="keyword">var</span> arr2 =sort([<span class="number">11</span>, <span class="number">7</span>, <span class="number">22</span>, <span class="number">99</span>]);</span><br><span class="line"><span class="built_in">console</span>.log(arr2);</span><br></pre></td></tr></table></figure>
+<h4 id="3-判断闰年"><a href="#3-判断闰年" class="headerlink" title="3. 判断闰年"></a>3. 判断闰年</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 利用函数判断闰年</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isRunYear</span>(<span class="params">year</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 如果是闰年我们返回true，否则返回false</span></span><br><span class="line">    <span class="keyword">var</span> flag = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span>(year % <span class="number">4</span> == <span class="number">0</span> &amp;&amp; year % <span class="number">100</span> != <span class="number">0</span> || year % <span class="number">400</span> == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        flag = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(isRunYear(<span class="number">2000</span>));</span><br><span class="line"><span class="built_in">console</span>.log(isRunYear(<span class="number">1999</span>));</span><br></pre></td></tr></table></figure>
+<h3 id="7-函数的两种声明方式"><a href="#7-函数的两种声明方式" class="headerlink" title="7. 函数的两种声明方式"></a>7. 函数的两种声明方式</h3><h4 id="1-利用函数关键字自定义函数（命名函数）"><a href="#1-利用函数关键字自定义函数（命名函数）" class="headerlink" title="1. 利用函数关键字自定义函数（命名函数）"></a>1. 利用函数关键字自定义函数（命名函数）</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">fn();</span><br></pre></td></tr></table></figure>
+<h4 id="2-函数表达式（匿名函数）"><a href="#2-函数表达式（匿名函数）" class="headerlink" title="2. 函数表达式（匿名函数）"></a>2. 函数表达式（匿名函数）</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// var 变量名 = function()&#123;&#125;;</span></span><br><span class="line"><span class="keyword">var</span> fun = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;函数表达式&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line">fun();</span><br></pre></td></tr></table></figure>
+<ol>
+<li>fun是变量名，不是函数名。</li>
+<li>函数表达式声明方式跟声明变量差不多，只不过变量里面存的是值，而函数表达式里面存的是函数。</li>
+<li>函数表达式也可以进行传递参数。</li>
+</ol>
+<h2 id="二、JavaScript作用域"><a href="#二、JavaScript作用域" class="headerlink" title="二、JavaScript作用域"></a>二、JavaScript作用域</h2><h3 id="1-作用域"><a href="#1-作用域" class="headerlink" title="1. 作用域"></a>1. 作用域</h3><p>通常来说，一段程序代码中所用到的名字并不总是有效和可用的，而限定这个名字的可用性的代码范围就是这个名字的作用域。作用域的使用提高了程序逻辑的局限性，增强了程序的可靠性，减少了名字的冲突。</p>
+<ol>
+<li>全局作用域：整个<code>&lt;script&gt;</code>标签或者是一个单独的JS文件。</li>
+<li>局部作用域（函数作用域）：在函数内部就是局部作用域，这个代码的名字只在函数内部起效果和作用。</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 局部作用域</span></span><br><span class="line">&#125;</span><br><span class="line">fn();</span><br></pre></td></tr></table></figure>
+<h3 id="2-变量的作用域"><a href="#2-变量的作用域" class="headerlink" title="2. 变量的作用域"></a>2. 变量的作用域</h3><h4 id="2-1-变量作用域的分类"><a href="#2-1-变量作用域的分类" class="headerlink" title="2.1 变量作用域的分类"></a>2.1 变量作用域的分类</h4><p>在JavaScript中，根据作用域的不同，变量可以分为两种：</p>
+<ul>
+<li>全局变量</li>
+<li>局部变量</li>
+</ul>
+<h4 id="2-2-全局变量"><a href="#2-2-全局变量" class="headerlink" title="2.2 全局变量"></a>2.2 全局变量</h4><p>在全局作用域下声明的变量叫做全局变量（在函数外部定义的变量）。</p>
+<ul>
+<li>全局变量在代码的任何位置都可以使用。</li>
+<li>在全局作用域下var声明的变量是全局变量。</li>
+<li>特殊情况下，在函数内部不使用var声明的变量也是全局变量（不建议使用）。</li>
+</ul>
+<h4 id="2-3-局部变量"><a href="#2-3-局部变量" class="headerlink" title="2.3 局部变量"></a>2.3 局部变量</h4><p>在局部作用域下声明的变量叫做局部变量（在函数内部定义的变量）。</p>
+<ul>
+<li>局部变量只能在该函数的内部使用。</li>
+<li>在函数内部var声明的变量是局部变量。</li>
+<li>函数的形象实际上就是局部变量。</li>
+</ul>
+<h4 id="2-4-全局变量和局部变量的区别"><a href="#2-4-全局变量和局部变量的区别" class="headerlink" title="2.4 全局变量和局部变量的区别"></a>2.4 全局变量和局部变量的区别</h4><ul>
+<li>全局变量：在任何一个地方都可以使用，只有在浏览器关闭时才会被销毁，因此比较占内存。</li>
+<li>局部变量：之在函数内部使用，当其所在的代码块被执行时，会被初始化；当代码运行结束后，就会被销毁，因此更节省内存空间。</li>
+</ul>
+<h3 id="3-作用域链"><a href="#3-作用域链" class="headerlink" title="3. 作用域链"></a>3. 作用域链</h3><ul>
+<li>只要是代码，就至少有一个作用域。</li>
+<li>写在函数内部的局部作用域。</li>
+<li>如果函数中还有函数，那么在这个作用域中就又可以诞生一个作用域。</li>
+<li>根据在内部函数可以访问外部函数变量的这种机制，用链式查找决定哪些数据能被内部函数访问，就称作作用域链。</li>
+</ul>
+<h2 id="三、JavaScript预解析"><a href="#三、JavaScript预解析" class="headerlink" title="三、JavaScript预解析"></a>三、JavaScript预解析</h2><h3 id="1-预解析"><a href="#1-预解析" class="headerlink" title="1. 预解析"></a>1. 预解析</h3><p>JavaScript代码是由浏览器中的JavaScript解析器来执行的。JavaScript解析器在运行JavaScript代码的时候分为两步：预解析和代码执行。</p>
+<ul>
+<li>预解析：JS引擎会把JS里面所有的var还有function提升到当前作用域的最前面。</li>
+<li>代码执行：按照代码书写的顺序从上往下执行。</li>
+</ul>
+<h3 id="2-变量预解析和函数预解析"><a href="#2-变量预解析和函数预解析" class="headerlink" title="2. 变量预解析和函数预解析"></a>2. 变量预解析和函数预解析</h3><p>预解析分为变量预解析（变量提升）和函数预解析（函数提升）。</p>
+<ul>
+<li>变量提升：就是把所有的变量声明提升到当前的作用域最前面，不提升赋值操作。</li>
+<li>函数提升：就是把所有的函数声明提升到当前的作用域最前面，不调用函数。</li>
+</ul>
+<h2 id="四、JavaScript对象"><a href="#四、JavaScript对象" class="headerlink" title="四、JavaScript对象"></a>四、JavaScript对象</h2><h3 id="1-对象"><a href="#1-对象" class="headerlink" title="1. 对象"></a>1. 对象</h3><h4 id="1-1-什么是对象"><a href="#1-1-什么是对象" class="headerlink" title="1.1 什么是对象"></a>1.1 什么是对象</h4><p>在JavaScript中，对象是一组无序的相关属性和方法的集合，所有的事物都是对象，例如字符串、数值、数组、函数等。<br>对象由属性和方法组成的。</p>
+<ul>
+<li>属性：事物的特征，在对象中用属性来表示（常用名词）。</li>
+<li>方法：事物的行为，在对象中用方法来表示（常用动词）。</li>
+</ul>
+<h4 id="1-2-为什么需要对象"><a href="#1-2-为什么需要对象" class="headerlink" title="1.2 为什么需要对象"></a>1.2 为什么需要对象</h4><p>保存一个值时，可以使用变量，保存多个值（一组值）时，可以使用数组。JS中的对象表达结构更清晰，更强大。个人信息在对象中的表达结果如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">person.name = <span class="string">&#x27;张三疯&#x27;</span>;</span><br><span class="line">person.sex = <span class="string">&#x27;男&#x27;</span>;</span><br><span class="line">person.age = <span class="number">28</span>;</span><br><span class="line">person.height = <span class="number">140</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="2-创建对象的三种方式"><a href="#2-创建对象的三种方式" class="headerlink" title="2. 创建对象的三种方式"></a>2. 创建对象的三种方式</h3><p>在JavaScript中，现阶段我们可以采用三种方式创建对象（object）：</p>
+<ul>
+<li>利用字面量创建对象</li>
+<li>利用new object创建对象</li>
+<li>利用构造函数创建对象</li>
+</ul>
+<h4 id="2-1-利用字面量创建对象"><a href="#2-1-利用字面量创建对象" class="headerlink" title="2.1 利用字面量创建对象"></a>2.1 利用字面量创建对象</h4><p>对象字面量：就是花括号{}里面包含了表达这个具体事物（对象）的属性和方法。<br>{}里面采取键值对的形式表示。</p>
+<ul>
+<li>键：相当于属性名。</li>
+<li>值：相当于属性值，可以是任意类型的值（数字类型、字符串类型、布尔类型、函数类型等）</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    unname: <span class="string">&#x27;张三疯&#x27;</span>,</span><br><span class="line">    age: <span class="number">20</span>,</span><br><span class="line">    sex: <span class="string">&#x27;男&#x27;</span>,</span><br><span class="line">    sayHi: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;hi~&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>对象的调用：</strong></p>
+<ul>
+<li>对象里面的属性调用：对象.属性名。小点，就理解为“的”。</li>
+<li>对象里面属性的另一种调用方式：对象[ ‘属性名’ ],注意方括号里面的属性必须加引号</li>
+<li>对象里面的方法调用：对象.方法名()，注意这个方法名字后面一定加括号。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(star.name);     <span class="comment">//调用名字属性</span></span><br><span class="line">consloe.log(star[<span class="string">&#x27;name&#x27;</span>]);  <span class="comment">//调用名字属性</span></span><br><span class="line">star.sayHi();               <span class="comment">//调用sayHi方法（一定不要忘记带后面的括号）</span></span><br></pre></td></tr></table></figure>
+<h4 id="变量、属性、函数、方法总结"><a href="#变量、属性、函数、方法总结" class="headerlink" title="变量、属性、函数、方法总结"></a>变量、属性、函数、方法总结</h4><ul>
+<li>变量：单独生命赋值，单独存在。</li>
+<li>属性：对象里面的变量称为属性，不需要声明，用来描述该对象的特征。</li>
+<li>函数：单独存在的，通过“函数名()”的方式就可以调用。</li>
+<li>方法：对象里面的函数称为方法，方法不需要声明，使用“对象.方法名()”的方式就可以调用，方法用来描述该对象的行为和功能。</li>
+</ul>
+<h4 id="2-2-利用new-object创建对象"><a href="#2-2-利用new-object创建对象" class="headerlink" title="2.2 利用new object创建对象"></a>2.2 利用new object创建对象</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 利用new object创建对象</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>(); <span class="comment">//创建了一个空的对象</span></span><br><span class="line">obj.uname = <span class="string">&#x27;张三疯&#x27;</span>;</span><br><span class="line">obj.age = <span class="number">20</span>;</span><br><span class="line">obj.sex = <span class="string">&#x27;男&#x27;</span>;</span><br><span class="line">obj.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;hi~&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(obj.uname);</span><br><span class="line"><span class="built_in">console</span>.log(obj[<span class="string">&#x27;sex&#x27;</span>]);</span><br><span class="line">obj.sayHi();</span><br></pre></td></tr></table></figure>
+<ol>
+<li>利用等号赋值的方法，添加对象的属性和方法。</li>
+<li>每个属性和方法之间用分号结束。</li>
+</ol>
+<h4 id="2-3-利用构造函数创建对象"><a href="#2-3-利用构造函数创建对象" class="headerlink" title="2.3 利用构造函数创建对象"></a>2.3 利用构造函数创建对象</h4><p>因为前面两种创建对象的方式一次只能创建一个对象，因此需要使用构造函数。<br>我们一次创建一个对象，里面很多的属性和方法是大量相同的，我们只能复制。因此我们可以利用函数的方法，重复这些相同的代码，我们就把这个函数称为构造函数。<br>构造函数：是一种特殊的函数，主要用来初始化对象，即为对象成员变量赋值初始值，它总与new运算符一起使用，就是把我们对象里面一些相同的属性和方法抽象出来封装到函数里面。</p>
+<p><strong>构造函数的语法格式：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 构造函数名(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.属性 = 值;</span><br><span class="line">    <span class="built_in">this</span>.方法 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">new</span> 构造函数名();</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong></p>
+<ol>
+<li>构造函数名字首字母要大写。</li>
+<li>构造函数不需要return，就可以返回结果。</li>
+<li>调用构造函数必须使用new。</li>
+<li>只要new Star()调用函数就创建一个对象。</li>
+<li>属性和方法前面必须添加this。</li>
+</ol>
+<h4 id="2-4-构造函数和对象"><a href="#2-4-构造函数和对象" class="headerlink" title="2.4 构造函数和对象"></a>2.4 构造函数和对象</h4><ul>
+<li>构造函数，如Stars()，抽象了对象的公共部分，封装到函数里面，它泛指某一大类（class）。</li>
+<li>创建对象，如new Star(),特指某一个，通过new关键字创建对象的过程我们也称为对象实例化。</li>
+</ul>
+<h3 id="3-new关键字"><a href="#3-new关键字" class="headerlink" title="3. new关键字"></a>3. new关键字</h3><p>new在执行时会做四件事：</p>
+<ol>
+<li>在内存中创建一个新的空对象。</li>
+<li>让this指向这个新的对象。</li>
+<li>执行构造函数里面的代码，给这个新对象添加属性和方法。</li>
+<li>返回这个新对象（所以构造函数里面不需要return）。</li>
+</ol>
+<h3 id="4-遍历对象属性"><a href="#4-遍历对象属性" class="headerlink" title="4. 遍历对象属性"></a>4. 遍历对象属性</h3><p>for in语句用于对数组或者对象的属性进行循环操作。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 遍历对象</span></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    name: <span class="string">&#x27;小明&#x27;</span>,</span><br><span class="line">    age: <span class="number">20</span>,</span><br><span class="line">    sex: <span class="string">&#x27;男&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> k <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(k);         <span class="comment">//k变量输出的是属性名</span></span><br><span class="line">    <span class="built_in">console</span>.log(obj[k]);    <span class="comment">//obj[k]得到的是属性值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
                       
 
                         
@@ -326,7 +524,7 @@
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
       <img
-        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/01/22/hello-world/"
+        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/03/08/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%91%A8/"
         alt="微信分享二维码">
     </div>
   </div>
@@ -342,18 +540,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/01/26/%E7%AC%AC%E4%B8%83%E5%91%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          定位+元素的显示和隐藏+CSS高级技巧
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/01/20/HTML/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML</div>
+    <a href="/2021/03/01/%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%91%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript流程控制-循环</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -380,7 +569,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81JavaScript%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text">一、JavaScript函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%87%BD%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">1. 函数的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">2. 函数的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E5%A3%B0%E6%98%8E%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 声明函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 调用函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-%E5%87%BD%E6%95%B0%E7%9A%84%E5%B0%81%E8%A3%85"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 函数的封装</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0"><span class="toc-number">1.3.</span> <span class="toc-text">3. 函数的参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E5%BD%A2%E5%8F%82%E5%92%8C%E5%AE%9E%E5%8F%82"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 形参和实参</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E5%87%BD%E6%95%B0%E5%BD%A2%E5%8F%82%E5%92%8C%E5%AE%9E%E5%8F%82%E4%B8%AA%E6%95%B0%E4%B8%8D%E5%8C%B9%E9%85%8D%E9%97%AE%E9%A2%98"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 函数形参和实参个数不匹配问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-%E5%B0%8F%E7%BB%93"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.4 小结</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">1.4.</span> <span class="toc-text">4. 函数的返回值</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-return%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 return语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-return%E7%BB%88%E6%AD%A2%E5%87%BD%E6%95%B0"><span class="toc-number">1.4.2.</span> <span class="toc-text">4.2 return终止函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-return%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">1.4.3.</span> <span class="toc-text">4.3 return的返回值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-%E5%87%BD%E6%95%B0%E6%B2%A1%E6%9C%89return%E5%B0%B1%E8%BF%94%E5%9B%9Eundefined"><span class="toc-number">1.4.4.</span> <span class="toc-text">4.4 函数没有return就返回undefined</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-break%EF%BC%8Ccontinue%EF%BC%8Creturn%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.4.5.</span> <span class="toc-text">4.5 break，continue，return的区别</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-arguments%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.5.</span> <span class="toc-text">5. arguments的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%95%B0%E7%BB%84%E6%A1%88%E4%BE%8B"><span class="toc-number">1.6.</span> <span class="toc-text">6. 数组案例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%A9%E7%94%A8%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85%E6%96%B9%E5%BC%8F%EF%BC%8C%E7%BF%BB%E8%BD%AC%E4%BB%BB%E6%84%8F%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84"><span class="toc-number">1.6.1.</span> <span class="toc-text">1. 利用函数封装方式，翻转任意一个数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%88%A9%E7%94%A8%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85%E6%96%B9%E5%BC%8F%EF%BC%8C%E5%AF%B9%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F"><span class="toc-number">1.6.2.</span> <span class="toc-text">2. 利用函数封装方式，对数组排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%88%A4%E6%96%AD%E9%97%B0%E5%B9%B4"><span class="toc-number">1.6.3.</span> <span class="toc-text">3. 判断闰年</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F"><span class="toc-number">1.7.</span> <span class="toc-text">7. 函数的两种声明方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%A9%E7%94%A8%E5%87%BD%E6%95%B0%E5%85%B3%E9%94%AE%E5%AD%97%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%EF%BC%88%E5%91%BD%E5%90%8D%E5%87%BD%E6%95%B0%EF%BC%89"><span class="toc-number">1.7.1.</span> <span class="toc-text">1. 利用函数关键字自定义函数（命名函数）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%EF%BC%88%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%EF%BC%89"><span class="toc-number">1.7.2.</span> <span class="toc-text">2. 函数表达式（匿名函数）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81JavaScript%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.</span> <span class="toc-text">二、JavaScript作用域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.1.</span> <span class="toc-text">1. 作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.2.</span> <span class="toc-text">2. 变量的作用域</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.1 变量作用域的分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2 全局变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.3 局部变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E5%92%8C%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.2.4.</span> <span class="toc-text">2.4 全局变量和局部变量的区别</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE"><span class="toc-number">2.3.</span> <span class="toc-text">3. 作用域链</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81JavaScript%E9%A2%84%E8%A7%A3%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text">三、JavaScript预解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%A2%84%E8%A7%A3%E6%9E%90"><span class="toc-number">3.1.</span> <span class="toc-text">1. 预解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8F%98%E9%87%8F%E9%A2%84%E8%A7%A3%E6%9E%90%E5%92%8C%E5%87%BD%E6%95%B0%E9%A2%84%E8%A7%A3%E6%9E%90"><span class="toc-number">3.2.</span> <span class="toc-text">2. 变量预解析和函数预解析</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81JavaScript%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.</span> <span class="toc-text">四、JavaScript对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.1.</span> <span class="toc-text">1. 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E4%BB%80%E4%B9%88%E6%98%AF%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.1.1.</span> <span class="toc-text">1.1 什么是对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.1.2.</span> <span class="toc-text">1.2 为什么需要对象</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">2. 创建对象的三种方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E5%88%A9%E7%94%A8%E5%AD%97%E9%9D%A2%E9%87%8F%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.2.1.</span> <span class="toc-text">2.1 利用字面量创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E3%80%81%E5%B1%9E%E6%80%A7%E3%80%81%E5%87%BD%E6%95%B0%E3%80%81%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93"><span class="toc-number">4.2.2.</span> <span class="toc-text">变量、属性、函数、方法总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E5%88%A9%E7%94%A8new-object%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.2.3.</span> <span class="toc-text">2.2 利用new object创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.2.4.</span> <span class="toc-text">2.3 利用构造函数创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.2.5.</span> <span class="toc-text">2.4 构造函数和对象</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-new%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">4.3.</span> <span class="toc-text">3. new关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%81%8D%E5%8E%86%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7"><span class="toc-number">4.4.</span> <span class="toc-text">4. 遍历对象属性</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
