@@ -9,19 +9,19 @@
     <link rel="dns-prefetch" href="http://example.com">
     <title>
       
-        JavaScript运算符 | 
+        JavaScript内置对象 | 
             Hexo
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="一、JavaScript运算符1. 运算符运算符（operator）也被称为操作符，用于实验赋值、比较和执行算数运算等功能的符号。 JavaScript中常用的运算符有：">
+    <meta name="description" content="一、JavaScript内置对象1. 内置对象 JavaScript的对象分为3种：自定义对象、内置对象、浏览器对象。 前面两种对象是JS基础内容，属于ECMAScript；第三个浏览器对象属于我们JS独有的。 内置对象就是指JS语言自带的一些对象，这些对象供开发者使用，并提供了一些常用的或是最基本而必要的功能（属性和方法）。 内置对象最大的优点就是帮助我们快速开发。 JavaScript提供了多">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript运算符">
-<meta property="og:url" content="http://example.com/2021/02/23/%E7%AC%AC%E5%8D%81%E4%B8%80%E5%91%A8/index.html">
+<meta property="og:title" content="JavaScript内置对象">
+<meta property="og:url" content="http://example.com/2021/03/15/%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%91%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、JavaScript运算符1. 运算符运算符（operator）也被称为操作符，用于实验赋值、比较和执行算数运算等功能的符号。 JavaScript中常用的运算符有：">
+<meta property="og:description" content="一、JavaScript内置对象1. 内置对象 JavaScript的对象分为3种：自定义对象、内置对象、浏览器对象。 前面两种对象是JS基础内容，属于ECMAScript；第三个浏览器对象属于我们JS独有的。 内置对象就是指JS语言自带的一些对象，这些对象供开发者使用，并提供了一些常用的或是最基本而必要的功能（属性和方法）。 内置对象最大的优点就是帮助我们快速开发。 JavaScript提供了多">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-02-23T02:28:17.000Z">
-<meta property="article:modified_time" content="2021-03-07T05:37:33.243Z">
+<meta property="article:published_time" content="2021-03-15T11:45:08.000Z">
+<meta property="article:modified_time" content="2021-03-21T15:20:00.337Z">
 <meta property="article:author" content="Wang Qichao">
 <meta name="twitter:card" content="summary">
       
@@ -192,7 +192,7 @@
           </div>
           <div id="js-content" class="content-ll">
             
-        <article id="post-第十一周"
+        <article id="post-第十四周"
   class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -200,7 +200,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JavaScript运算符
+      JavaScript内置对象
     </h1>
   
 
@@ -215,301 +215,103 @@
             </a>
             
               
-                <a href="/2021/02/23/%E7%AC%AC%E5%8D%81%E4%B8%80%E5%91%A8/" class="archive-article-date">
-  	<time datetime="2021-02-23T02:28:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-23</time>
+                <a href="/2021/03/15/%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%91%A8/" class="archive-article-date">
+  	<time datetime="2021-03-15T11:45:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-15</time>
 </a>
                   
       </header>
       
         <div class="article-entry" itemprop="articleBody">
           
-                    <h2 id="一、JavaScript运算符"><a href="#一、JavaScript运算符" class="headerlink" title="一、JavaScript运算符"></a>一、JavaScript运算符</h2><h3 id="1-运算符"><a href="#1-运算符" class="headerlink" title="1. 运算符"></a>1. 运算符</h3><p>运算符（operator）也被称为操作符，用于实验赋值、比较和执行算数运算等功能的符号。</p>
-<p>JavaScript中常用的运算符有：</p>
+                    <h2 id="一、JavaScript内置对象"><a href="#一、JavaScript内置对象" class="headerlink" title="一、JavaScript内置对象"></a>一、JavaScript内置对象</h2><h3 id="1-内置对象"><a href="#1-内置对象" class="headerlink" title="1. 内置对象"></a>1. 内置对象</h3><ul>
+<li>JavaScript的对象分为3种：自定义对象、内置对象、浏览器对象。</li>
+<li>前面两种对象是JS基础内容，属于ECMAScript；第三个浏览器对象属于我们JS独有的。</li>
+<li>内置对象就是指JS语言自带的一些对象，这些对象供开发者使用，并提供了一些常用的或是最基本而必要的功能（属性和方法）。</li>
+<li>内置对象最大的优点就是帮助我们快速开发。</li>
+<li>JavaScript提供了多个内置对象：Math、Data、Array、String等。</li>
+</ul>
 <a id="more"></a>
 
-<ul>
-<li>算术运算符</li>
-<li>递增和递减运算符</li>
-<li>比较运算符</li>
-<li>逻辑运算符</li>
-<li>赋值运算符</li>
-</ul>
-<h3 id="2-算术运算符"><a href="#2-算术运算符" class="headerlink" title="2. 算术运算符"></a>2. 算术运算符</h3><h4 id="2-1-算术运算符"><a href="#2-1-算术运算符" class="headerlink" title="2.1 算术运算符"></a>2.1 算术运算符</h4><p>算术运算符：算术运算使用的符号用于执行两个变量或值的算术运算。</p>
-<table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">描述</th>
-<th align="center">实例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">+</td>
-<td align="center">加</td>
-<td align="center">10+20=30</td>
-</tr>
-<tr>
-<td align="center">-</td>
-<td align="center">减</td>
-<td align="center">10-20=-10</td>
-</tr>
-<tr>
-<td align="center">*</td>
-<td align="center">乘</td>
-<td align="center">10*20=200</td>
-</tr>
-<tr>
-<td align="center">/</td>
-<td align="center">除</td>
-<td align="center">10/20=0.5</td>
-</tr>
-<tr>
-<td align="center">%</td>
-<td align="center">取余数</td>
-<td align="center">返回除法的余数9%2=1</td>
-</tr>
-</tbody></table>
-<h4 id="2-2-浮点数的精度"><a href="#2-2-浮点数的精度" class="headerlink" title="2.2 浮点数的精度"></a>2.2 浮点数的精度</h4><p>浮点数值的最高精度是17位小数，但是进行算术计算时其其精确度远远不如整数。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result= <span class="number">0.1</span> + <span class="number">0.2</span>;      <span class="comment">//结果不是0.3，而是：0.30000000000000004</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">0.07</span> * <span class="number">100</span>);    <span class="comment">//结果不是7，而是：7.00000000000000001</span></span><br></pre></td></tr></table></figure>
-<p>所以：不要直接判断两个浮点数是否相等。</p>
-<h4 id="2-3-表达式和返回值"><a href="#2-3-表达式和返回值" class="headerlink" title="2.3 表达式和返回值"></a>2.3 表达式和返回值</h4><p>表达式：是由数字、运算符、变量等以能求得数值的有意义排列方法所得的组合。<br>简单理解：是由数字、运算符、变量等组成的式子。</p>
-<p>表达式最终都会有一个结果返回给我们，成为返回值。</p>
-<h3 id="3-递增和递减运算符"><a href="#3-递增和递减运算符" class="headerlink" title="3. 递增和递减运算符"></a>3. 递增和递减运算符</h3><h4 id="3-1-递增和递减运算符"><a href="#3-1-递增和递减运算符" class="headerlink" title="3.1 递增和递减运算符"></a>3.1 递增和递减运算符</h4><p>如果需要反复给数字变量添加或减去1，可以使用递增（++）和递减（–）运算符来完成。<br>在JavaScript中，递增（++）和递减（–）既可以放在变量的前面，也可以放在变量的后面。放在变量的前面时，我们可以称为前置递增（递减）运算符，放在变量的后面时，我们可以称为后置递增（递减）运算符。</p>
-<p><strong>注意：递增和递减运算符必须和变量配合使用。</strong></p>
-<h4 id="3-2-递增运算符"><a href="#3-2-递增运算符" class="headerlink" title="3.2 递增运算符"></a>3.2 递增运算符</h4><h5 id="3-2-1-前置递增运算符"><a href="#3-2-1-前置递增运算符" class="headerlink" title="3.2.1 前置递增运算符"></a>3.2.1 前置递增运算符</h5><p><code>++num</code> 前置递增,就是自加1，类似于<code>num=num+1</code>,但是<code>++num</code>写起来更简单。<br>使用口诀：先自加，后返回值。</p>
-<h5 id="3-2-2-后置递增运算符"><a href="#3-2-2-后置递增运算符" class="headerlink" title="3.2.2 后置递增运算符"></a>3.2.2 后置递增运算符</h5><p><code>num++</code> 前置递增,就是自加1，类似于<code>num=num+1</code>,但是<code>num++</code>写起来更简单。<br>使用口诀：先返回值，后自加。</p>
-<h5 id="3-2-3-前置递增和后置递增小结"><a href="#3-2-3-前置递增和后置递增小结" class="headerlink" title="3.2.3 前置递增和后置递增小结"></a>3.2.3 前置递增和后置递增小结</h5><ul>
-<li>前置递增和后置递增运算符可以简化代码的编写，让变量的值+1，比以前写法更简单。</li>
-<li>单独使用时，运行结果相同。</li>
-<li>与其他代码连用时，执行结果会不同。</li>
-<li>后置：先原值运算，后自加。</li>
-<li>前置：先自加，后运算。</li>
-<li>开发时，大多使用后置递减，并且代码独占一行，例如：<code>num++;</code>或者<code>num--;</code>。</li>
-</ul>
-<h3 id="4-比较运算符"><a href="#4-比较运算符" class="headerlink" title="4. 比较运算符"></a>4. 比较运算符</h3><h4 id="4-1-比较运算符"><a href="#4-1-比较运算符" class="headerlink" title="4.1 比较运算符"></a>4.1 比较运算符</h4><p>概念：比较运算符（关系运算符）是两个数据进行比较时所使用的运算符，比较运算后，会返回一个布尔值（true/false）作为比较运算的结果。</p>
-<table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">说明</th>
-<th align="center">实例</th>
-<th align="center">结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">&lt;</td>
-<td align="center">小于号</td>
-<td align="center">1&lt;2</td>
-<td align="center">true</td>
-</tr>
-<tr>
-<td align="center">&gt;</td>
-<td align="center">大于号</td>
-<td align="center">1&gt;2</td>
-<td align="center">false</td>
-</tr>
-<tr>
-<td align="center">&gt;=</td>
-<td align="center">大于等于号（大于或者等于）</td>
-<td align="center">2&gt;=2</td>
-<td align="center">true</td>
-</tr>
-<tr>
-<td align="center">&lt;=</td>
-<td align="center">小于等于号（小于或者等于</td>
-<td align="center">3&lt;=2&gt;</td>
-<td align="center">false</td>
-</tr>
-<tr>
-<td align="center">==</td>
-<td align="center">判等号（会转型）</td>
-<td align="center">37==27</td>
-<td align="center">true</td>
-</tr>
-<tr>
-<td align="center">!=</td>
-<td align="center">不等号</td>
-<td align="center">37!=37</td>
-<td align="center">false</td>
-</tr>
-<tr>
-<td align="center">=== !==</td>
-<td align="center">全等（要求值和数据类型都一致）</td>
-<td align="center">37===’37’</td>
-<td align="center">true</td>
-</tr>
-</tbody></table>
-<h4 id="4-2-小结"><a href="#4-2-小结" class="headerlink" title="4.2 =小结"></a>4.2 =小结</h4><table>
-<thead>
-<tr>
-<th align="center">符号</th>
-<th align="center">作用</th>
-<th align="center">用法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">=</td>
-<td align="center">赋值</td>
-<td align="center">把右边给左边</td>
-</tr>
-<tr>
-<td align="center">==</td>
-<td align="center">判断</td>
-<td align="center">判断两边值是否相等</td>
-</tr>
-<tr>
-<td align="center">===</td>
-<td align="center">全等</td>
-<td align="center">判断两边的值和数据类型是否完全相同</td>
-</tr>
-</tbody></table>
-<h3 id="5-逻辑运算符"><a href="#5-逻辑运算符" class="headerlink" title="5. 逻辑运算符"></a>5. 逻辑运算符</h3><h4 id="5-1-逻辑运算符"><a href="#5-1-逻辑运算符" class="headerlink" title="5.1 逻辑运算符"></a>5.1 逻辑运算符</h4><p>概念：逻辑运算符使用来进行布尔值运算的运算符，其返回值也是布尔值。</p>
-<table>
-<thead>
-<tr>
-<th align="center">逻辑运算符</th>
-<th align="center">说明</th>
-<th align="center">实例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">&amp;&amp;</td>
-<td align="center">“逻辑与”，简称“与”（and）</td>
-<td align="center">true&amp;&amp;false</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">!</td>
-<td align="center">“逻辑非”简称“非”（not）</td>
-<td align="center">!true</td>
-</tr>
-</tbody></table>
-<h4 id="5-2-逻辑与-amp-amp"><a href="#5-2-逻辑与-amp-amp" class="headerlink" title="5.2 逻辑与&amp;&amp;"></a>5.2 逻辑与&amp;&amp;</h4><p>两边都是true才返回true，否则返回false。</p>
-<h4 id="5-3-逻辑或"><a href="#5-3-逻辑或" class="headerlink" title="5.3 逻辑或||"></a>5.3 逻辑或||</h4><p>两边都为false才返回false，否则都为true。</p>
-<h4 id="5-4-逻辑非"><a href="#5-4-逻辑非" class="headerlink" title="5.4 逻辑非"></a>5.4 逻辑非</h4><p>逻辑非（!）也叫做相反符，用来取一个布尔值相反的值，如true的相反值是false。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> isok = <span class="literal">true</span>;</span><br><span class="line"><span class="built_in">console</span>.log(isok);  <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
-<h4 id="5-5-短路运算（逻辑运算）"><a href="#5-5-短路运算（逻辑运算）" class="headerlink" title="5.5 短路运算（逻辑运算）"></a>5.5 短路运算（逻辑运算）</h4><p>短路运算的原理：当有多个表达式（值）时，左边的表达式值可以确定结果时，就不再继续运算右边的表达式的值。</p>
-<h5 id="5-5-1-逻辑与"><a href="#5-5-1-逻辑与" class="headerlink" title="5.5.1 逻辑与"></a>5.5.1 逻辑与</h5><ul>
-<li>语法：表达式1&amp;&amp;表达式2。</li>
-<li>如果第一个表达式的值为真，则返回表达式2。</li>
-<li>如果第一个表达式的值为假，则返回表达式1。</li>
-</ul>
-<h5 id="5-5-2-逻辑或"><a href="#5-5-2-逻辑或" class="headerlink" title="5.5.2 逻辑或"></a>5.5.2 逻辑或</h5><ul>
-<li>语法：表达式1||表达式2。</li>
-<li>如果第一个表达式的值为真，则返回表达式1。</li>
-<li>如果第一个表达式的值为假，则返回表达式2。</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">0</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">123</span> || num++);  <span class="comment">//123</span></span><br><span class="line"><span class="built_in">console</span>.log(num);           <span class="comment">//0</span></span><br></pre></td></tr></table></figure>
-<h3 id="6-赋值运算符"><a href="#6-赋值运算符" class="headerlink" title="6. 赋值运算符"></a>6. 赋值运算符</h3><table>
-<thead>
-<tr>
-<th align="center">赋值运算符</th>
-<th align="center">说明</th>
-<th align="center">案例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">=</td>
-<td align="center">直接赋值</td>
-<td align="center"><code>var usrName = &#39;我是值&#39;;</code></td>
-</tr>
-<tr>
-<td align="center">+=、-=</td>
-<td align="center">加、减一个数后再赋值</td>
-<td align="center"><code>var age = 10; age+=5; //15</code></td>
-</tr>
-<tr>
-<td align="center">*=、/=、%=</td>
-<td align="center">乘、除、取模后再赋值</td>
-<td align="center"><code>var age = 2; age*=5; //10</code></td>
-</tr>
-</tbody></table>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = <span class="number">10</span>;</span><br><span class="line">age += <span class="number">5</span>;  <span class="comment">//相当于 age = age + 5;</span></span><br><span class="line">age -= <span class="number">5</span>;  <span class="comment">//相当于 age = age - 5;</span></span><br><span class="line">age *= <span class="number">5</span>;  <span class="comment">//相当于 age = age * 5;</span></span><br></pre></td></tr></table></figure>
-<h3 id="7-运算符优先级"><a href="#7-运算符优先级" class="headerlink" title="7. 运算符优先级"></a>7. 运算符优先级</h3><table>
-<thead>
-<tr>
-<th align="center">优先级</th>
-<th align="center">运算符</th>
-<th align="center">顺序</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">小括号</td>
-<td align="center">()</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">一元运算符</td>
-<td align="center">++ – !</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">算术运算符</td>
-<td align="center">先*/%后+-</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">关系运算符</td>
-<td align="center">&gt; &gt;= &lt; &lt;=</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">相等运算符</td>
-<td align="center">== != === !==</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">逻辑运算符</td>
-<td align="center">先&amp;&amp;后</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">赋值运算符</td>
-<td align="center">=</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center">逗号运算符</td>
-<td align="center">,</td>
-</tr>
-</tbody></table>
-<h2 id="二、JavaScript流程控制-分支"><a href="#二、JavaScript流程控制-分支" class="headerlink" title="二、JavaScript流程控制-分支"></a>二、JavaScript流程控制-分支</h2><h3 id="1-流程控制"><a href="#1-流程控制" class="headerlink" title="1. 流程控制"></a>1. 流程控制</h3><p>在一个程序执行的过程中，各条代码的执行顺序的结果是有直接影响的。很多时候我们要通过控制代码的执行顺序来实现我们要完成的功能。<br>简单理解：流程控制就是来控制我们的代码按照什么结构顺序来执行。<br>流程控制主要有三种结构，分别是顺序结构、分支结构和循环结构，这三种结构代表三种代码执行的顺序。</p>
-<h3 id="2-顺序流程控制"><a href="#2-顺序流程控制" class="headerlink" title="2. 顺序流程控制"></a>2. 顺序流程控制</h3><p>顺序结构是程序中最简单、最基本的流程控制，它没有特定的语法结构，程序会按照代码的先后顺序，依次执行，程序中大多数的代码都是这样执行的。</p>
-<h3 id="3-分支流程控制if语句"><a href="#3-分支流程控制if语句" class="headerlink" title="3. 分支流程控制if语句"></a>3. 分支流程控制if语句</h3><h4 id="3-1-分支结构"><a href="#3-1-分支结构" class="headerlink" title="3.1 分支结构"></a>3.1 分支结构</h4><p>由上到下执行代码的过程中，根据不同的条件，执行不同的路径代码（执行代码多选一的过程），从而得到不同的结果。</p>
-<h4 id="3-2-if语句"><a href="#3-2-if语句" class="headerlink" title="3.2 if语句"></a>3.2 if语句</h4><p><strong>语法结构：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//条件成立执行代码，否则什么也不做</span></span><br><span class="line"><span class="keyword">if</span>（条件表达式）&#123;</span><br><span class="line">    <span class="comment">//条件成立执行的代码语句</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>语句可以理解为一个行为，循环语句和分支语句就是典型的语句。一个程序有很多语句组成，一般情况下，会分割成一个一个的语句。</p>
-<h4 id="3-3-if-else语句"><a href="#3-3-if-else语句" class="headerlink" title="3.3 if else语句"></a>3.3 if else语句</h4><p><strong>语法结构：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//条件成立 执行if里面的代码，否则执行else里面的代码</span></span><br><span class="line"><span class="keyword">if</span>（条件表达式）&#123;</span><br><span class="line">    <span class="comment">//[如果]条件成立执行的代码语句</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">//[否则]执行的代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="3-4-if-else-if语句（多分支语句）"><a href="#3-4-if-else-if语句（多分支语句）" class="headerlink" title="3.4 if else if语句（多分支语句）"></a>3.4 if else if语句（多分支语句）</h4><p><strong>语法结构：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//条件成立 执行if里面的代码，否则执行else里面的代码</span></span><br><span class="line"><span class="keyword">if</span>（条件表达式<span class="number">1</span>）&#123;</span><br><span class="line">    语句<span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (条件表达式<span class="number">2</span>)&#123;</span><br><span class="line">    语句<span class="number">2</span>；</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">//上述条件都不成立执行此处代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="4-三元表达式"><a href="#4-三元表达式" class="headerlink" title="4. 三元表达式"></a>4. 三元表达式</h3><p>三元表达式也能做一些简单的条件选择。有三元运算符组成的式子称为三元表达式。</p>
-<ul>
-<li>语法结构：条件表达式 ? 表达式1 : 表达式2。</li>
-<li>执行思路：如果表达式结果为真，则返回表达式1的值，如果条件表达式结果为假，则返回表达式2的值。</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> result = num &gt; <span class="number">5</span> ? <span class="string">&#x27;是的&#x27;</span> : <span class="string">&#x27;不是的&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(result);        <span class="comment">//是的</span></span><br></pre></td></tr></table></figure>
-<h3 id="5-分支流程控制-switch语句"><a href="#5-分支流程控制-switch语句" class="headerlink" title="5. 分支流程控制 switch语句"></a>5. 分支流程控制 switch语句</h3><h4 id="5-1-语法结构"><a href="#5-1-语法结构" class="headerlink" title="5.1 语法结构"></a>5.1 语法结构</h4><p>switch语句也是多分支语句，它用于基于不同的条件来执行不同的代码。当针对变量设置一系列的特定值的的选项时就可以使用switch。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式)&#123;</span><br><span class="line">    <span class="keyword">case</span> value1:</span><br><span class="line">        <span class="comment">//表达式等于value1时要执行的代码</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> value2:</span><br><span class="line">        <span class="comment">//表达式等于value2时要执行的代码</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="comment">//表达式不等于任何一个value时要执行的代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>注意事项：</strong></p>
+<h3 id="2-查文档"><a href="#2-查文档" class="headerlink" title="2. 查文档"></a>2. 查文档</h3><h4 id="2-1-MDN"><a href="#2-1-MDN" class="headerlink" title="2.1 MDN"></a>2.1 MDN</h4><p>Mozilla开发者网络（MDN）提供了有关开放网络（Open Web）的信息，包括HTML、CSS和万维网及HTML5应用的API。</p>
+<h4 id="2-2-如何学习对象中的方法"><a href="#2-2-如何学习对象中的方法" class="headerlink" title="2.2 如何学习对象中的方法"></a>2.2 如何学习对象中的方法</h4><ol>
+<li>查阅该方法的功能。</li>
+<li>查看里面参数的意义和类型。</li>
+<li>查看返回值的意义和类型。</li>
+<li>通过demo进行测试。</li>
+</ol>
+<h3 id="3-Math对象"><a href="#3-Math对象" class="headerlink" title="3. Math对象"></a>3. Math对象</h3><p>Math是一个内置对象，它具有数学常数和函数的属性和方法。不是一个函数对象，不需要使用new来调用。<br>与其它全局对象不同的是，Math不是一个构造器。Math的所有属性和方法都是静态的，用到的常数pi可以用Math.PI表示，用x作参数Math。sin(x)调用sin函数。JavaScript中的常数，用以全精度的实数定义的。</p>
+<h4 id="3-1-Math概述"><a href="#3-1-Math概述" class="headerlink" title="3.1 Math概述"></a>3.1 Math概述</h4><p>Math对象不是构造函数，它具有数学常数和函数的属性和方法。跟数学相关的运算（求绝对值、取整、最大值等）可以使用Math中的成员。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.PI         <span class="comment">//圆周率</span></span><br><span class="line"><span class="built_in">Math</span>.floor()    <span class="comment">//向下取整</span></span><br><span class="line"><span class="built_in">Math</span>.ceil()     <span class="comment">//向上取整</span></span><br><span class="line"><span class="built_in">Math</span>.round()    <span class="comment">//四舍五入版 就近取整  -3.5结果是-3</span></span><br><span class="line"><span class="built_in">Math</span>.abs()      <span class="comment">//绝对值</span></span><br><span class="line"><span class="built_in">Math</span>.max()/<span class="built_in">Math</span>.min()   <span class="comment">//求最大和最小值</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-2-随机数方法-random"><a href="#3-2-随机数方法-random" class="headerlink" title="3.2 随机数方法 random()"></a>3.2 随机数方法 random()</h4><p><code>Math.random()</code>的函数返回一个浮点，伪随机数在范围[0,1),也就是说，从0（包括0）往上，但是不包括1（排除1），然后您可以缩放到所需的范围。实现将初始种子选择到随机数生成算法，它不能被用户选择或重置。</p>
+<h3 id="4-日期对象"><a href="#4-日期对象" class="headerlink" title="4. 日期对象"></a>4. 日期对象</h3><h4 id="4-1-Data概述"><a href="#4-1-Data概述" class="headerlink" title="4.1 Data概述"></a>4.1 Data概述</h4><p>创建Data实例用来处理日期和时间。Data对象基于1970年1月1日（世界标准时间）起的毫秒数。</p>
 <ol>
-<li>表达式我们经常写成变量。</li>
-<li>num的值和case里面的值相匹配的时候是全等（必须是值和数据类型一致才可以 num===1）。</li>
-<li>如果当前的case里面没有break，则不会推出switch，继续执行下一个case。</li>
+<li>Data()日期对象是一个构造函数，必须使用new来调用创建我们的日期对象。</li>
+<li>使用Data，如果没有参数，返回当前系统的当前时间。</li>
+<li>参数常用的写法：数字型–2021，01，01 或者是 字符串型–’2021-1-1 8:8:8’。</li>
 </ol>
-<h4 id="5-2-switch语句和if-else-if语句的区别"><a href="#5-2-switch语句和if-else-if语句的区别" class="headerlink" title="5.2 switch语句和if else if语句的区别"></a>5.2 switch语句和if else if语句的区别</h4><ol>
-<li>一般情况下，它们两个语句可以相互转换。</li>
-<li>switch语句通常处理case为比较确定值的情况，而if else if语句更加灵活，常用于范围判断（大于、等于某个范围）。</li>
-<li>switch语句进行条件判断后直接执行到程序的条件语句，效率更高。而if else if语句有几种条件，就得判断多少次。</li>
-<li>当分支比较少时，if else if语句的执行效率比switch语句高。</li>
-<li>当分支比较多时，switch语句的执行效率比较高，而且结构更清晰。</li>
+<h4 id="4-2-Data-方法的使用"><a href="#4-2-Data-方法的使用" class="headerlink" title="4.2 Data()方法的使用"></a>4.2 Data()方法的使用</h4><h5 id="4-2-1-获取当前时间必须实例化"><a href="#4-2-1-获取当前时间必须实例化" class="headerlink" title="4.2.1 获取当前时间必须实例化"></a>4.2.1 获取当前时间必须实例化</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> now = <span class="keyword">new</span> Data();</span><br><span class="line"><span class="built_in">console</span>.log(now);</span><br></pre></td></tr></table></figure>
+<h5 id="4-2-2-Data-构造函数的参数"><a href="#4-2-2-Data-构造函数的参数" class="headerlink" title="4.2.2 Data()构造函数的参数"></a>4.2.2 Data()构造函数的参数</h5><p>如果括号里面有时间，就返回参数里面的时间。例如日期格式字符串为’2019-5-1’，可以写成<code>new Data(&#39;2019-5-1&#39;)</code>或者<code>new Data(&#39;2019/5/1&#39;)</code>。</p>
+<h4 id="4-3-日期格式化"><a href="#4-3-日期格式化" class="headerlink" title="4.3 日期格式化"></a>4.3 日期格式化</h4><p>需要获取日期指定部分，我们要手动得到这种形式。</p>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">说明</th>
+<th align="center">代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">getFullYear()</td>
+<td align="center">获取当年</td>
+<td align="center">dObj.getFullYear()</td>
+</tr>
+<tr>
+<td align="center">getMonth()</td>
+<td align="center">获取当月（0-11）</td>
+<td align="center">dObj.getMonth()</td>
+</tr>
+<tr>
+<td align="center">getDate()</td>
+<td align="center">获取当天日期</td>
+<td align="center">dObj.getDate()</td>
+</tr>
+<tr>
+<td align="center">getDay()</td>
+<td align="center">获取星期几（周日0 到周六6）</td>
+<td align="center">dObj.getDay()</td>
+</tr>
+<tr>
+<td align="center">getHours()</td>
+<td align="center">获取当前小时</td>
+<td align="center">dObj.getHours()</td>
+</tr>
+<tr>
+<td align="center">getMinutes()</td>
+<td align="center">获取当前分钟</td>
+<td align="center">dobj.getMinutes()</td>
+</tr>
+<tr>
+<td align="center">getSeconds()</td>
+<td align="center">获取当前秒钟</td>
+<td align="center">dObj.getSeconds()</td>
+</tr>
+</tbody></table>
+<h4 id="4-4-获取日期的总的毫秒形式"><a href="#4-4-获取日期的总的毫秒形式" class="headerlink" title="4.4 获取日期的总的毫秒形式"></a>4.4 获取日期的总的毫秒形式</h4><p>Data对象是基于1970年1月1日（世界标准时间）起的毫秒数。<br>我们经常利用总的毫秒数来计算时间，因为它更精确。</p>
+<h5 id="4-4-1-通过valueOf-和getTime"><a href="#4-4-1-通过valueOf-和getTime" class="headerlink" title="4.4.1 通过valueOf()和getTime()"></a>4.4.1 通过valueOf()和getTime()</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = <span class="keyword">new</span> Data();</span><br><span class="line"><span class="built_in">console</span>.log(data.valueOf());</span><br><span class="line"><span class="built_in">console</span>.log(data.getTime());</span><br></pre></td></tr></table></figure>
+<h5 id="4-4-2-简单的写法"><a href="#4-4-2-简单的写法" class="headerlink" title="4.4.2 简单的写法"></a>4.4.2 简单的写法</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data1 = +<span class="keyword">new</span> Data();        <span class="comment">//+new Data() 返回的就是总的毫秒数</span></span><br><span class="line"><span class="built_in">console</span>.log(data1);</span><br></pre></td></tr></table></figure>
+<h5 id="4-4-3-H5新增的获取总的毫秒数"><a href="#4-4-3-H5新增的获取总的毫秒数" class="headerlink" title="4.4.3 H5新增的获取总的毫秒数"></a>4.4.3 H5新增的获取总的毫秒数</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(Data.now());</span><br></pre></td></tr></table></figure>
+<h4 id="5-案例：倒计时"><a href="#5-案例：倒计时" class="headerlink" title="5. 案例：倒计时"></a>5. 案例：倒计时</h4><ol>
+<li>核心算法：输入的时间减去现在的时间就是剩余的时间，即倒计时，但是不能拿着时分秒相减，比如 5分减去25分，结果会是负的。</li>
+<li>用时间戳来做。用户输入时间总的毫秒数减去现在的时间的总的毫秒数，得到的就是剩余时间的毫秒数。</li>
+<li>把剩余时间总的毫秒数转换为天、时、分、秒（时间戳转换为时分秒）。<br>转换公式如下：<ul>
+<li>d=parselnt(总秒数/60/60/24);   //计算天数</li>
+<li>h=parselnt(总秒数/60/60%24);   //计算小时</li>
+<li>m=parselnt(总秒数/60%60);      //计算分数</li>
+<li>s=parselnt(总秒数%60);         //计算当前秒数</li>
+</ul>
+</li>
 </ol>
-
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">conutDown</span>(<span class="params">time</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> nowTime = +<span class="keyword">new</span> Data();      <span class="comment">//返回的是当前时间总的毫秒数</span></span><br><span class="line">    <span class="keyword">var</span> inputTime = +<span class="keyword">new</span> Data(time);<span class="comment">//返回的是用户输入时间总的毫秒数</span></span><br><span class="line">    <span class="keyword">var</span> time = (inputTime - nowTime)/<span class="number">1000</span>;<span class="comment">//time是剩余时间的秒数</span></span><br><span class="line">    <span class="keyword">var</span> d =<span class="built_in">parseInt</span>(time / <span class="number">60</span> / <span class="number">60</span> / <span class="number">24</span>);<span class="comment">//天</span></span><br><span class="line">    d = d &lt;<span class="number">10</span> ? <span class="string">&#x27;0&#x27;</span> + d : d;</span><br><span class="line">    <span class="keyword">var</span> h =<span class="built_in">parseInt</span>(time / <span class="number">60</span> / <span class="number">60</span> % <span class="number">24</span>);<span class="comment">//时</span></span><br><span class="line">    h = h &lt;<span class="number">10</span> ? <span class="string">&#x27;0&#x27;</span> + h : h;</span><br><span class="line">    <span class="keyword">var</span> m =<span class="built_in">parseInt</span>(time / <span class="number">60</span> % <span class="number">60</span> );<span class="comment">//分</span></span><br><span class="line">    m = m &lt;<span class="number">10</span> ? <span class="string">&#x27;0&#x27;</span> + m : m;</span><br><span class="line">    <span class="keyword">var</span> s =<span class="built_in">parseInt</span>(time % <span class="number">60</span> );<span class="comment">//秒</span></span><br><span class="line">    s = s &lt;<span class="number">10</span> ? <span class="string">&#x27;0&#x27;</span> + s : s;</span><br><span class="line">    <span class="keyword">return</span> d + <span class="string">&#x27;天&#x27;</span> + h + <span class="string">&#x27;时&#x27;</span> + m + <span class="string">&#x27;分&#x27;</span> + s + <span class="string">&#x27;秒&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(countDown(<span class="string">&#x27;2021-6-6 18:00:00&#x27;</span>));</span><br><span class="line"><span class="keyword">var</span> data = <span class="keyword">new</span> Data();</span><br><span class="line"><span class="built_in">console</span>.log(data);</span><br></pre></td></tr></table></figure>
                       
 
                         
@@ -601,7 +403,7 @@
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
       <img
-        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/02/23/%E7%AC%AC%E5%8D%81%E4%B8%80%E5%91%A8/"
+        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/03/15/%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%91%A8/"
         alt="微信分享二维码">
     </div>
   </div>
@@ -617,18 +419,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/03/01/%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%91%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JavaScript流程控制-循环
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/02/15/%E7%AC%AC%E5%8D%81%E5%91%A8/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JavaScript（一）</div>
+    <a href="/2021/03/08/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%91%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript函数+作用域+预解析+对象</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -655,7 +448,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81JavaScript%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.</span> <span class="toc-text">一、JavaScript运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.1.</span> <span class="toc-text">1. 运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.2.</span> <span class="toc-text">2. 算术运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 算术运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E7%B2%BE%E5%BA%A6"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 浮点数的精度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 表达式和返回值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%92%E5%A2%9E%E5%92%8C%E9%80%92%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.3.</span> <span class="toc-text">3. 递增和递减运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E9%80%92%E5%A2%9E%E5%92%8C%E9%80%92%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 递增和递减运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 递增运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-1-%E5%89%8D%E7%BD%AE%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">3.2.1 前置递增运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-2-%E5%90%8E%E7%BD%AE%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">3.2.2 后置递增运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-3-%E5%89%8D%E7%BD%AE%E9%80%92%E5%A2%9E%E5%92%8C%E5%90%8E%E7%BD%AE%E9%80%92%E5%A2%9E%E5%B0%8F%E7%BB%93"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">3.2.3 前置递增和后置递增小结</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.4.</span> <span class="toc-text">4. 比较运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 比较运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-%E5%B0%8F%E7%BB%93"><span class="toc-number">1.4.2.</span> <span class="toc-text">4.2 &#x3D;小结</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.5.</span> <span class="toc-text">5. 逻辑运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.5.1.</span> <span class="toc-text">5.1 逻辑运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-%E9%80%BB%E8%BE%91%E4%B8%8E-amp-amp"><span class="toc-number">1.5.2.</span> <span class="toc-text">5.2 逻辑与&amp;&amp;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-%E9%80%BB%E8%BE%91%E6%88%96"><span class="toc-number">1.5.3.</span> <span class="toc-text">5.3 逻辑或||</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-%E9%80%BB%E8%BE%91%E9%9D%9E"><span class="toc-number">1.5.4.</span> <span class="toc-text">5.4 逻辑非</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-5-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%EF%BC%88%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%EF%BC%89"><span class="toc-number">1.5.5.</span> <span class="toc-text">5.5 短路运算（逻辑运算）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#5-5-1-%E9%80%BB%E8%BE%91%E4%B8%8E"><span class="toc-number">1.5.5.1.</span> <span class="toc-text">5.5.1 逻辑与</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-5-2-%E9%80%BB%E8%BE%91%E6%88%96"><span class="toc-number">1.5.5.2.</span> <span class="toc-text">5.5.2 逻辑或</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.6.</span> <span class="toc-text">6. 赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">1.7.</span> <span class="toc-text">7. 运算符优先级</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81JavaScript%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%88%86%E6%94%AF"><span class="toc-number">2.</span> <span class="toc-text">二、JavaScript流程控制-分支</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-number">2.1.</span> <span class="toc-text">1. 流程控制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%A1%BA%E5%BA%8F%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-number">2.2.</span> <span class="toc-text">2. 顺序流程控制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%86%E6%94%AF%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6if%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.3.</span> <span class="toc-text">3. 分支流程控制if语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84"><span class="toc-number">2.3.1.</span> <span class="toc-text">3.1 分支结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-if%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.3.2.</span> <span class="toc-text">3.2 if语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-if-else%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.3.3.</span> <span class="toc-text">3.3 if else语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-if-else-if%E8%AF%AD%E5%8F%A5%EF%BC%88%E5%A4%9A%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5%EF%BC%89"><span class="toc-number">2.3.4.</span> <span class="toc-text">3.4 if else if语句（多分支语句）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%B8%89%E5%85%83%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">2.4.</span> <span class="toc-text">4. 三元表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%88%86%E6%94%AF%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-switch%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.5.</span> <span class="toc-text">5. 分支流程控制 switch语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-%E8%AF%AD%E6%B3%95%E7%BB%93%E6%9E%84"><span class="toc-number">2.5.1.</span> <span class="toc-text">5.1 语法结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-switch%E8%AF%AD%E5%8F%A5%E5%92%8Cif-else-if%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.5.2.</span> <span class="toc-text">5.2 switch语句和if else if语句的区别</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81JavaScript%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.</span> <span class="toc-text">一、JavaScript内置对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.1.</span> <span class="toc-text">1. 内置对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%9F%A5%E6%96%87%E6%A1%A3"><span class="toc-number">1.2.</span> <span class="toc-text">2. 查文档</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-MDN"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 MDN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 如何学习对象中的方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Math%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.3.</span> <span class="toc-text">3. Math对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-Math%E6%A6%82%E8%BF%B0"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 Math概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E9%9A%8F%E6%9C%BA%E6%95%B0%E6%96%B9%E6%B3%95-random"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 随机数方法 random()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%97%A5%E6%9C%9F%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.4.</span> <span class="toc-text">4. 日期对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-Data%E6%A6%82%E8%BF%B0"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 Data概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-Data-%E6%96%B9%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">4.2 Data()方法的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-2-1-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E5%BF%85%E9%A1%BB%E5%AE%9E%E4%BE%8B%E5%8C%96"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">4.2.1 获取当前时间必须实例化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-2-2-Data-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">4.2.2 Data()构造函数的参数</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-number">1.4.3.</span> <span class="toc-text">4.3 日期格式化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-%E8%8E%B7%E5%8F%96%E6%97%A5%E6%9C%9F%E7%9A%84%E6%80%BB%E7%9A%84%E6%AF%AB%E7%A7%92%E5%BD%A2%E5%BC%8F"><span class="toc-number">1.4.4.</span> <span class="toc-text">4.4 获取日期的总的毫秒形式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-4-1-%E9%80%9A%E8%BF%87valueOf-%E5%92%8CgetTime"><span class="toc-number">1.4.4.1.</span> <span class="toc-text">4.4.1 通过valueOf()和getTime()</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-4-2-%E7%AE%80%E5%8D%95%E7%9A%84%E5%86%99%E6%B3%95"><span class="toc-number">1.4.4.2.</span> <span class="toc-text">4.4.2 简单的写法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-4-3-H5%E6%96%B0%E5%A2%9E%E7%9A%84%E8%8E%B7%E5%8F%96%E6%80%BB%E7%9A%84%E6%AF%AB%E7%A7%92%E6%95%B0"><span class="toc-number">1.4.4.3.</span> <span class="toc-text">4.4.3 H5新增的获取总的毫秒数</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%80%92%E8%AE%A1%E6%97%B6"><span class="toc-number">1.4.5.</span> <span class="toc-text">5. 案例：倒计时</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
