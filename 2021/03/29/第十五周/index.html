@@ -9,21 +9,23 @@
     <link rel="dns-prefetch" href="http://example.com">
     <title>
       
-        Hello World | 
+        简单数据类型和复杂数据类型+Web APIs+DOM | 
             Hexo
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+    <meta name="description" content="一、简单数据类型和复杂数据类型1. 简单数据类型与复杂数据类型简单类型又叫做基本数据类型或者值类型，复杂数据类型又叫做引用类型。  值类型：简单数据类型&#x2F;基本数据类型，在存储时变量中存储的是值本身，因此叫做值类型。string，number，boolean，undefined，null（返回一个空的对象 object） 引用类型：复杂数据类型，在存储变量中存储的仅仅是地址（引用），因此叫做引用数据">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/01/22/hello-world/index.html">
+<meta property="og:title" content="简单数据类型和复杂数据类型+Web APIs+DOM">
+<meta property="og:url" content="http://example.com/2021/03/29/%E7%AC%AC%E5%8D%81%E4%BA%94%E5%91%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="一、简单数据类型和复杂数据类型1. 简单数据类型与复杂数据类型简单类型又叫做基本数据类型或者值类型，复杂数据类型又叫做引用类型。  值类型：简单数据类型&#x2F;基本数据类型，在存储时变量中存储的是值本身，因此叫做值类型。string，number，boolean，undefined，null（返回一个空的对象 object） 引用类型：复杂数据类型，在存储变量中存储的仅仅是地址（引用），因此叫做引用数据">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-22T04:44:01.223Z">
-<meta property="article:modified_time" content="2021-01-22T05:32:16.939Z">
+<meta property="og:image" content="https://img2.baidu.com/it/u=4069710210,858097302&fm=26&fmt=auto&gp=0.jpg">
+<meta property="article:published_time" content="2021-03-29T05:03:55.000Z">
+<meta property="article:modified_time" content="2021-04-04T14:54:11.295Z">
 <meta property="article:author" content="Wang Qichao">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img2.baidu.com/it/u=4069710210,858097302&fm=26&fmt=auto&gp=0.jpg">
       
         <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
         
@@ -192,7 +194,7 @@
           </div>
           <div id="js-content" class="content-ll">
             
-        <article id="post-hello-world"
+        <article id="post-第十五周"
   class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -200,7 +202,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      简单数据类型和复杂数据类型+Web APIs+DOM
     </h1>
   
 
@@ -215,25 +217,324 @@
             </a>
             
               
-                <a href="/2021/01/22/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-22T04:44:01.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-22</time>
+                <a href="/2021/03/29/%E7%AC%AC%E5%8D%81%E4%BA%94%E5%91%A8/" class="archive-article-date">
+  	<time datetime="2021-03-29T05:03:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-29</time>
 </a>
                   
       </header>
       
         <div class="article-entry" itemprop="articleBody">
           
-                    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+                    <h2 id="一、简单数据类型和复杂数据类型"><a href="#一、简单数据类型和复杂数据类型" class="headerlink" title="一、简单数据类型和复杂数据类型"></a>一、简单数据类型和复杂数据类型</h2><h3 id="1-简单数据类型与复杂数据类型"><a href="#1-简单数据类型与复杂数据类型" class="headerlink" title="1. 简单数据类型与复杂数据类型"></a>1. 简单数据类型与复杂数据类型</h3><p>简单类型又叫做基本数据类型或者值类型，复杂数据类型又叫做引用类型。</p>
+<ul>
+<li>值类型：简单数据类型/基本数据类型，在存储时变量中存储的是值本身，因此叫做值类型。<br>string，number，boolean，undefined，null（返回一个空的对象 object）</li>
+<li>引用类型：复杂数据类型，在存储变量中存储的仅仅是地址（引用），因此叫做引用数据类型。<br>通过new关键字创建的对象（系统对象、自定义对象），如Object、Array、Date等。</li>
+</ul>
 <a id="more"></a>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timer = <span class="literal">null</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> timer);      <span class="comment">//object</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-堆和栈"><a href="#2-堆和栈" class="headerlink" title="2. 堆和栈"></a>2. 堆和栈</h3><p>堆栈空间分配区别：</p>
+<ol>
+<li>栈（操作系统）：由操作系统自动分配释放存放函数时的参数值、局部变量的值等。其操作方式类似于数据结构中的栈。简单数据类型存放到栈里面。</li>
+<li>堆（操作系统）：存储复杂数据类型（对象），一般由程序员分配释放，若程序员不释放，有垃圾回收机制回收。复杂数据类型存放的堆里面。</li>
+</ol>
+<p><strong>注意：JavaScript中没有堆栈的概念，通过堆栈的方式，可以让大家更容易理解代码的一些执行方式。</strong></p>
+<h3 id="3-简单类型的内存分配"><a href="#3-简单类型的内存分配" class="headerlink" title="3. 简单类型的内存分配"></a>3. 简单类型的内存分配</h3><ul>
+<li><p>值类型（简单数据类型）：string、number、boolean、undefined、null。</p>
+</li>
+<li><p>值类型变量的数据直接存放在变量（栈空间）中。</p>
+</li>
+<li><p>简单数据类型，是存放在栈里面，里面直接开辟一个空间存放的是值。</p>
+</li>
+</ul>
+<h3 id="4-复杂类型的内存分配"><a href="#4-复杂类型的内存分配" class="headerlink" title="4. 复杂类型的内存分配"></a>4. 复杂类型的内存分配</h3><ul>
+<li><p>引用类型（复杂数据类型）：通过new关键字创建的对象（系统对象、自定义对象），如Object、Array、Date等。</p>
+</li>
+<li><p>引用类型变量（栈空间）里存放的是地址，真正的对象实例存放在栈空间中。</p>
+</li>
+<li><p>复杂数据类型，首先在栈里面存放地址，十六进制表示，然后这个地址指向堆里面的数据。</p>
+</li>
+</ul>
+<h3 id="5-简单类型传参"><a href="#5-简单类型传参" class="headerlink" title="5. 简单类型传参"></a>5. 简单类型传参</h3><p>函数的形参也可以看做是一个变量，当我们把一个值类型变量作为参数传给函数的形参时，其实是把变量在栈空间里的值复制了一份给形参，那么在方法内部对形参做任何修改，都不会影响到的外部变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">a</span>) </span>&#123;</span><br><span class="line">    a++;</span><br><span class="line">    <span class="built_in">console</span>.log(a);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> x = <span class="number">10</span>;</span><br><span class="line">fn(x);</span><br><span class="line"><span class="built_in">console</span>.log(x);</span><br></pre></td></tr></table></figure>
+<h3 id="6-复杂类型传参"><a href="#6-复杂类型传参" class="headerlink" title="6. 复杂类型传参"></a>6. 复杂类型传参</h3><p>函数的形参也看做是一个变量，当我们把引用类型变量传给形参时，其实是把变量在栈空间里保存的堆地址复制给了形参，形参和实参其实保存的是同一个堆地址，所以操作的是同一个对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(x.name); <span class="comment">//xiaohong</span></span><br><span class="line">    x.name = <span class="string">&quot;xiaoming&quot;</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(x.name); <span class="comment">//xiaoming</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person(<span class="string">&quot;xiaohong&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(p.name); <span class="comment">//xiaohong</span></span><br><span class="line">f1(p);</span><br><span class="line"><span class="built_in">console</span>.log(p.name); <span class="comment">//xiaoming</span></span><br></pre></td></tr></table></figure>
+<h2 id="二、Web-APIs"><a href="#二、Web-APIs" class="headerlink" title="二、Web APIs"></a>二、Web APIs</h2><h3 id="1-Web-APIs和JS基础关联性"><a href="#1-Web-APIs和JS基础关联性" class="headerlink" title="1. Web APIs和JS基础关联性"></a>1. Web APIs和JS基础关联性</h3><h4 id="1-1-JS的组成"><a href="#1-1-JS的组成" class="headerlink" title="1.1 JS的组成"></a>1.1 JS的组成</h4><p>JavaScript由ECMAScript（JavaScript语法）、DOM（页面文档对象模型）、BOM（浏览器对象模型）组成。ECMAScript属于JavaScript基础，DOM和BOM属于Web APIs。</p>
+<h4 id="1-2-JS基础阶段以及Web-APIs阶段"><a href="#1-2-JS基础阶段以及Web-APIs阶段" class="headerlink" title="1.2 JS基础阶段以及Web APIs阶段"></a>1.2 JS基础阶段以及Web APIs阶段</h4><p><strong>JS基础阶段：</strong></p>
+<ul>
+<li>学习ECMAScript标准规定的基本语法</li>
+<li>掌握JS基本语法</li>
+<li>只学习基本语法，做不了常用的网页交互效果</li>
+<li>目的是为了JS后面的课程打基础、做铺垫</li>
+</ul>
+<p><strong>Web APIs阶段：</strong></p>
+<ul>
+<li>Web APIs是W3C组织的标准</li>
+<li>Web APIs主要学习DOM和BOM</li>
+<li>Web APIs是JS所独有的部分</li>
+<li>主要学习页面交互功能</li>
+<li>需要使用JS基础的课程内容做基础</li>
+</ul>
+<h3 id="2-API和Web-APIs"><a href="#2-API和Web-APIs" class="headerlink" title="2. API和Web APIs"></a>2. API和Web APIs</h3><h4 id="2-1-API"><a href="#2-1-API" class="headerlink" title="2.1 API"></a>2.1 API</h4><p>API（Application Programming Interface，应用程序编程接口）是一些预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，而又无需访问源码，或理解内部工作机制的细节。</p>
+<p>简单理解：<strong>API是给程序员提供的一种工具，以便能更轻松的实现想要完成的功能。</strong></p>
+<h4 id="2-2-Web-APIs"><a href="#2-2-Web-APIs" class="headerlink" title="2.2 Web APIs"></a>2.2 Web APIs</h4><p>Web APIs是浏览器提供的一套操作浏览器功能和页面元素的API（BOM和DOM）。</p>
+<h4 id="2-3-API和Web-API总结"><a href="#2-3-API和Web-API总结" class="headerlink" title="2.3 API和Web API总结"></a>2.3 API和Web API总结</h4><ol>
+<li>API是为我们程序员提供的一个接口，帮助我们实现某种功能。</li>
+<li>Web API主要是针对于浏览器提供的接口，主要针对于浏览器做交互效果。</li>
+<li>Web API一般都有输入和输出（函数的传参和返回值），Web API很多都是方法（函数）。</li>
+</ol>
+<h2 id="三、DOM"><a href="#三、DOM" class="headerlink" title="三、DOM"></a>三、DOM</h2><h3 id="1-DOM简介"><a href="#1-DOM简介" class="headerlink" title="1. DOM简介"></a>1. DOM简介</h3><h4 id="1-1-什么是DOM"><a href="#1-1-什么是DOM" class="headerlink" title="1.1 什么是DOM"></a>1.1 什么是DOM</h4><p>文档对象模型（Document Object Model，简称DOM），是W3C组织推荐的处理可扩展标记语言（HTML或者XML）的标准编程接口。<br>W3C已经定义了一系列的DOM接口，通过这些DOM接口可以改变网页的内容、结构和样式。</p>
+<h4 id="1-2-DOM树"><a href="#1-2-DOM树" class="headerlink" title="1.2 DOM树"></a>1.2 DOM树</h4><p><img src="https://img2.baidu.com/it/u=4069710210,858097302&fm=26&fmt=auto&gp=0.jpg" alt="RUNOOB 图标"></p>
+<ul>
+<li>文档：一个页面就是一个文档，DOM中使用document表示。</li>
+<li>元素：页面中的所有标签都是元素，DOM中使用element表示。</li>
+<li>节点：网页中的所有内容都是节点（标签、属性、文本、注释等），DOM中使用node表示。</li>
+</ul>
+<h3 id="2-获取元素"><a href="#2-获取元素" class="headerlink" title="2. 获取元素"></a>2. 获取元素</h3><h4 id="2-1-如何获取页面元素"><a href="#2-1-如何获取页面元素" class="headerlink" title="2.1 如何获取页面元素"></a>2.1 如何获取页面元素</h4><p>DOM在我们的实际开发中主要用来操作元素。<br>获取页面中的元素可以使用以下几种方式：</p>
+<ul>
+<li>根据ID获取</li>
+<li>根据标签名获取</li>
+<li>通过HTML5新增的方法获取</li>
+<li>特殊元素获取</li>
+</ul>
+<h4 id="2-2-根据ID获取"><a href="#2-2-根据ID获取" class="headerlink" title="2.2 根据ID获取"></a>2.2 根据ID获取</h4><p>使用getElementById()方法可以获取带有ID的元素对象。</p>
+<ol>
+<li>需要先有标签，所以script写到标签的下面。</li>
+<li>驼峰命名法：get 获得，element 元素，by 通过。</li>
+<li>参数 id是大小写敏感的字符串。</li>
+<li>返回的是一个元素对象。</li>
+<li>console.dir 打印我们返回的元素对象。</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timer = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;timer&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(timer);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> timer);</span><br><span class="line"><span class="built_in">console</span>.dir(timer);</span><br></pre></td></tr></table></figure>
+<h4 id="2-3-根据标签名获取"><a href="#2-3-根据标签名获取" class="headerlink" title="2.3 根据标签名获取"></a>2.3 根据标签名获取</h4><p>使用getElementsByTagName()方法可以返回带有指定标签名的对象的集合。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementsByTagName(<span class="string">&#x27;标签名&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong></p>
+<ol>
+<li>因为得到的是一个对象的集合，所以我们想要操作里面的元素就需要遍历。</li>
+<li>得到元素对象是动态的。</li>
+</ol>
+<p>还可以获取某个元素（父元素）内部所有指定标签名的子元素。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">element.getElementsByTagName(<span class="string">&#x27;标签名&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>注意：父元素必须是单个对象（必须指明是哪一个元素对象），获取的时候不包括父元素自己。</strong></p>
+<h4 id="2-4-通过HTML5新增的方法获取"><a href="#2-4-通过HTML5新增的方法获取" class="headerlink" title="2.4 通过HTML5新增的方法获取"></a>2.4 通过HTML5新增的方法获取</h4><ul>
+<li>根据类名返回元素对象集合</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementByClassName(<span class="string">&#x27;类名&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>根据指定选择器返回第一个元素对象</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">&#x27;选择器&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>根据指定选择器返回</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.querySelectorAll(<span class="string">&#x27;选择器&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="2-5-获取特殊元素（body，html）"><a href="#2-5-获取特殊元素（body，html）" class="headerlink" title="2.5 获取特殊元素（body，html）"></a>2.5 获取特殊元素（body，html）</h4><p><strong>获取body元素：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.body      <span class="comment">//返回body元素对象</span></span><br></pre></td></tr></table></figure>
+<p><strong>获取html元素：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.documentElement    <span class="comment">//返回html元素对接</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-事件基础"><a href="#3-事件基础" class="headerlink" title="3. 事件基础"></a>3. 事件基础</h3><h4 id="3-1-事件概述"><a href="#3-1-事件概述" class="headerlink" title="3.1 事件概述"></a>3.1 事件概述</h4><p>JavaScript是我们有能力创建动态页面，而事件是可以被JavaScript侦测到的行为。<br>简单理解：触发——响应机制。<br>网页中的每个元素都可以产生某些可以触发JavaScript的事件，例如，我们可以在用户点击某按钮时产生一个事件，然后去执行某些操作。</p>
+<h4 id="3-2-时间三要素"><a href="#3-2-时间三要素" class="headerlink" title="3.2 时间三要素"></a>3.2 时间三要素</h4><ul>
+<li>事件是由三部分组成的：事件源、事件类型、事件处理程序，我们也称为时间三要素。<ul>
+<li>事件源：事件被触发的对象。</li>
+<li>事件类型：如何触发 什么事件，比如鼠标点击（onclick）、鼠标点击、鼠标按下。</li>
+<li>事件处理程序：通过一个函数赋值的方式完成。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">&quot;btn&quot;</span>&gt;</span>唐伯虎<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;btn&#x27;</span>);</span></span><br><span class="line"><span class="javascript">    btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        alert(<span class="string">&#x27;秋香&#x27;</span>);</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-3-执行事件的步骤"><a href="#3-3-执行事件的步骤" class="headerlink" title="3.3 执行事件的步骤"></a>3.3 执行事件的步骤</h4><ol>
+<li>获取事件源。</li>
+<li>注册事件（绑定事件）。</li>
+<li>添加事件处理程序（采取函数赋值形式）。</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;<span class="number">123</span>&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="keyword">var</span> div = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">    div.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;我被选中了&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-4-常见的鼠标事件"><a href="#3-4-常见的鼠标事件" class="headerlink" title="3.4 常见的鼠标事件"></a>3.4 常见的鼠标事件</h4><table>
+<thead>
+<tr>
+<th align="center">鼠标事件</th>
+<th align="center">触发条件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">onclick</td>
+<td align="center">鼠标点击左键触发</td>
+</tr>
+<tr>
+<td align="center">onmouseover</td>
+<td align="center">鼠标经过触发</td>
+</tr>
+<tr>
+<td align="center">onmouseout</td>
+<td align="center">鼠标离开触发</td>
+</tr>
+<tr>
+<td align="center">onfocus</td>
+<td align="center">获取鼠标焦点触发</td>
+</tr>
+<tr>
+<td align="center">onblur</td>
+<td align="center">失去鼠标焦点触发</td>
+</tr>
+<tr>
+<td align="center">onmousemove</td>
+<td align="center">鼠标移动触发</td>
+</tr>
+<tr>
+<td align="center">onmouseup</td>
+<td align="center">鼠标弹起触发</td>
+</tr>
+<tr>
+<td align="center">onmousedown</td>
+<td align="center">鼠标按下触发</td>
+</tr>
+</tbody></table>
+<h3 id="4-操作元素"><a href="#4-操作元素" class="headerlink" title="4. 操作元素"></a>4. 操作元素</h3><p>JavaScript的DOM操作可以改变网页内容、结构和样式，我们可以利用DOM操作元素来改变元素里面的内容、属性等。以下都是属性。</p>
+<h4 id="4-1-改变元素内容"><a href="#4-1-改变元素内容" class="headerlink" title="4.1 改变元素内容"></a>4.1 改变元素内容</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">element.innerText</span><br></pre></td></tr></table></figure>
+<p>从起始位置到终止位置的内容，但它去除html标签，同时空格和换行也会去掉。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">element.innerHTML</span><br></pre></td></tr></table></figure>
+<p>起始位置到终止位置的全部内容，包括html标签，同时保留空格和换行。</p>
+<p>innerText和innerHTML的区别：</p>
+<ol>
+<li>innerText：不识别html标签，非标准。</li>
+<li>innerHTML：识别html标签，W3C标准。</li>
+</ol>
+<p>这两个属性是可读写的，可以获取元素里面的内容。</p>
+<h4 id="4-2-常用元素的属性操作"><a href="#4-2-常用元素的属性操作" class="headerlink" title="4.2 常用元素的属性操作"></a>4.2 常用元素的属性操作</h4><ol>
+<li>innerText、innerHTML 改变元素内容</li>
+<li>src、href</li>
+<li>id、alt、title</li>
+</ol>
+<h4 id="4-3-表单元素的属性操作"><a href="#4-3-表单元素的属性操作" class="headerlink" title="4.3 表单元素的属性操作"></a>4.3 表单元素的属性操作</h4><p>利用DOM可以操作如下表单元素的属性： type、value、checked、selected、disabled。</p>
+<h4 id="4-4-样式属性操作"><a href="#4-4-样式属性操作" class="headerlink" title="4.4 样式属性操作"></a>4.4 样式属性操作</h4><p>我们可以通过JS修改元素的大小、颜色、位置等样式。</p>
+<ol>
+<li>element.style：行内样式操作</li>
+<li>element。className：类名样式操作</li>
+</ol>
+<p><strong>注意：</strong></p>
+<ol>
+<li>JS里面的样式采取驼峰命名法，比如fontSize、backgroundColor。</li>
+<li>JS修改style样式操作，产生的是行内样式，CSS权重比较重。</li>
+<li>如果样式修改较多，可以采取操作类名方式更改元素样式。</li>
+<li>class因为是个保留字，因此使用className来操作元素类名属性。</li>
+<li>className会直接更改元素的类名，会覆盖原先的类名。</li>
+</ol>
+<h4 id="4-5-排他思想"><a href="#4-5-排他思想" class="headerlink" title="4.5 排他思想"></a>4.5 排他思想</h4><p>如果有同一组元素，我们想要某一个元素实现某种样式。需要用到循环的排他思想算法：</p>
+<ol>
+<li>所有元素全部清楚样式</li>
+<li>给当前元素设置样式</li>
+<li>注意顺序不能颠倒</li>
+</ol>
+<h4 id="4-6-自定义元素属性的操作"><a href="#4-6-自定义元素属性的操作" class="headerlink" title="4.6 自定义元素属性的操作"></a>4.6 自定义元素属性的操作</h4><h5 id="4-6-1-获取属性值"><a href="#4-6-1-获取属性值" class="headerlink" title="4.6.1 获取属性值"></a>4.6.1 获取属性值</h5><ul>
+<li>element.属性 获取属性值。</li>
+<li>element.getAttribute(‘属性’);</li>
+</ul>
+<p>区别：</p>
+<ul>
+<li>element.属性 获取内置属性值（元素本身自带的属性）。</li>
+<li>element.getAttribute(‘属性’); 主要获得自定义的属性（标准）。</li>
+</ul>
+<h5 id="4-6-2-设置属性值"><a href="#4-6-2-设置属性值" class="headerlink" title="4.6.2 设置属性值"></a>4.6.2 设置属性值</h5><ul>
+<li>element.属性=’值’ 设置内置属性值。</li>
+<li>element.getAttribute(‘属性’,’值’);</li>
+</ul>
+<p>区别：</p>
+<ul>
+<li>element.属性=’值’ 设置内置属性值。</li>
+<li>element.getAttribute(‘属性’,’值’); 主要设置自定义的属性（标准）。</li>
+</ul>
+<h5 id="4-6-3-移除属性"><a href="#4-6-3-移除属性" class="headerlink" title="4.6.3 移除属性"></a>4.6.3 移除属性</h5><ul>
+<li>element.removeAttribute(‘属性’);</li>
+</ul>
+<h4 id="4-7-H5自定义属性"><a href="#4-7-H5自定义属性" class="headerlink" title="4.7 H5自定义属性"></a>4.7 H5自定义属性</h4><p>自定义属性的目的：是为了保存并使用数据。有些数据可以保存到页面中而不用保存到数据库中。<br>自定义属性获取是通过<code>getAttribute(&#39;属性&#39;)</code>获取。<br>但是有些自定义属性很容易引起歧义，不容易判断是内置属性还是自定义属性。</p>
+<h5 id="4-7-1-设置H5自定义属性"><a href="#4-7-1-设置H5自定义属性" class="headerlink" title="4.7.1 设置H5自定义属性"></a>4.7.1 设置H5自定义属性</h5><p>H5规定自定义属性data-开头作为属性名并且赋值。<br>比如<code>&lt;div data-index = &quot;1&quot;&gt;&lt;/div&gt;</code>。</p>
+<h5 id="4-7-2-获取H5自定义属性"><a href="#4-7-2-获取H5自定义属性" class="headerlink" title="4.7.2 获取H5自定义属性"></a>4.7.2 获取H5自定义属性</h5><ol>
+<li>兼容性获取 <code>element.getAttribute(&#39;data-index&#39;);</code></li>
+<li>H5新增 element.datast.index 或者 element.dataset[‘index’],ie 11才开始支持。</li>
+</ol>
+<h3 id="5-节点操作"><a href="#5-节点操作" class="headerlink" title="5. 节点操作"></a>5. 节点操作</h3><h4 id="5-1-为什么学节点操作"><a href="#5-1-为什么学节点操作" class="headerlink" title="5.1 为什么学节点操作"></a>5.1 为什么学节点操作</h4><p>获取元素通常使用两种方式：</p>
+<ul>
+<li>利用DOM提供的方法获取元素<ul>
+<li>document.getElementById()</li>
+<li>document.getElementsByTagName()</li>
+<li>document.querySelector等</li>
+<li>逻辑不强、繁琐</li>
+</ul>
+</li>
+<li>利用节点层级关系获取元素<ul>
+<li>利用父子兄节点关系获取元素<br>= 逻辑性强，但是兼容性稍差</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-2-节点概述"><a href="#5-2-节点概述" class="headerlink" title="5.2 节点概述"></a>5.2 节点概述</h4><p>一般地，节点至少拥有nodeType(节点类型)、nodeName(节点类型)和nodeValue(节点值)这三个基本属性。</p>
+<ul>
+<li>元素节点 nodeType 为1</li>
+<li>属性节点 nodeType 为2</li>
+<li>文本节点 nodeType 为3（文本节点包括文字、空格、换行等）</li>
+</ul>
+<h4 id="5-3-节点层级"><a href="#5-3-节点层级" class="headerlink" title="5.3 节点层级"></a>5.3 节点层级</h4><p>利用DOM树可以把节点划分为不同的层级关系，常见的是父子兄层级关系。</p>
+<h5 id="5-3-1-父级节点"><a href="#5-3-1-父级节点" class="headerlink" title="5.3.1 父级节点"></a>5.3.1 父级节点</h5><ul>
+<li>node.parentNode</li>
+</ul>
+<h5 id="5-3-2-子节点"><a href="#5-3-2-子节点" class="headerlink" title="5.3.2 子节点"></a>5.3.2 子节点</h5><ul>
+<li>parentNode.childNodes(标准)</li>
+</ul>
+<p>parentNode.childNodes 返回包含指定节点的子节点的集合，该集合为即时更新集合。</p>
+<p><strong>注意：返回值里面包含了所有的子节点，包括元素节点、文本节点等。</strong></p>
+<ul>
+<li>parentNode.children(非标准)</li>
+</ul>
+<p>parentNode.children是一个只读属性，返回所有的子元素节点。它只返回子元素节点，其余节点不返回。</p>
+<ul>
+<li>parentNode.firstChild</li>
+</ul>
+<p>firstChild返回第一个子节点，找不到则返回null。同样，也是包含所有的节点。</p>
+<ul>
+<li>parentNode.lastChild</li>
+</ul>
+<p>lastChild返回最后一个子节点，找不到则返回null。</p>
+<ul>
+<li>parentNode.firstElementChild</li>
+</ul>
+<p>parentNode.firstElementChild返回第一个子节点，找不到则返回null。</p>
+<ul>
+<li>parentNode.lastElementChild</li>
+</ul>
+<p>parentNode.lastElementChild返回最后一个子节点，找不到则返回null。</p>
+<h5 id="5-3-3-兄弟节点"><a href="#5-3-3-兄弟节点" class="headerlink" title="5.3.3 兄弟节点"></a>5.3.3 兄弟节点</h5><ul>
+<li>node.nextSibling</li>
+</ul>
+<p>nextSibling返回当前元素的下一个兄弟节点，找不到则返回null。同样，也是包含所有的节点。</p>
+<ul>
+<li>node.previousSibling</li>
+</ul>
+<p>previousSibling返回当前元素的上一个兄弟节点，找不到则返回null。同样，也是包含所有的节点。</p>
+<ul>
+<li>node.nextElementSibling</li>
+</ul>
+<p>nextElementSibling返回当前元素的下一个兄弟节点，找不到则返回null。</p>
+<ul>
+<li>node.previousElementSibling</li>
+</ul>
+<p>previousElementSibling返回当前元素的上一个兄弟节点，找不到则返回null。</p>
+<h4 id="5-4-创建节点"><a href="#5-4-创建节点" class="headerlink" title="5.4 创建节点"></a>5.4 创建节点</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.createElement(<span class="string">&#x27;tagName&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p><code>document.createElement()</code>方法创建由tagName指定的HTML元素。因为这些元素原先不存在，是根据我们的需求动态生成的，所以我们也称为动态创建元素节点。</p>
+<ul>
+<li>node.appendChild(child)</li>
+</ul>
+<p>node.appendChild()方法将一个节点添加到指定父节点的子节点列表末尾，类似于css里面的after为元素。</p>
+<ul>
+<li>node.insertBefore(child,指定元素)</li>
+</ul>
+<p>node.insertBefore()方法将一个节点添加到指定父节点的子节点列表前面，类似于css里面的before为元素。</p>
+<h4 id="5-5-删除节点"><a href="#5-5-删除节点" class="headerlink" title="5.5 删除节点"></a>5.5 删除节点</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.removeChild(child)</span><br></pre></td></tr></table></figure>
+<p>node.removeChild()方法从DOM中删除一个子节点，返回删除的节点。</p>
+<h4 id="5-6-复制节点"><a href="#5-6-复制节点" class="headerlink" title="5.6 复制节点"></a>5.6 复制节点</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node.cloneNode()</span><br></pre></td></tr></table></figure>
+<p>node.cloneNode()方法返回调用该方法的节点的一个副本，也成为克隆节点、拷贝节点。</p>
+<p><strong>注意：</strong></p>
+<ol>
+<li>如果括号参数为空或者为false，则是浅拷贝，即只克隆复制节点本身，不克隆里面的子节点。</li>
+<li>如果括号参数为true，则是深度拷贝，会复制节点本身以及里面所有的子节点。</li>
+</ol>
 
                       
 
@@ -326,7 +627,7 @@
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
       <img
-        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/01/22/hello-world/"
+        src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wang-qichao.github.io/021/03/29/%E7%AC%AC%E5%8D%81%E4%BA%94%E5%91%A8/"
         alt="微信分享二维码">
     </div>
   </div>
@@ -342,18 +643,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/01/26/%E7%AC%AC%E4%B8%83%E5%91%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          定位+元素的显示和隐藏+CSS高级技巧
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/01/20/HTML/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML</div>
+    <a href="/2021/03/22/%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%91%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript内置对象</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -380,7 +672,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%AE%80%E5%8D%95%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%A4%8D%E6%9D%82%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">一、简单数据类型和复杂数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%AE%80%E5%8D%95%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%A4%8D%E6%9D%82%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">1. 简单数据类型与复杂数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A0%86%E5%92%8C%E6%A0%88"><span class="toc-number">1.2.</span> <span class="toc-text">2. 堆和栈</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%AE%80%E5%8D%95%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D"><span class="toc-number">1.3.</span> <span class="toc-text">3. 简单类型的内存分配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%A4%8D%E6%9D%82%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D"><span class="toc-number">1.4.</span> <span class="toc-text">4. 复杂类型的内存分配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%AE%80%E5%8D%95%E7%B1%BB%E5%9E%8B%E4%BC%A0%E5%8F%82"><span class="toc-number">1.5.</span> <span class="toc-text">5. 简单类型传参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%A4%8D%E6%9D%82%E7%B1%BB%E5%9E%8B%E4%BC%A0%E5%8F%82"><span class="toc-number">1.6.</span> <span class="toc-text">6. 复杂类型传参</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Web-APIs"><span class="toc-number">2.</span> <span class="toc-text">二、Web APIs</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Web-APIs%E5%92%8CJS%E5%9F%BA%E7%A1%80%E5%85%B3%E8%81%94%E6%80%A7"><span class="toc-number">2.1.</span> <span class="toc-text">1. Web APIs和JS基础关联性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-JS%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-number">2.1.1.</span> <span class="toc-text">1.1 JS的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-JS%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5%E4%BB%A5%E5%8F%8AWeb-APIs%E9%98%B6%E6%AE%B5"><span class="toc-number">2.1.2.</span> <span class="toc-text">1.2 JS基础阶段以及Web APIs阶段</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-API%E5%92%8CWeb-APIs"><span class="toc-number">2.2.</span> <span class="toc-text">2. API和Web APIs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-API"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.1 API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-Web-APIs"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2 Web APIs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-API%E5%92%8CWeb-API%E6%80%BB%E7%BB%93"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.3 API和Web API总结</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81DOM"><span class="toc-number">3.</span> <span class="toc-text">三、DOM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-DOM%E7%AE%80%E4%BB%8B"><span class="toc-number">3.1.</span> <span class="toc-text">1. DOM简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E4%BB%80%E4%B9%88%E6%98%AFDOM"><span class="toc-number">3.1.1.</span> <span class="toc-text">1.1 什么是DOM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-DOM%E6%A0%91"><span class="toc-number">3.1.2.</span> <span class="toc-text">1.2 DOM树</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0"><span class="toc-number">3.2.</span> <span class="toc-text">2. 获取元素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E9%A1%B5%E9%9D%A2%E5%85%83%E7%B4%A0"><span class="toc-number">3.2.1.</span> <span class="toc-text">2.1 如何获取页面元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E6%A0%B9%E6%8D%AEID%E8%8E%B7%E5%8F%96"><span class="toc-number">3.2.2.</span> <span class="toc-text">2.2 根据ID获取</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-%E6%A0%B9%E6%8D%AE%E6%A0%87%E7%AD%BE%E5%90%8D%E8%8E%B7%E5%8F%96"><span class="toc-number">3.2.3.</span> <span class="toc-text">2.3 根据标签名获取</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-%E9%80%9A%E8%BF%87HTML5%E6%96%B0%E5%A2%9E%E7%9A%84%E6%96%B9%E6%B3%95%E8%8E%B7%E5%8F%96"><span class="toc-number">3.2.4.</span> <span class="toc-text">2.4 通过HTML5新增的方法获取</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-%E8%8E%B7%E5%8F%96%E7%89%B9%E6%AE%8A%E5%85%83%E7%B4%A0%EF%BC%88body%EF%BC%8Chtml%EF%BC%89"><span class="toc-number">3.2.5.</span> <span class="toc-text">2.5 获取特殊元素（body，html）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BA%8B%E4%BB%B6%E5%9F%BA%E7%A1%80"><span class="toc-number">3.3.</span> <span class="toc-text">3. 事件基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E4%BA%8B%E4%BB%B6%E6%A6%82%E8%BF%B0"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.1 事件概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E6%97%B6%E9%97%B4%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.2 时间三要素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-%E6%89%A7%E8%A1%8C%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.3.3.</span> <span class="toc-text">3.3 执行事件的步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6"><span class="toc-number">3.3.4.</span> <span class="toc-text">3.4 常见的鼠标事件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0"><span class="toc-number">3.4.</span> <span class="toc-text">4. 操作元素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-%E6%94%B9%E5%8F%98%E5%85%83%E7%B4%A0%E5%86%85%E5%AE%B9"><span class="toc-number">3.4.1.</span> <span class="toc-text">4.1 改变元素内容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-%E5%B8%B8%E7%94%A8%E5%85%83%E7%B4%A0%E7%9A%84%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C"><span class="toc-number">3.4.2.</span> <span class="toc-text">4.2 常用元素的属性操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0%E7%9A%84%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C"><span class="toc-number">3.4.3.</span> <span class="toc-text">4.3 表单元素的属性操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-%E6%A0%B7%E5%BC%8F%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C"><span class="toc-number">3.4.4.</span> <span class="toc-text">4.4 样式属性操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-%E6%8E%92%E4%BB%96%E6%80%9D%E6%83%B3"><span class="toc-number">3.4.5.</span> <span class="toc-text">4.5 排他思想</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%85%83%E7%B4%A0%E5%B1%9E%E6%80%A7%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">3.4.6.</span> <span class="toc-text">4.6 自定义元素属性的操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-6-1-%E8%8E%B7%E5%8F%96%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="toc-number">3.4.6.1.</span> <span class="toc-text">4.6.1 获取属性值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-6-2-%E8%AE%BE%E7%BD%AE%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="toc-number">3.4.6.2.</span> <span class="toc-text">4.6.2 设置属性值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-6-3-%E7%A7%BB%E9%99%A4%E5%B1%9E%E6%80%A7"><span class="toc-number">3.4.6.3.</span> <span class="toc-text">4.6.3 移除属性</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-H5%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7"><span class="toc-number">3.4.7.</span> <span class="toc-text">4.7 H5自定义属性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-7-1-%E8%AE%BE%E7%BD%AEH5%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7"><span class="toc-number">3.4.7.1.</span> <span class="toc-text">4.7.1 设置H5自定义属性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-7-2-%E8%8E%B7%E5%8F%96H5%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7"><span class="toc-number">3.4.7.2.</span> <span class="toc-text">4.7.2 获取H5自定义属性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C"><span class="toc-number">3.5.</span> <span class="toc-text">5. 节点操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AD%A6%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C"><span class="toc-number">3.5.1.</span> <span class="toc-text">5.1 为什么学节点操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-%E8%8A%82%E7%82%B9%E6%A6%82%E8%BF%B0"><span class="toc-number">3.5.2.</span> <span class="toc-text">5.2 节点概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-%E8%8A%82%E7%82%B9%E5%B1%82%E7%BA%A7"><span class="toc-number">3.5.3.</span> <span class="toc-text">5.3 节点层级</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#5-3-1-%E7%88%B6%E7%BA%A7%E8%8A%82%E7%82%B9"><span class="toc-number">3.5.3.1.</span> <span class="toc-text">5.3.1 父级节点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-3-2-%E5%AD%90%E8%8A%82%E7%82%B9"><span class="toc-number">3.5.3.2.</span> <span class="toc-text">5.3.2 子节点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-3-3-%E5%85%84%E5%BC%9F%E8%8A%82%E7%82%B9"><span class="toc-number">3.5.3.3.</span> <span class="toc-text">5.3.3 兄弟节点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-%E5%88%9B%E5%BB%BA%E8%8A%82%E7%82%B9"><span class="toc-number">3.5.4.</span> <span class="toc-text">5.4 创建节点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-5-%E5%88%A0%E9%99%A4%E8%8A%82%E7%82%B9"><span class="toc-number">3.5.5.</span> <span class="toc-text">5.5 删除节点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-6-%E5%A4%8D%E5%88%B6%E8%8A%82%E7%82%B9"><span class="toc-number">3.5.6.</span> <span class="toc-text">5.6 复制节点</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
